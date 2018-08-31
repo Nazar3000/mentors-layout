@@ -1,0 +1,51 @@
+extends ../default.pug
+block pageContent
+    include ../templates/header.pug
+    .content
+        section.admin-link-nav
+            .container
+                a.admin-link.active(href='') Особистий кабінет наставника >
+                a.admin-link(href='')  Денис Сверидов
+
+        section.admin
+            .container
+                .admin-wrapp
+                    .admin-left
+                        a.admin-bage(href='')
+                            i.fas.fa-pencil-alt
+                        .admin-card-child
+                            .admin-card-info
+                                img(src='img/child-card.png', alt='')
+                                div
+                                    h2.admin-card-name
+                                        | Денис
+                                        br
+                                        | Сверидов
+                                    p.admin-card-birth Дата народження
+                                    p.admin-card-data
+                                        | 25.08.2004
+                                        span.admin-card-age (14  років)
+                            .admin-card-line
+                            .admin-card-dream
+                                div
+                                    span.admin-card-dream-name Мрія
+                                    p.admin-card-dream-item Мріє поїхати у США
+                                    span.admin-card-dream-name Боїться
+                                    p.admin-card-dream-item Павуків, кажанів
+                                    span.admin-card-dream-name Ненавидить
+                                    p.admin-card-dream-item Залишатися один в дощь
+                                div
+                                    span.admin-card-dream-name Хочу стати
+                                    p.admin-card-dream-item Лікарем
+                                    span.admin-card-dream-name Любить
+                                    p.admin-card-dream-item Коли йому читають казки
+                            .admin-card-line
+                            .admin-card-post
+                                p Твоя задача не досягти якихось цілей, а допомогти дититні!
+                                a(href='') Детальніше
+
+
+
+
+
+    include ../templates/footer.pug

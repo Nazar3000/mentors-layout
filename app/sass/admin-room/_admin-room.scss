@@ -1,0 +1,45 @@
+.admin{
+  &-bage{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: $main-color;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    @include flex-center-center;
+    color: $white-color;
+  }
+  &-wrapp{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 90px;
+  }
+  &-left{
+    width: 39%;
+    @include white-card;
+    position: relative;
+  }
+  &-right{
+    width: 59%;
+    @include white-card;
+  }
+  &-card{
+    &-info{
+      display: flex;
+      justify-content: flex-start;
+      & > img{
+        width: 110px;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+    }
+    &-name{
+      font-size: 30px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      color: $grafit-color;
+    }
+  }
+}

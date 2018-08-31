@@ -29,7 +29,6 @@ button:focus, input:focus{
 .footer {
   flex: 0 0 auto;
 }
-
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -42,6 +41,41 @@ button:focus, input:focus{
 .footer {
   flex: 0 0 auto;
 }
+
+//  main style
+
+
+
+.admin{
+  &-link{
+    font-size: 12px;
+    letter-spacing: 0.83px;
+    color: #7C7D7E;
+    font-weight: 500;
+    &:hover{
+      color: $main-color;
+    }
+    &.active{
+      color: $main-color;
+    }
+    &-nav{
+      padding: 35px 0;
+    }
+  }
+}
+
+.error-form {
+  display: block;
+  margin: 10px 0;
+  color: #e82929;
+  text-transform: uppercase;
+  font-size: 7px;
+  text-align: right;
+  width: 100%;
+}
+
+
+
 
 
 @import 'media';

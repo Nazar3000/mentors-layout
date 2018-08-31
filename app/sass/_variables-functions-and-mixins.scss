@@ -7,6 +7,18 @@ $grey-color:#34454E;
 $light-blue:#E2EDF0;
 
 
+// admin card
+
+@mixin white-card{
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: -2px -1px 9px 0 rgba(0,0,0,0.17);
+    padding: 27px 27px 27px 55px;
+}
+
+
+
+
 
 // shadow-gradient
 
