@@ -1,0 +1,42 @@
+.footer{
+  background: $grafit-color;
+  padding: 65px 0 78px;
+  &-wrapp{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &-nav{
+    display: flex;
+
+    &-item{
+      margin-right: 130px;
+      & a{
+        color: $white-color;
+        display: block;
+        padding: 5px 0;
+        font-size: 15px;
+        letter-spacing: 0.95px;
+        font-weight: 100;
+        &:hover{
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  &-btn{
+    @include blue-btn;
+     & a{
+       color: $white-color;
+       line-height: 1.2;
+       display: block;
+       &:hover{
+         text-decoration: none;
+       }
+     }
+  }
+  &-logo{
+    margin-right: 130px;
+  }
+}
