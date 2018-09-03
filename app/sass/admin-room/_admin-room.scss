@@ -1,39 +1,57 @@
 .admin{
-  &-bage{
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    background: $main-color;
-    width: 30px;
-    height: 30px;
-    border-radius: 50px;
-    @include flex-center-center;
-    color: $white-color;
-  }
   &-wrapp{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 90px;
   }
   &-left{
-    width: 39%;
-    @include white-card;
-    position: relative;
+    width: 43%;
   }
   &-right{
-    width: 59%;
-    @include white-card;
+    width: 54%;
   }
   &-card{
-    &-info{
+    margin-bottom: 30px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+    padding: 27px 27px 27px 55px;
+    &-post{
+      & > p{
+        font-size: 12px;
+        font-weight: bold;
+        letter-spacing: 0.46px;
+        color: $grafit-color;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      & > a{
+        @include blue-btn;
+        margin: 0 auto;
+        @include flex-center-center;
+      }
+    }
+    &-dream{
       display: flex;
       justify-content: flex-start;
-      & > img{
-        width: 110px;
-        height: 120px;
-        object-fit: cover;
-        border-radius: 8px;
+      &-name{
+        font-size: 10px;
+        font-weight: bold;
+        letter-spacing: 0.33px;
+        color: $grafit-color;
       }
+      &-item{
+        font-size: 12px;
+        letter-spacing: 0.46px;
+        line-height: 20px;
+        color: $grafit-color;
+        margin-bottom: 25px;
+      }
+    }
+    &-line{
+      width: 100%;
+      height: 1px;
+      background: rgba(151, 151, 151, 0.23);
+      margin-bottom: 18px;
     }
     &-name{
       font-size: 30px;
@@ -41,5 +59,446 @@
       letter-spacing: 1px;
       color: $grafit-color;
     }
+    &-birth{
+      font-size: 10px;
+      font-weight: bold;
+      letter-spacing: 0.33px;
+      color: $grafit-color;
+      margin-bottom: 4px;
+    }
+    &-data{
+      font-size: 14px;
+      letter-spacing: 0.46px;
+      margin-bottom: 0;
+    }
+    &-bage{
+      margin-left: auto;
+      background: $main-color;
+      width: 30px;
+      height: 30px;
+      border-radius: 50px;
+      @include flex-center-center;
+      color: #fff;
+    }
+    &-info{
+      display: flex;
+      justify-content: flex-start;
+      margin-bottom: 30px;
+      & > img{
+        width: 110px;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-right: 50px;
+      }
+    }
+  }
+  &-school{
+    margin-bottom: 30px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+    padding: 27px 27px 27px 55px;
+    & > a{
+      display: block;
+      width: 100%;
+      text-align: right;
+      color: $main-color;
+      text-decoration: underline;
+      font-size: 15px;
+      letter-spacing: 0.15px;
+    }
+    &-title{
+      font-size: 30px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      color: $grafit-color;
+      margin-bottom: 25px;
+    }
+    &-line{
+      width: 100%;
+      height: 1px;
+      background: rgba(151, 151, 151, 0.23);
+      margin-bottom: 20px;
+    }
+    &-video{
+      &-item{
+        @include flex-start-center;
+        margin-bottom: 25px;
+        & > img{
+          border: 1px solid $main-color;
+          width: 100px;
+          height: 70px;
+          object-fit: cover;
+          background: $light-blue;
+          display: block;
+          position: relative;
+          border-radius: 2px;
+          margin-right: 15px;
+          &::after{
+            background: url(../img/play.png) no-repeat;
+            position: absolute;
+            content: '';
+            margin: auto;
+            top: 35%;
+            left: 40%;
+            bottom: 0;
+            right: 0;
+          }
+        }
+      }
+      &-title{
+        & > p{
+          font-size: 14px;
+          letter-spacing: 0.54px;
+          color: $grafit-color;
+          margin-bottom: 15px;
+        }
+        & > a{
+          font-size: 15px;
+          letter-spacing: 0.15px;
+          color: $main-color;
+        }
+        &-item{
+          @include flex-start-center;
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+  &-walk {
+    margin-bottom: 30px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+    padding: 27px 27px 27px 55px;
+    & > a{
+      display: block;
+      width: 100%;
+      text-align: right;
+      color: $main-color;
+      text-decoration: underline;
+      font-size: 15px;
+      letter-spacing: 0.15px;
+    }
+    &-title {
+      font-size: 30px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      color: $grafit-color;
+      margin-bottom: 25px;
+    }
+    &-line {
+      width: 100%;
+      height: 1px;
+      background: rgba(151, 151, 151, 0.23);
+      margin-bottom: 25px;
+    }
+    &-place {
+      @include flex-start-center;
+      margin-bottom: 60px;
+      & > img {
+        width: 145px;
+        height: 125px;
+        object-fit: cover;
+        border-radius: 2px;
+        margin-right: 25px;
+        display: block;
+      }
+      & h4 {
+        color: $grafit-color;
+        font-size: 14px;
+        font-weight: bold;
+        letter-spacing: 0.46px;
+      }
+      & p {
+        font-size: 12px;
+        letter-spacing: 0.46px;
+        color: $grafit-color;
+        margin-bottom: 0;
+      }
+    }
+  }
+  &-social{
+    margin-bottom: 30px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+    padding: 27px 27px 27px 37px;
+    &-btn{
+      margin: 0 auto;
+      @include blue-btn;
+    }
+    &-dialog{
+      margin-bottom: 18px;
+      & > span{
+        font-size: 13px;
+        letter-spacing: 0.5px;
+        color: $grafit-color;
+        font-weight: 500;
+        display: block;
+        width: 100%;
+        text-align: right;
+        padding-left: 10px;
+      }
+      &-content{
+        background:rgba(226,237,240,0.37);
+        padding: 10px;
+        border-radius: 8px;
+        width: 100%;
+        margin-bottom: 10px;
+        & > p{
+          font-size: 18px;
+          letter-spacing: 1.14px;
+          color: $main-color;
+          margin-bottom: 13px;
+        }
+        & > span{
+          font-size: 13px;
+          letter-spacing: 0.5px;
+          color: $grafit-color;
+          font-weight: 500;
+          display: block;
+        }
+      }
+      &-wrapp{
+        @include flex-start-center;
+        & > img{
+          height: 40px;
+          width: 40px;
+          border-radius: 50px;
+          object-fit: cover;
+          margin-right: 10px;
+        }
+      }
+      &-line{
+        width: 100%;
+        height: 1px;
+        background: rgba(151, 151, 151, 0.23);
+        margin-bottom: 20px;
+        &-btn{
+          margin: 20px 0;
+          width: 100%;
+          height: 1px;
+          background: rgba(151, 151, 151, 0.23);
+        }
+      }
+    }
+    &-wrapp{
+      &-icon{
+        @include flex-end-center;
+        font-size: 13px;
+        margin-bottom: 15px;
+        & span{
+          color: $grafit-color;
+          margin-left: 45px;
+          padding-right: 5px;
+        }
+        & a {
+          color: $main-color;
+          letter-spacing: 0.82px;
+        }
+      }
+    }
+    &-image > img{
+      height: 238px;
+      width: 100%;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+    &-description p{
+      font-size: 14px;
+      letter-spacing: 0.54px;
+      color: $grafit-color;
+    }
+    &-author{
+      @include flex-start-center;
+      margin-bottom: 25px;
+      & > img{
+        width: 45px;
+        height: 45px;
+        border-radius: 50px;
+        margin-right: 20px;
+      }
+      & h4{
+        color: $main-color;
+        font-size: 18px;
+        letter-spacing: 1.14px;
+        margin-bottom: 0;
+      }
+      & span{
+        color: $grafit-color;
+        font-size: 12px;
+        letter-spacing: 0.46px;
+      }
+    }
+    &-line{
+      width: 100%;
+      height: 1px;
+      background: rgba(151, 151, 151, 0.23);
+      margin-bottom: 7px;
+    }
+    &-title{
+      font-size: 30px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      color: $grafit-color;
+      margin-bottom: 20px;
+    }
+    &-bage{
+      margin-left: auto;
+      background: $main-color;
+      width: 30px;
+      height: 30px;
+      border-radius: 50px;
+      @include flex-center-center;
+      color: #fff;
+    }
+    &-city{
+      font-size:15px;
+      letter-spacing: 1.14px;
+      color: $main-color;
+      position: relative;
+      top: 5px;
+    }
+    &-info{
+      display: flex;
+      align-items: flex-start;
+    }
+    &-link{
+      display: flex;
+    }
+  }
+  &-diary{
+    margin-bottom: 30px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+    padding: 27px 27px 27px 55px;
+    &-btn{
+      @include blue-btn;
+      margin: 20px auto 0;
+    }
+    &-title{
+      font-size: 30px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      color: $grafit-color;
+      margin-bottom: 20px;
+    }
+    &-line{
+      width: 100%;
+      height: 1px;
+      background: rgba(151, 151, 151, 0.23);
+    }
+    &-item{
+      @include flex-between-center;
+      padding: 20px 0;
+      border-bottom: 1px solid rgba(151, 151, 151, 0.23);
+      &:last-child{
+        border: 0;
+      }
+      & span{
+        font-size: 14px;
+        letter-spacing: 0.54px;
+        color: $grafit-color;
+        display: inline-block;
+        margin-right: 40px;
+      }
+      & a{
+        font-size: 14px;
+        letter-spacing: 0.54px;
+        color: $main-color;
+      }
+    }
   }
 }
+
+
+//.admin{
+//    &-diary{
+//      &-item{
+//
+//
+//      }
+//
+//    }
+//    &-wrapp{
+//      margin-bottom: 30px;
+//      border-radius: 8px;
+//      background-color: #fff;
+//      box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+//      padding: 27px 22px 27px 35px;
+//      position: relative;
+//      & .diary-btn{
+//        @include blue-btn;
+//        padding: 0;
+//        @include flex-center-center;
+//        margin: 25px auto 0;
+//        width: 200px;
+//        height: 50px;
+//      }
+//      & .dialog{
+//        margin-bottom: 15px;
+//        & > span{
+//          width: 100%;
+//          display: block;
+//          text-align: right;
+//          font-size: 12px;
+//          letter-spacing: 0.46px;
+//          color: $grafit-color;
+//        }
+//        &-content{
+//
+//
+//        }
+//        &-wrapp{
+//          display: flex;
+//          justify-content: flex-start;
+//
+//        }
+//      }
+//    }
+//  }
+//  &-card{
+//    &-social{
+//      display: flex;
+//      justify-content: space-between;
+//      &-btn{
+//        @include blue-btn;
+//        display: block;
+//        margin: 0 auto;
+//        width: 200px;
+//        height: 50px;
+//        @include flex-center-center;
+//        font-size: 15px;	letter-spacing: 0.15px;
+//        padding: 0;
+//      }
+//      &-image{
+//        & > img{
+//
+//        }
+//        &-link{
+//          display: flex;
+//          align-items: center;
+//          justify-content: flex-end;
+//          margin-bottom: 10px;
+//
+//
+//      & > h2{
+//        font-size: 30px;
+//        font-weight: bold;
+//        letter-spacing: 1.16px;
+//        color: $grafit-color;
+//        margin-bottom: 20px;
+//      }
+//      &-link{
+//        display: flex;
+//        & > p{
+//          color: $main-color;
+//          font-size: 15px;
+//          letter-spacing: 0.95px;
+//          margin: 5px 20px 0 0;
+//        }
+//      }
+//    }

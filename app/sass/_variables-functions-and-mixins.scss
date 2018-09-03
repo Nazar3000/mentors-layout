@@ -107,14 +107,14 @@ $second-font: 'FreeSet';
     line-height: 1.2;
 }
 @mixin blue-btn{
-    background: $main-color;
-    padding: 10px 30px;
-    text-align: center;
-    color: $white-color;
-    letter-spacing: 0.15px;
+    height: 50px;
+    width: 200px;
     border-radius: 8px;
     box-shadow: 2px 5px 10px 0 rgba(0,0,0,0.19);
-    width: 190px;
+    background: $main-color;
+    color: $white-color;
+    @include flex-center-center;
+    letter-spacing: 0.15px;
     & > a{
         font-weight: 400;
     }
@@ -123,6 +123,18 @@ $second-font: 'FreeSet';
 
 
 // position
+
+@mixin flex-end-center{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+@mixin flex-start-center{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
 @mixin flex-center-center{
     display: flex;
     justify-content: center;
