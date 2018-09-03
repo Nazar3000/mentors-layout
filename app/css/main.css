@@ -3165,6 +3165,239 @@ input:focus {
   color: #368CCA;
 }
 
+.admin-card-place {
+  margin-bottom: 35px;
+}
+
+.admin-card-place > span {
+  font-size: 12px;
+  letter-spacing: 0.46px;
+  color: #368CCA;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.admin-card-place > p {
+  font-size: 12px;
+  letter-spacing: 0.56px;
+  color: #3F4C55;
+}
+
+.admin-card-adress {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.admin-card-adress > div:first-child {
+  margin-right: 20px;
+}
+
+.admin-card-adress p {
+  font-size: 12px;
+  letter-spacing: 0.56px;
+  color: #3F4C55;
+  margin-bottom: 0;
+}
+
+.admin-card-adress span {
+  font-size: 12px;
+  letter-spacing: 0.46px;
+  color: #368CCA;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.worksheet {
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  background-color: #fff;
+  -webkit-box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+          box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+  padding: 27px 27px 27px 55px;
+}
+
+.worksheet-wrapp {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 25px;
+}
+
+.worksheet-wrapp > img {
+  margin-right: 30px;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+}
+
+.worksheet-wrapp > p {
+  font-size: 12px;
+  letter-spacing: 0.46px;
+  color: #3F4C55;
+  margin-bottom: 0;
+}
+
+.worksheet-line {
+  width: 100%;
+  height: 1px;
+  background: rgba(151, 151, 151, 0.23);
+  margin-bottom: 35px;
+}
+
+.worksheet-history {
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  background-color: #fff;
+  -webkit-box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+          box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+  padding: 45px 100px 60px;
+  margin-bottom: 100px;
+  width: 900px;
+}
+
+.worksheet-history-page {
+  position: relative;
+  z-index: 1;
+  padding: 20px 0;
+}
+
+.worksheet-history-page::before {
+  position: absolute;
+  content: '';
+  right: 0;
+  bottom: 30px;
+  z-index: -1;
+  background: url(../img/history-bg.png) no-repeat;
+  width: 100%;
+  height: 100%;
+  background-size: 75%;
+  background-position: right center;
+}
+
+.worksheet-history > a {
+  height: 50px;
+  width: 200px;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  -webkit-box-shadow: 2px 5px 10px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 2px 5px 10px 0 rgba(0, 0, 0, 0.19);
+  background: #368CCA;
+  color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  letter-spacing: 0.15px;
+  margin-left: auto;
+}
+
+.worksheet-history > a > a {
+  font-weight: 400;
+}
+
+.worksheet-history h2 {
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #3F4C55;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.worksheet-page {
+  margin-top: 28px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.worksheet-page > a {
+  margin: 0 10px;
+  color: #368CCA;
+  font-size: 15px;
+}
+
+.worksheet-page > a.active {
+  font-weight: bold;
+}
+
+.worksheet-bage {
+  background: #368CCA;
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 50px;
+          border-radius: 50px;
+  color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-left: auto;
+}
+
+.worksheet-input {
+  margin-bottom: 22px;
+}
+
+.worksheet-input > span {
+  display: block;
+  font-size: 15px;
+  letter-spacing: 1.04px;
+  color: #3F4C55;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.worksheet-input > input {
+  border: 0;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  background: rgba(226, 237, 240, 0.37);
+  padding: 20px 10px;
+  width: 100%;
+}
+
 @font-face {
   font-family: 'Roboto';
   src: url(../fonts/Roboto/Roboto-Bold/Roboto-Bold.ttf);
