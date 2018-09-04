@@ -3864,6 +3864,49 @@ input:focus {
   cursor: pointer;
 }
 
+.video-see {
+  margin-bottom: 100px;
+}
+
+.video-see h2 {
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #3F4C55;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.video-see-frame {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.video-see-download {
+  padding: 0 200px;
+}
+
+.video-see-download p {
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: #368CCA;
+  margin-bottom: 5px;
+}
+
+.video-see-download a {
+  font-size: 15px;
+  letter-spacing: 0.83px;
+  color: #368CCA;
+  display: inline-block;
+  margin-right: 35px;
+  text-decoration: underline;
+}
+
+.video-see-download a span {
+  color: #aaa;
+  margin-right: 5px;
+}
+
 @font-face {
   font-family: 'Roboto';
   src: url(../fonts/Roboto/Roboto-Bold/Roboto-Bold.ttf);
