@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 @import url(//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css);
 
 * {
@@ -97,6 +99,15 @@ textarea:focus {
 
 .admin-link-nav {
   padding: 35px 0;
+}
+
+.admin-link-title {
+  font-size: 12px;
+  letter-spacing: 0.83px;
+  color: #368CCA;
+  font-weight: 500;
+  display: inline-block;
+  cursor: default;
 }
 
 .error-form {
@@ -1845,14 +1856,77 @@ textarea:focus {
 
 .header-wrapp li {
   display: inline-block;
-  margin: 0 20px;
+  padding: 0 20px;
   line-height: 1.2;
 }
 
 .header-wrapp-link {
   margin-bottom: 0;
-  display: block;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  /* поправил на flex */
   text-decoration: none;
+}
+
+.header-wrapp-linkdropdown {
+  position: relative;
+}
+
+.header-wrapp-linkdropdown::before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  height: 25%;
+  left: 0;
+  background: #fff;
+  z-index: 6;
+  top: 75%;
+}
+
+.header-wrapp-linkdropdown:hover {
+  -webkit-box-shadow: 0 2px 35px 0 rgba(165, 164, 164, 0.5);
+          box-shadow: 0 2px 35px 0 rgba(165, 164, 164, 0.5);
+}
+
+.header-wrapp-linkdropdown:hover .header-link {
+  background: white;
+}
+
+.header-wrapp-linkdropdown .header-link {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-wrapp-linkdropdown:hover .header-dropdown {
+  display: block;
+}
+
+.header-dropdown {
+  width: 100%;
+  left: 0;
+  text-align: center;
+  display: none;
+  position: absolute;
+  top: 100%;
+  background: #fff;
+  z-index: 5;
+  -webkit-box-shadow: 0 2px 35px 0 rgba(165, 164, 164, 0.5);
+          box-shadow: 0 2px 35px 0 rgba(165, 164, 164, 0.5);
+}
+
+.header-dropdown-link {
+  display: block;
+  padding: 10px 0;
+  color: #3F4C55;
+  text-align: center;
 }
 
 .header-link {
@@ -3454,7 +3528,7 @@ textarea:focus {
   margin-bottom: 5px;
 }
 
-.worksheet-input > input {
+.worksheet-input > p {
   border: 0;
   -webkit-border-radius: 8px;
           border-radius: 8px;
@@ -4667,6 +4741,54 @@ textarea:focus {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
+  margin-left: 5px;
+}
+
+.admin {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.admin > img {
+  width: 50px;
+  height: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-border-radius: 50px;
+          border-radius: 50px;
+  background: #eee;
+  margin: 0 20px 0 50px;
+  -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.4);
+          box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.4);
+}
+
+.admin-title span {
+  display: block;
+  font-size: 12px;
+  letter-spacing: 0.46px;
+  color: #3F4C55;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+.admin-title a {
+  display: block;
+  font-size: 15px;
+  letter-spacing: 0.95px;
+  color: #368CCA;
+}
+
+.admin-title a > i {
   margin-left: 5px;
 }
 

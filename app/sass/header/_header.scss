@@ -8,14 +8,56 @@
     align-items: center;
     & li{
       display: inline-block;
-      margin: 0 20px;
+      padding: 0 20px;
       line-height: 1.2;
-
     }
     &-link{
       margin-bottom: 0;
-      display: block;
+      display: flex; /* поправил на flex */
       text-decoration: none;
+      &dropdown{
+        position: relative;
+        &::before{
+          content: "";
+          width: 100%;
+          position: absolute;
+          height: 25%;
+          left: 0;
+          background: #fff;
+          z-index: 6;
+          top: 75%;
+        }
+        &:hover{
+          box-shadow: 0 2px 35px 0 rgba(165,164,164,0.5);
+        }
+        &:hover .header-link{
+          background: white;
+        }
+        & .header-link{
+          display: flex;
+          align-items: center;
+        }
+      }
+      &dropdown:hover .header-dropdown{
+        display: block;
+      }
+    }
+  }
+  &-dropdown{
+    width: 100%;
+    left: 0;
+    text-align: center;
+    display: none;
+    position: absolute;
+    top: 100%;
+    background:#fff;
+    z-index: 5;
+    box-shadow: 0 2px 35px 0 rgba(165,164,164,0.5);
+    &-link{
+      display: block;
+      padding:10px 0;
+      color: $grafit-color;
+      text-align: center;
     }
   }
   &-link{
@@ -37,7 +79,7 @@
     font-weight: 500;
   }
   &-donate{
-   @include blue-btn;
+    @include blue-btn;
     margin: 0 0 0 40px;
   }
   &-btn{
