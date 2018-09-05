@@ -10,7 +10,7 @@ $(document).ready(function() {
         }
     });
 
-    // accorderon show
+    // accorderon  main page show
 
     $(function($){
         var contents = $('.issues-content');
@@ -23,6 +23,25 @@ $(document).ready(function() {
 
             var content = title.next('.issues-content');
 
+            if (!content.is(':visible')) {
+                content.slideDown(function(){title.addClass('is-opened')});
+            }
+        });
+    });
+
+    // all message
+
+    $(function($){
+        var contents = $('.tape-dialog-all-content');
+        var titles = $('.tape-dialog-all');
+
+        titles.on('click',function(){
+            var title = $(this);
+
+            contents.filter(':visible').slideUp(function(){
+                $(this).siblings('.tape-dialog-all').removeClass('is-opened');
+            });
+            var content = title.siblings('.tape-dialog-all-content');
             if (!content.is(':visible')) {
                 content.slideDown(function(){title.addClass('is-opened')});
             }

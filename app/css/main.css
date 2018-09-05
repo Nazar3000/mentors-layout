@@ -3631,7 +3631,7 @@ textarea:focus {
   margin-bottom: 30px;
 }
 
-.tape-dialog-all > a {
+.tape-dialog-all > p {
   font-size: 13px;
   letter-spacing: 0.13px;
   text-decoration: underline;
@@ -3808,6 +3808,14 @@ textarea:focus {
   color: #3F4C55;
   font-size: 12px;
   letter-spacing: 0.46px;
+}
+
+.tape-dialog-all {
+  cursor: pointer;
+}
+
+.tape-dialog-all-content {
+  display: none;
 }
 
 .video-all {

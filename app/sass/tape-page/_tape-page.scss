@@ -40,7 +40,7 @@
       display: block;
       text-align: right;
       margin-bottom: 30px;
-      & > a{
+      & > p{
         font-size: 13px;
         letter-spacing: 0.13px;
         text-decoration: underline;
@@ -163,6 +163,13 @@
 }
 
 
+.tape-dialog-all {
+  cursor: pointer;
+}
+
+.tape-dialog-all-content {
+  display: none;
+}
 
 //
 //
