@@ -9,6 +9,7 @@
   }
   &-nav{
     display: flex;
+    align-items: center;
 
     &-item{
       margin-right: 130px;
@@ -27,10 +28,14 @@
   }
   &-btn{
     @include blue-btn;
+    text-align: center;
      & a{
        color: $white-color;
        line-height: 1.2;
        display: block;
+       font-size: 15px;
+       letter-spacing: 0.15px;
+       font-weight: 100;
        &:hover{
          text-decoration: none;
        }

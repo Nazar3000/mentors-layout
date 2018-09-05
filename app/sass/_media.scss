@@ -1,6 +1,8 @@
 @import "index/index";
 @import "header/header";
+@import "header-log/header-log";
 @import "footer/footer";
+@import "footer-log/footer-log";
 @import "register-mentor/register-mentor";
 @import "register/register";
 @import "video-mentor/video-mentor";
@@ -9,6 +11,8 @@
 @import "tape-page/tape-page";
 @import "video-all/video-all";
 @import "video-see/video-see";
+@import "log-in/log-in";
+@import "id-card-settings/id-card-settings";
 
 
 @media (max-width: 1200px) {
