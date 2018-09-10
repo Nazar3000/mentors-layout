@@ -3691,6 +3691,10 @@ input[type="radio"]:checked:after {
           align-items: center;
 }
 
+.tape-add-img > label > span {
+  font-size: 10px;
+}
+
 .tape-add-img > label > i {
   color: #368CCA;
   margin-right: 10px;

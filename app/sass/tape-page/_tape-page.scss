@@ -44,6 +44,9 @@
         display: flex;
         justify-content: flex-start;
         align-items: center;
+        & > span{
+          font-size: 10px;
+        }
         & > i{
           color: $main-color;
           margin-right: 10px;
