@@ -4227,11 +4227,13 @@ select:focus {
           flex-wrap: wrap;
   color: #fff;
   font-size: 8px;
+  cursor: pointer;
 }
 
 .setting-card-icon .delete-img {
   color: #368CCA;
   font-size: 13px;
+  cursor: pointer;
 }
 
 .setting-card-dream {

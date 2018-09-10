@@ -16,8 +16,10 @@ block pageContent
                             .setting-card-info
                                 img(src='img/user.svg', alt='')
                                 .setting-card-icon
-                                    a.add-img(href='' title='Add image')
+                                    label.add-img(for='files')
                                         i.fas.fa-plus
+                                    input#files(style='display:none;', type='file')
+
                                     a.delete-img(href='' title='Delete image')
                                         i.fas.fa-trash
                                 div
@@ -125,8 +127,9 @@ block pageContent
 
 
                             .setting-card-icon
-                                a.add-img(href='' title='Add image')
+                                label.add-img(for='files')
                                     i.fas.fa-plus
+                                input#file(style='display:none;', type='file')
                                 a.delete-img(href='' title='Delete image')
                                     i.fas.fa-trash
 

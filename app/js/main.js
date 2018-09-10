@@ -100,6 +100,14 @@ $(document).ready(function() {
         slideMargin:0,
     });
 
+
+    // add img
+
+    $("#files, #file").change(function() {
+        filename = this.files[0].name;
+        console.log(filename);
+    });
+
 });
 
 

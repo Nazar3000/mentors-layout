@@ -28,10 +28,12 @@
         @include flex-center-center;
         color: #fff;
         font-size: 8px;
+        cursor: pointer;
       }
       & .delete-img{
         color: $main-color;
         font-size: 13px;
+        cursor: pointer;
       }
     }
     &-dream{
