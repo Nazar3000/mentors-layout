@@ -15,7 +15,7 @@ a, a:hover{
   text-decoration: none;
   transition: 0.5s ease;
 }
-button:focus, input:focus, textarea:focus{
+button:focus, input:focus, textarea:focus, select:focus{
   outline: none;
 }
 .wrapper {
@@ -81,6 +81,14 @@ button:focus, input:focus, textarea:focus{
   text-align: right;
   width: 100%;
 }
+
+// style checkbox
+
+
+
+
+
+
 
 
 

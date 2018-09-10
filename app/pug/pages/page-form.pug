@@ -1,0 +1,62 @@
+extends ../default.pug
+block pageContent
+    include ../templates/header.pug
+    .content
+        section.page-form
+            .container
+                .page-form-title
+                    h2 Давай знайомитися!
+                    p Заповни обов’язкову анкету кандидата в наставники
+                    span
+                        | Велике прохання заповнити всі графи анкети, даючи найбільш повні відповіді на запитання.
+                        br
+                        | Це допоможе краще здійснити взаємодобір пари «дитина-наставник»
+
+                form(action='')
+                    h3 1. Загальні відомості:
+                    .page-form-register
+                        .page-form-register-left
+                            span ПІБ
+                            input(type='text')
+                            span Дата народження та ваш вік
+                            input(type='text')
+                            span Контактний телефон
+                            input(type='text')
+                            span Електронна адреса
+                            input(type='text')
+                        .page-form-register-right
+                            span Національність/Громадянство
+                            input(type='text')
+                            span Адреса фактичного місця проживання
+                            input(type='text')
+                            span Адреса реєстрації
+                            input(type='text')
+                            span Віросповідання
+                            select
+                                option Християнство
+                                option Християнство
+                                option Християнство
+                            .page-form-register-religion
+                                span Яку міську церкву ви відвідуєте?
+                                input(type='text')
+                                span Як часто?
+                                select
+                                    option Раз на тиждень
+                                    option Раз на тиждень
+                                    option Раз на тиждень
+
+                    h3 2. Стан здоров’я:
+                    .page-form-health
+                        .checkbox-family
+                            input#box-1(type='checkbox' checked='checked')
+                            label(for='box-1') Так
+                            input#box-2(type='checkbox')
+                            label(for='box-2') Нi
+
+
+
+
+
+
+
+    include ../templates/footer-log.pug

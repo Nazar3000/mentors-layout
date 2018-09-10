@@ -46,9 +46,14 @@
   &-wrapp{
     @include flex-start-center;
     margin-bottom: 25px;
-    & > img{
+    &-img{
       margin-right: 30px;
       border-radius: 2px;
+    }
+    & > img{
+      width: 177px;
+      height: 220px;
+      object-fit: cover;
     }
     & > p{
       font-size: 12px;

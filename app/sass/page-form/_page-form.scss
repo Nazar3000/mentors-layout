@@ -1,0 +1,70 @@
+.page-form{
+  padding: 85px  0 150px;
+  &-register{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    &-religion{
+      margin-left: 25px;
+      & > span{
+        @include name-input;
+      }
+      & > input{
+        @include input-sm-form;
+        width: 100%;
+      }
+      & > select{
+        @include select-sm-form;
+        width: 100%;
+      }
+    }
+    &-left{
+      & > span{
+        @include name-input;
+      }
+      & > input{
+        @include input-form;
+      }
+    }
+    &-right{
+      & > span{
+        @include name-input;
+      }
+      & > input{
+        @include input-form;
+      }
+      & > select{
+        @include select-form;
+      }
+    }
+  }
+  &-health{
+
+  }
+  & h3{
+    @include title-form;
+  }
+  &-title{
+    & > h2{
+      letter-spacing: 1.16px;
+      text-align: center;
+      color: $grafit-color;
+      font-size: 30px;
+      font-weight: bold;
+    }
+    & > p{
+      color: $main-color;
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 35px;
+      letter-spacing: 1.16px;
+    }
+    & > span{
+      display: block;
+      text-align: center;
+      font-size: 14px;
+      letter-spacing: 1.25px;
+      margin-bottom: 60px;
+    }
+  }
+}
