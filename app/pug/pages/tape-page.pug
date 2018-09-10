@@ -15,6 +15,21 @@ block pageContent
                     a.tape-bage(href='')
                         i.fas.fa-plus
                     .tape-content
+                        .tape-add
+                            .tape-add-wrapp
+                                .tape-author
+                                    img(src='img/ava.png', alt='')
+                                .tape-add-content
+                                    textarea(name='', id='', rows='5', placeholder='Напишіть Вашу новину тут')
+                                    .tape-add-img
+                                        label(tabindex='0', for='file')
+                                            i.fas.fa-camera
+                                            span Додати фото/відео
+                                        p.tape-add-img-name
+                                        input#file(type='file', name='inputFile', required='')
+
+                            button.tape-add-btn Поділитися
+
                         .tape-author
                             img(src='img/ava.png', alt='')
                             div
