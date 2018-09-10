@@ -38,8 +38,95 @@
       }
     }
   }
+  &-check{
+    &-symptom{
+      display: flex;
+      justify-content: center;
+      & label{
+        padding-left: 0;
+      }
+      &-new{
+        display: flex;
+        justify-content: flex-start;
+        & label{
+          padding-left: 0;
+        }
+      }
+    }
+  }
   &-health{
+    margin-bottom: 50px;
+    & .blue-title{
+      display: block;
+      font-size: 15px;
+      letter-spacing: 1.04px;
+      color: $main-color;
+      margin-bottom: 5px;
+      padding-left: 25px;
+      &-input{
+        @include input-sm-form;
+        margin-left:25px;
+        width: 510px;
+        display: block;
+      }
+    }
+    & > span{
+      @include name-input;
+    }
+    & > input{
+      @include input-form;
+      margin-bottom: 40px;
+    }
+  }
+  &-education{
 
+  }
+  &-symptom{
+   @include flex-start-center;
+    padding-left: 25px;
+    &-item{
+      width: 125px;
+      text-align: center;
+      margin-right: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      &-new{
+        width: 190px;
+        text-align: center;
+        margin-right: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+        & p{
+          background: $main-color;
+          border-radius: 4px;
+          width: 100%;
+          color: $white-color;
+          font-size: 14px;
+          letter-spacing: 0.97px;
+          padding: 5px 0;
+          margin-bottom: 10px;
+        }
+      }
+      & .page-form-check .form-check{
+        padding-left: 0;
+      }
+      & p{
+        background: $main-color;
+        border-radius: 4px;
+        width: 100%;
+        color: $white-color;
+        font-size: 14px;
+        letter-spacing: 0.97px;
+        padding: 5px 0;
+        margin-bottom: 10px;
+      }
+    }
   }
   & h3{
     @include title-form;
@@ -68,3 +155,33 @@
     }
   }
 }
+
+
+.page-form-check {
+  display: flex;
+  margin: 10px 0 35px;
+}
+.form-check input {
+  width: auto;
+  position: absolute;
+  cursor: pointer;
+  visibility: hidden;
+}
+.form-check {
+  margin-bottom: 0;
+  display: flex;
+  cursor: pointer;
+}
+.form-check-label{
+  &-md {
+    font-size: 13px;
+    letter-spacing: 1.04px;
+    margin:0 10px 0 25px;
+  }
+  &-sm {
+    font-size: 13px;
+    letter-spacing: 1.04px;
+    margin: 0 10px 0 25px;
+  }
+}
+

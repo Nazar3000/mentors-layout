@@ -21,9 +21,9 @@ block pageContent
                             span Дата народження та ваш вік
                             input(type='text')
                             span Контактний телефон
-                            input(type='text')
+                            input(type='phone')
                             span Електронна адреса
-                            input(type='text')
+                            input(type='email')
                         .page-form-register-right
                             span Національність/Громадянство
                             input(type='text')
@@ -47,11 +47,89 @@ block pageContent
 
                     h3 2. Стан здоров’я:
                     .page-form-health
-                        .checkbox-family
-                            input#box-1(type='checkbox' checked='checked')
-                            label(for='box-1') Так
-                            input#box-2(type='checkbox')
-                            label(for='box-2') Нi
+                        span Як Ви оцінюєте свій стан здоров’я?
+                        input(type='text')
+                        span Чи маєте Ви серйозні захворювання?
+                        .page-form-check
+                            label.form-check
+                                input(type='radio', name='1', value='')
+                                span.form-check-label-md Так
+                            label.form-check
+                                input(type='radio', name='1', value='', checked='checked')
+                                span.form-check-label-md Hi
+
+                        span Чи перебуваєте Ви на обліку:
+                        .page-form-symptom
+                            .page-form-symptom-item
+                                p Нарколога
+                                .page-form-check-symptom
+                                    label.form-check
+                                        input(type='radio', name='narco', value='')
+                                        span.form-check-label-sm Так
+                                    label.form-check
+                                        input(type='radio', name='narco', value='', checked='checked')
+                                        span.form-check-label-sm Hi
+
+                            .page-form-symptom-item
+                                p Психіатра
+                                .page-form-check-symptom
+                                    label.form-check
+                                        input(type='radio', name='psixo', value='')
+                                        span.form-check-label-sm Так
+                                    label.form-check
+                                        input(type='radio', name='psixo', value='', checked='checked')
+                                        span.form-check-label-sm Hi
+
+                            .page-form-symptom-item
+                                p Фтизіатра
+                                .page-form-check-symptom
+                                    label.form-check
+                                        input(type='radio', name='ftiz', value='')
+                                        span.form-check-label-sm Так
+                                    label.form-check
+                                        input(type='radio', name='ftiz', value='', checked='checked')
+                                        span.form-check-label-sm Hi
+
+                            .page-form-symptom-item
+                                p Терапевта
+                                .page-form-check-symptom
+                                    label.form-check
+                                        input(type='radio', name='tera', value='')
+                                        span.form-check-label-sm Так
+                                    label.form-check
+                                        input(type='radio', name='tera', value='', checked='checked')
+                                        span.form-check-label-sm Hi
+
+                        .page-form-symptom
+                            .page-form-symptom-item-new
+                                p Дерматовенеролога
+                                .page-form-check-symptom-new
+                                    label.form-check
+                                        input(type='radio', name='derm', value='')
+                                        span.form-check-label-sm Так
+                                    label.form-check
+                                        input(type='radio', name='derm', value='', checked='checked')
+                                        span.form-check-label-sm Hi
+
+                        .blue-title * Якщо так, то вкажіть назву медичної установи, термін перебування
+                        input.blue-title-input(type='text')
+
+                        span Чи є Ви ВІЛ-інфікованим?
+                            .page-form-check
+                                label.form-check
+                                    input(type='radio', name='asid', value='')
+                                    span.form-check-label-md Так
+                                label.form-check
+                                    input(type='radio', name='asid', value='', checked='checked')
+                                    span.form-check-label-md Hi
+
+                    h3 3. Освіта:
+
+
+
+
+
+
 
 
 

@@ -84,6 +84,33 @@ button:focus, input:focus, textarea:focus, select:focus{
 
 // style checkbox
 
+input[type="radio"]:before {
+  content: " ";
+  display: block;
+  background-color: white;
+  border: 1px solid #D8D8D8;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  border-radius: 100px;
+  visibility: initial;
+}
+input[type="radio"]:after {
+  content: " ";
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 100px;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  visibility: initial;
+  background-color: #ffffff;
+  transition: background-color 0.2s ease-in-out;
+}
+input[type="radio"]:checked:after {
+  background: $main-color;
+}
 
 
 
