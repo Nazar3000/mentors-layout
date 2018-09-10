@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "gulp": "^3.9.1",
+    "lightslider": "^1.1.6",
     "particlesjs": "^2.2.2",
     "shufflejs": "^5.1.2",
     "swiper": "^4.1.6"
