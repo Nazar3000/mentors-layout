@@ -354,13 +354,6 @@
       @include flex-center-center;
       color: #fff;
     }
-    &-city{
-      font-size:15px;
-      letter-spacing: 1.14px;
-      color: $main-color;
-      position: relative;
-      top: 5px;
-    }
     &-info{
       display: flex;
       align-items: flex-start;
