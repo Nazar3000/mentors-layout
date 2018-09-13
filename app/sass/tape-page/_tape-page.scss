@@ -205,8 +205,10 @@
       color: $main-color;
       font-size: 28px;
       @include flex-start-center;
+      cursor: pointer;
       & span{
         margin-left: 10px;
+        cursor: pointer;
       }
     }
     &-edit{

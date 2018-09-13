@@ -50,9 +50,11 @@ block pageContent
                                 img(src='img/post2.jpg', alt='')
                                 .tape-wrapp-icon-edit
                                     .tape-wrapp-icon-img
-                                        a.tape-bage-img(href='')
+                                        label.tape-bage-img(for='files')
                                             i.fas.fa-camera
                                             span Змінити фото
+                                        input#files(style='display:none;', type='file')
+
 
                                     .tape-wrapp-icon-right
                                         .tape-social-icon

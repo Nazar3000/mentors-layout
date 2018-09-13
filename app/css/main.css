@@ -4130,10 +4130,12 @@ input[type="radio"]:checked:after {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 
 .tape-bage-img span {
   margin-left: 10px;
+  cursor: pointer;
 }
 
 .tape-bage-edit {
