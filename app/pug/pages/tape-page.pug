@@ -24,17 +24,63 @@ block pageContent
                                     .tape-add-img
                                         label(tabindex='0', for='file')
                                             i.fas.fa-camera
-                                            span Додати фото/відео
+                                            span Додати фото
                                         p.tape-add-img-name
                                         input#file(type='file', name='inputFile', required='')
 
                             button.tape-add-btn Поділитися
 
+
+                        .tape-edit
+                            .tape-author
+                                .tape-author-head
+                                    .tape-author-left
+                                        img(src='img/ava.png', alt='')
+                                        div
+                                            h4 Ігор Петренко
+                                            span 24 хв тому
+                                    .tape-author-right
+                                        .tape-author-right-wrapp
+                                            a.tape-bage-ok(href='' title='Submit')
+                                                i.fas.fa-check
+                            .tape-description
+                                textarea(name='', rows='5', placeholder='Напишіть Вашу новину тут')
+
+                            .tape-image
+                                img(src='img/post2.jpg', alt='')
+                                .tape-wrapp-icon-edit
+                                    .tape-wrapp-icon-img
+                                        a.tape-bage-img(href='')
+                                            i.fas.fa-camera
+                                            span Змінити фото
+
+                                    .tape-wrapp-icon-right
+                                        .tape-social-icon
+                                            span
+                                                i.far.fa-comment
+                                            a(href='') Коментарii (3)
+                                        .tape-social-icon
+                                            span
+                                                i.far.fa-thumbs-up
+                                            a(href='') (18)
+
+
+
+
+
                         .tape-author
-                            img(src='img/ava.png', alt='')
-                            div
-                                h4 Ігор Петренко
-                                span 24 хв тому
+                            .tape-author-head
+                                .tape-author-left
+                                    img(src='img/ava.png', alt='')
+                                    div
+                                        h4 Ігор Петренко
+                                        span 24 хв тому
+                                .tape-author-right
+                                    .tape-author-right-wrapp
+                                        a.tape-bage-edit(href='' title='Edit')
+                                            i.fas.fa-pencil-alt
+                                        a.tape-bage-trash(href='' title='Delete')
+                                            i.fas.fa-trash
                         .tape-description
                             p
                                 | Наша перша зустріч з вихованцем. Було спочатку страшно, але з першої секунди ми знайшли спільну мову і далі пішло “як по маслу”.  Початок покладено. Тепер найголовніше залишатися постійним, це для мене виклик, але я вірю, що впораюсь!
