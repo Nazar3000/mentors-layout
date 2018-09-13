@@ -69,20 +69,27 @@
       }
     }
     &-img{
-      & > i{
-        background: $main-color;
-        width: 30px;
-        height: 30px;
-        border-radius: 50px;
-        @include flex-center-center;
-        color: #fff;
-        box-shadow: 0 1px 5px 0 rgba(0,0,0,0.2);
-        margin: 0 auto 10px;
+      text-align: center;
+      & > label{
+        margin-bottom: 0;
+        & > i{
+          background: $main-color;
+          width: 30px;
+          height: 30px;
+          border-radius: 50px;
+          @include flex-center-center;
+          color: #fff;
+          box-shadow: 0 1px 5px 0 rgba(0,0,0,0.2);
+          margin: 0 auto 10px;
+          cursor: pointer;
+        }
       }
       & > span{
         font-size: 15px;
         letter-spacing: 0.15px;
         color: #9C9A9A;
+        display: block;
+        cursor: default;
       }
     }
   }
@@ -90,6 +97,27 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
+    &-input{
+      &-name{
+        font-size: 30px;
+        font-weight: bold;
+        letter-spacing: 1.16px;
+        color: $grafit-color;
+        margin-bottom: 20px;
+        border: 0;
+        background: transparent;
+      }
+      &-date{
+        color:$grafit-color;
+        font-size: 18px;
+        font-weight: bold;
+        letter-spacing: 0.6px;
+        display: block;
+        margin-bottom: 45px;
+        border: 0;
+        background: transparent;
+      }
+    }
     &-img{
       background: $main-color;
       width: 30px;
@@ -134,16 +162,43 @@
       &-item{
         text-align: center;
         margin-left: 90px;
+        & > label{
+          margin-bottom: 0;
+          & > i{
+            background: $main-color;
+            width: 30px;
+            height: 30px;
+            border-radius: 50px;
+            @include flex-center-center;
+            color: #fff;
+            box-shadow: 0 1px 5px 0 rgba(0,0,0,0.2);
+            margin: 0 auto 10px;
+            cursor: pointer;
+          }
+        }
         & span{
-          display: block;
           font-size: 15px;
           letter-spacing: 0.15px;
           color: #9C9A9A;
+          display: block;
+          cursor: pointer;
         }
       }
     }
     &-content{
       padding-right: 130px;
+      & textarea{
+        width: 100%;
+        font-size: 14px;
+        letter-spacing: 0.54px;
+        color: $grafit-color;
+        margin-bottom: 35px;
+        border: 0;
+        background: #f8f8f8;
+        border-radius: 8px;
+        resize: none;
+        padding: 5px;
+      }
       & h4{
         color: $main-color;
         font-size: 16px;
@@ -197,6 +252,14 @@
       padding: 60px 60px 40px 160px;
       margin-bottom: 30px;
       display: none;
+      &-edit{
+        border-radius: 8px;
+        background-color: #fff;
+        box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+        padding: 60px 60px 40px 160px;
+        margin-bottom: 30px;
+        //display: none;
+      }
     }
     &-wrapp{
      display: flex;

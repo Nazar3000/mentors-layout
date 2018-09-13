@@ -103,7 +103,7 @@ $(document).ready(function() {
 
     // add img
 
-    $("#files, #file").change(function() {
+    $("#files, #file, #filess").change(function() {
         filename = this.files[0].name;
         // console.log(filename);
     });
@@ -112,6 +112,10 @@ $(document).ready(function() {
         files = this.files;
         $('.tape-add-img-name').append(files[0].name);
     });
+
+    // select2
+
+    $('.js-example-basic-single').select2();
 
 });
 
