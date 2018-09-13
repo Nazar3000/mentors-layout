@@ -46,9 +46,19 @@ button:focus, input:focus, textarea:focus, select:focus, label:focus{
   flex: 0 0 auto;
 }
 
+
+// alert bage
+
+.alert.alert-danger{
+  position: fixed;
+  top: 125px;
+  right: 25px;
+}
+
+.alert-border{
+  border: 2px solid red!important;
+}
 //  main style
-
-
 
 .admin{
   &-link{

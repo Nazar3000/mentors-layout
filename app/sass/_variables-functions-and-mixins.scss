@@ -119,6 +119,13 @@ $second-font: 'FreeSet';
 
 // position
 
+@mixin flex-vertical-between{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
 @mixin flex-end-center {
   display: flex;
   justify-content: flex-end;

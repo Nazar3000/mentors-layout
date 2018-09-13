@@ -91,6 +91,16 @@ label:focus {
           flex: 0 0 auto;
 }
 
+.alert.alert-danger {
+  position: fixed;
+  top: 125px;
+  right: 25px;
+}
+
+.alert-border {
+  border: 2px solid red !important;
+}
+
 .admin-link {
   font-size: 12px;
   letter-spacing: 0.83px;
@@ -3306,6 +3316,35 @@ input[type="radio"]:checked:after {
   -webkit-box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
           box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
   padding: 27px 27px 27px 55px;
+}
+
+.admin-diary-empty {
+  margin-bottom: 30px;
+  height: 335px;
+  text-align: center;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  background-color: #fff;
+  -webkit-box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+          box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+  padding: 27px 27px 40px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .admin-diary-btn {

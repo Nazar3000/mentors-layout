@@ -178,12 +178,16 @@ block pageContent
                             textarea(rows='4' placeholder='Опис:')
 
                             h4 Спостереження за вихованцем:
-                            textarea(rows='4' placeholder='Спостереження за вихованцем:')
+                            textarea.alert-border(rows='4' placeholder='Спостереження за вихованцем:')
 
                             h4 Замітка для наступної зустрічі:
                             textarea(rows='4' placeholder='Замітка для наступної зустрічі:')
 
                             a.diary-block-close(href='') Згорнути
+
+                    .alert.alert-danger(role='alert')
+                        strong Oh snap!
+                        |  Change a few things up and try submitting again.
 
 
 
