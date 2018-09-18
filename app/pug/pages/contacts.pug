@@ -1,0 +1,77 @@
+extends ../default.pug
+block pageContent
+    include ../templates/header-admin.pug
+    .content
+        section.admin-link-nav
+            .container
+                a.admin-link(href='') Особистий кабінет наставника >
+                p.admin-link-title
+                    | Денис Сверидов
+
+        section.contacts
+            .contacts-container
+                h2 Корисні контакти
+                .contacts-search
+                    i.fas.fa-search
+                    input(type="text" placeholder="Почніть вводити назву організації або ключові слова")
+
+                a.contacts-prof(href="") Перейти в розділ “Профорієнтація”
+
+
+                .contacts-slide
+                    .owl-carousel
+                        .contacts-all
+                            .contacts-all-item
+                                p ОО “Одна Надія”
+                                .contacts-all-img
+                                    img(src='img/cont-3.jpg', alt='')
+
+                            .contacts-all-item
+                                p Альянс “Україна без сиріт”
+                                .contacts-all-img
+                                    img(src='img/cont-3.png', alt='')
+
+                            .contacts-all-item
+                                p Приймальня Уповноваженого Президента з прав дитини
+                                .contacts-all-img
+                                    img(src='img/cont-3.svg', alt='')
+
+                        .contacts-all
+                            .contacts-all-item
+                                p ОО “Одна Надія”
+                                .contacts-all-img
+                                    img(src='img/cont-3.jpg', alt='')
+
+                            .contacts-all-item
+                                p Альянс “Україна без сиріт”
+                                .contacts-all-img
+                                    img(src='img/cont-3.png', alt='')
+
+                            .contacts-all-item
+                                p Приймальня Уповноваженого Президента з прав дитини
+                                .contacts-all-img
+                                    img(src='img/cont-3.svg', alt='')
+
+                        .contacts-all
+                            .contacts-all-item
+                                p ОО “Одна Надія”
+                                .contacts-all-img
+                                    img(src='img/cont-3.jpg', alt='')
+
+                            .contacts-all-item
+                                p Альянс “Україна без сиріт”
+                                .contacts-all-img
+                                    img(src='img/cont-3.png', alt='')
+
+                            .contacts-all-item
+                                p Приймальня Уповноваженого Президента з прав дитини
+                                .contacts-all-img
+                                    img(src='img/cont-3.svg', alt='')
+
+
+
+
+
+
+    include ../templates/footer-bar.pug
+    include ../templates/footer-log.pug
