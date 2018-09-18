@@ -5,6 +5,10 @@
     border: 0;
     margin: 0 auto;
   }
+  &-alert{
+    border: 1px solid red !important;
+    margin-bottom: 5px!important;
+  }
   &-select{
     margin-bottom: 75px;
     & > select{
