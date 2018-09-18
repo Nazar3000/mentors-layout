@@ -104,6 +104,7 @@ label:focus {
 .error-bage {
   font-size: 15px;
   margin-bottom: 15px;
+  color: red;
 }
 
 .admin-link {
@@ -7218,6 +7219,10 @@ input[type="radio"]:checked:after {
   z-index: -1;
 }
 
+.table-education-name > option {
+  text-align: center;
+}
+
 .table-education-input {
   width: 120px;
   background-color: #E2EDF0;
@@ -8052,6 +8057,11 @@ input[type="radio"]:checked:after {
   content: "\f046";
   color: #368CCA;
   cursor: pointer;
+}
+
+select.table-education-name {
+  padding-left: 10px;
+  border: 0;
 }
 
 .stage {

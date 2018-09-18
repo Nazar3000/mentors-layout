@@ -424,6 +424,9 @@
         right: -354px;
         z-index: -1;
       }
+      & > option{
+        text-align: center;
+      }
     }
     &-input {
       width: 120px;
@@ -1052,3 +1055,7 @@
 
 }
 
+select.table-education-name{
+  padding-left: 10px;
+  border: 0;
+}
