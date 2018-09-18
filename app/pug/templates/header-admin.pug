@@ -13,7 +13,15 @@ header.header-log
                     img(src='img/ava.png', alt='')
                     .admin-title
                         span Особистий кабінет наставника
-                        a(href='admin.html') Ігор Петренко
+                        .admin-menu-off Ігор Петренко
                             i.fas.fa-caret-down
+                            .admin-menu-on
+                                a(href="/")
+                                    i.fas.fa-sign-out-alt
+                                    | Вихід з акаунта
+                                a(href="admin.html")
+                                    i.fas.fa-cog
+                                    | Налаштування профілю
+
 
 

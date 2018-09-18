@@ -5278,6 +5278,48 @@ input[type="radio"]:checked:after {
           align-items: center;
 }
 
+.admin-menu-on {
+  padding: 10px;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 200px;
+  top: 50px;
+  z-index: 100;
+}
+
+.admin-menu-on a {
+  font-size: 10px;
+  letter-spacing: 0.1px;
+  color: #3F4C55;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.admin-menu-on a:hover {
+  color: #368CCA;
+}
+
+.admin-menu-on a i {
+  color: #368CCA;
+  margin-right: 10px;
+}
+
+.admin-menu-off {
+  display: block;
+  font-size: 15px;
+  letter-spacing: 0.95px;
+  color: #368CCA;
+  cursor: pointer;
+}
+
+.admin-menu-off > i {
+  margin-left: 5px;
+}
+
 .admin > img {
   width: 50px;
   height: 50px;
@@ -5291,6 +5333,10 @@ input[type="radio"]:checked:after {
           box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.4);
 }
 
+.admin-title {
+  position: relative;
+}
+
 .admin-title span {
   display: block;
   font-size: 12px;
@@ -5301,14 +5347,7 @@ input[type="radio"]:checked:after {
 }
 
 .admin-title a {
-  display: block;
-  font-size: 15px;
-  letter-spacing: 0.95px;
-  color: #368CCA;
-}
-
-.admin-title a > i {
-  margin-left: 5px;
+  position: relative;
 }
 
 .diary {
@@ -9875,6 +9914,22 @@ select.table-education-name {
   width: 480px;
   margin: 0 auto;
   margin-bottom: 20px;
+}
+
+.admin-log-card > button {
+  margin-left: auto;
+  border: 0;
+  color: #fff;
+  background: #368CCA;
+  width: 100px;
+  text-align: center;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  font-size: 10px;
+  letter-spacing: 0.1px;
+  padding: 5px 20px;
+  display: block;
+  cursor: pointer;
 }
 
 .admin-log-head {

@@ -153,6 +153,18 @@ $(document).ready(function() {
         }
     });
 
+    //  admin menu
+
+    $(".admin-menu-on").hide();
+
+    $(".admin-menu-off").click(
+        function() {
+            $(".admin-menu-on").slideToggle('fast');
+        },
+        function() {
+            $(".admin-menu-on").slideToggle('fast');
+        }
+    );
 
 });
 
