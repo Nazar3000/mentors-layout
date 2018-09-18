@@ -1,19 +1,62 @@
 .admin-log{
   padding: 100px 0;
+  &-img {
+    display: flex;
+    & > img{
+      height: 133px;
+      width: 108px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-right: 10px;
+      background: #fbfbfb;
+    }
+  }
+  &-password{
+    width: 48%;
+    & > span{
+      font-size: 10px;
+      font-weight: bold;
+      letter-spacing: 0.46px;
+      color: $main-color;
+      display: block;
+      margin-bottom: 6px;
+    }
+    & > input{
+      border-radius: 2px;
+      background-color: #E2EDF0;
+      width: 100%;
+      border: 0;
+      margin-bottom: 3px;
+      padding: 0 15px;
+      height: 30px;
+      &::placeholder{
+        font-size: 10px;
+        letter-spacing: 0.93px;
+      }
+    }
+  }
   &-description{
+    width: 48%;
     & > span {
       font-size: 10px;
       font-weight: bold;
       letter-spacing: 0.46px;
       color: $main-color;
       display: block;
-      margin-bottom: 8px;
+      margin-bottom: 2px;
     }
     & > p{
       font-size: 12px;
       letter-spacing: 0.56px;
       color: $grafit-color;
-      margin-bottom: 5px;
+      margin-bottom: 8px;
+    }
+    & > input{
+      font-size: 12px;
+      letter-spacing: 0.56px;
+      color: $grafit-color;
+      margin-bottom: 8px;
+      border: 0;
     }
   }
   &-line{
@@ -29,6 +72,7 @@
     padding: 45px 30px 60px 60px;
     width: 480px;
     margin: 0 auto;
+    margin-bottom: 20px;
   }
   &-head{
     display: flex;
@@ -61,6 +105,23 @@
       font-weight: bold;
       letter-spacing: 1px;
       color: $grafit-color;
+    }
+    & > input{
+      font-size: 30px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      color: $grafit-color;
+      border: 0;
+      width: 150px;
+      display: block;
+      line-height: 1;
+      &:last-child{
+        margin-bottom: 0;
+        font-size: 14px;
+        letter-spacing: 0.46px;
+        color: $grafit-color;
+        font-weight: bold;
+      }
     }
     & > span{
       font-size: 10px;

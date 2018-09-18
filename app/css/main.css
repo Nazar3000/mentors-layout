@@ -6782,7 +6782,6 @@ input[type="radio"]:checked:after {
   border: 0;
   margin-bottom: 25px;
   padding: 20px 30px;
-  cursor: pointer;
 }
 
 .page-form-register-right > span {
@@ -6817,7 +6816,6 @@ input[type="radio"]:checked:after {
   border: 0;
   margin-bottom: 25px;
   padding: 20px 30px;
-  cursor: pointer;
 }
 
 .page-form-register-right > select {
@@ -6952,7 +6950,6 @@ input[type="radio"]:checked:after {
   border: 0;
   margin-bottom: 25px;
   padding: 20px 30px;
-  cursor: pointer;
   margin-bottom: 40px;
 }
 
@@ -9771,20 +9768,94 @@ select.table-education-name {
   padding: 100px 0;
 }
 
+.admin-log-img {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.admin-log-img > img {
+  height: 133px;
+  width: 108px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  margin-right: 10px;
+  background: #fbfbfb;
+}
+
+.admin-log-password {
+  width: 48%;
+}
+
+.admin-log-password > span {
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 0.46px;
+  color: #368CCA;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.admin-log-password > input {
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  background-color: #E2EDF0;
+  width: 100%;
+  border: 0;
+  margin-bottom: 3px;
+  padding: 0 15px;
+  height: 30px;
+}
+
+.admin-log-password > input::-webkit-input-placeholder {
+  font-size: 10px;
+  letter-spacing: 0.93px;
+}
+
+.admin-log-password > input::-moz-placeholder {
+  font-size: 10px;
+  letter-spacing: 0.93px;
+}
+
+.admin-log-password > input:-ms-input-placeholder {
+  font-size: 10px;
+  letter-spacing: 0.93px;
+}
+
+.admin-log-password > input::placeholder {
+  font-size: 10px;
+  letter-spacing: 0.93px;
+}
+
+.admin-log-description {
+  width: 48%;
+}
+
 .admin-log-description > span {
   font-size: 10px;
   font-weight: bold;
   letter-spacing: 0.46px;
   color: #368CCA;
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 2px;
 }
 
 .admin-log-description > p {
   font-size: 12px;
   letter-spacing: 0.56px;
   color: #3F4C55;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
+}
+
+.admin-log-description > input {
+  font-size: 12px;
+  letter-spacing: 0.56px;
+  color: #3F4C55;
+  margin-bottom: 8px;
+  border: 0;
 }
 
 .admin-log-line {
@@ -9803,6 +9874,7 @@ select.table-education-name {
   padding: 45px 30px 60px 60px;
   width: 480px;
   margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .admin-log-head {
@@ -9868,6 +9940,25 @@ select.table-education-name {
   font-weight: bold;
   letter-spacing: 1px;
   color: #3F4C55;
+}
+
+.admin-log-title > input {
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #3F4C55;
+  border: 0;
+  width: 150px;
+  display: block;
+  line-height: 1;
+}
+
+.admin-log-title > input:last-child {
+  margin-bottom: 0;
+  font-size: 14px;
+  letter-spacing: 0.46px;
+  color: #3F4C55;
+  font-weight: bold;
 }
 
 .admin-log-title > span {
