@@ -166,6 +166,16 @@ $(document).ready(function() {
         }
     );
 
+    // open modal card creer
+
+    $('.career-table-btn').click(function(){
+        $('.career-card').fadeIn(500);
+    });
+
+    $('.career-card-close').click(function(){
+        $('.career-card').fadeOut(400);
+    });
+
 });
 
 

@@ -17,6 +17,39 @@
     bottom: 0;
     margin: auto;
   }
+  &-success{
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    box-shadow: -2px -1px 9px 0 rgba(0,0,0,0.17);
+    padding: 65px 95px;
+    text-align: center;
+    margin-bottom: 45px;
+    width: 568px;
+    &-line{
+      width: 100%;
+      height: 1px;
+      background:rgba(151,151,151,0.23);
+      margin-bottom: 40px;
+    }
+    & > p{
+      font-size: 24px;
+      font-weight: 500;
+      letter-spacing: 1.66px;
+      color: $main-color;
+      margin-bottom: 25px;
+    }
+    & > span{
+      font-size: 20px;
+      letter-spacing: 1.6px;
+      display: block;
+      line-height: 1.2;
+      margin-bottom: 40px;
+    }
+    & > i{
+      color: $main-color;
+      font-size: 40px;
+    }
+  }
   &-wrapp{
     display: flex;
     justify-content:flex-start;
