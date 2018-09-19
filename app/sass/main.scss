@@ -58,12 +58,13 @@ button:focus, input:focus, textarea:focus, select:focus, label:focus{
 
 .alert-border{
   border: 2px solid red!important;
-  }
-.error-bage{
+}
+.error-form {
   font-size: 15px;
   margin-bottom: 15px;
   color: red;
 }
+
 //  main style
 
 .admin{
@@ -92,15 +93,7 @@ button:focus, input:focus, textarea:focus, select:focus, label:focus{
   }
 }
 
-.error-form {
-  display: block;
-  margin: 10px 0;
-  color: #e82929;
-  text-transform: uppercase;
-  font-size: 7px;
-  text-align: right;
-  width: 100%;
-}
+
 
 // style checkbox
 
