@@ -18,6 +18,24 @@
       }
     }
   }
+  &-download-video{
+    @include flex-start-center;
+    & > a{
+      @include flex-center-center;
+      color: $main-color;
+      text-decoration: underline;
+      font-size: 15px;
+      letter-spacing: 0.83px;
+      & > img{
+        width: 20px;
+        margin-left: 40px;
+      }
+      & > span{
+        display: block;
+        margin-left: 10px;
+      }
+    }
+  }
   & > h2{
     margin-bottom: 70px;
     text-align: center;
@@ -27,6 +45,15 @@
     letter-spacing: 1.16px
   }
   &-block{
+    &-license{
+      & > p{
+        font-size: 20px;
+        letter-spacing: 1.11px;
+        margin-bottom: 0;
+        line-height: 1.2;
+        margin-left: 90px;
+      }
+    }
     &-one{
       position: relative;
       margin: 45px 0 80px;
@@ -138,6 +165,24 @@
     align-items: center;
   }
   &-blue{
+    &-license{
+      background: $main-color;
+      border-radius: 8px;
+      padding: 60px 0 75px;
+      width: 380px;
+      & > img{
+        width: 65px;
+        display: block;
+        margin: 0 auto 40px;
+      }
+      & > p{
+        font-size: 24px;
+        font-weight: bold;
+        letter-spacing: 1.33px;
+        color: $white-color;
+        text-align: center;
+      }
+    }
     &-video{
       background: $main-color;
       border-radius: 8px;
