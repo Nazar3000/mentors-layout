@@ -1,0 +1,49 @@
+.volunteer{
+  &-wellcome{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 0;
+    & > img{
+      width: 583px;
+      height: 474px;
+    }
+    &-title{
+      position: relative;
+      right: 120px;
+      & > h2{
+        color: $grafit-color;
+        font-size: 30px;
+        font-weight: bold;
+        letter-spacing: 1.16px;
+        margin:50px 0 80px;
+      }
+      & > p{
+        font-size: 18px;
+        letter-spacing: 1.25px;
+        color: $black-color;
+        margin-bottom: 30px;
+        width: 565px;
+        & > span{
+          color: $main-color;
+          font-weight: 600;
+        }
+      }
+      & > a{
+        @include yellow-btn;
+        font-weight: bold;
+      }
+    }
+  }
+  &-blue{
+    &-wrapp{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+    &-block{
+      background: $main-color;
+      padding: 30px 0;
+    }
+
+  }
+}
