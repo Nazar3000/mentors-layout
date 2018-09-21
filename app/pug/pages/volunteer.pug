@@ -136,12 +136,39 @@ block pageContent
                         .video-all-check
                             input#box5.with-font(type='checkbox', checked='checked')
                             label.video-all-check-name(for='box5') Допомогти по іншому
-
+                        input(type='text' placeholder='Вкажи як саме')
 
                     .volunteer-form-line
-
                     .volunteer-form-right
-                        p 2
+                        input(type='text' placeholder='Ім’я')
+                        input(type='text' placeholder='Прізвище')
+                        input(type='text' placeholder='Email')
+                        input(type='text' placeholder='Телефон')
+                        select(required='')
+                            option(value='') Обери своє місто
+                            option Дыня
+                            option Тыква
+                            option Кабачок
+                            option Баклажан
+                            option Патиссон
+                            option Огурец
+
+                        button Реєстрація
+                        .volunteer-form-vertical
+                        p
+                            | Реєструючись, Ви погоджуєтеся з
+                            a(href='')
+                                |  політикою
+                                br
+                                |  обробки персональних данних
+                            |  . Зверніть увагу,
+                            br
+                            |  що Ваші данні будуть передані третім особам:
+                            br
+                            |  Центрам соціальних служб, Громадським
+                            br
+                            |  організаціям та Наставникам Вашого міста.
+
 
 
 
