@@ -3797,6 +3797,14 @@ input[type="radio"]:checked:after {
           align-items: center;
 }
 
+.tape-add-img-name {
+  margin-bottom: 0;
+  font-size: 10px;
+  color: #368CCA;
+  letter-spacing: 0.5px;
+  margin-left: 20px;
+}
+
 .tape-add-img > label {
   margin-bottom: 0;
   cursor: pointer;
