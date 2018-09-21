@@ -103,7 +103,7 @@ block pageContent
         section.volunteer-idea
             .container
                 .volunteer-idea-wrapp
-                    img(src='')
+                    img(src='img/lightbulb.svg')
                     .volunteer-idea-title
                         span
                             | В тебе є інша ідея того, як Ти
@@ -113,12 +113,35 @@ block pageContent
 
         section.volunteer-form
             .container
+                h2 Приєднатися до волонтерів:
                 .volunteer-form-card
                     .volunteer-form-left
+                        p Обери, що ти можеш робити:
+                        .video-all-check
+                            input#box1.with-font(type='checkbox', checked='checked')
+                            label.video-all-check-name(for='box1') Займатись популяризацією Наставництва
+                        .video-all-check
+                            input#box2.with-font(type='checkbox', checked='checked')
+                            label.video-all-check-name(for='box2') Проводити майстер-класи
+                        input(type='text' placeholder='Вкажи які саме')
+                        .video-all-check
+                            input#box3.with-font(type='checkbox', checked='checked')
+                            label.video-all-check-name(for='box3') Познайомити дитину зі своєю професією
+                        input(type='text' placeholder='Вкажи яка професія')
+                        input(type='text' placeholder='Назва компанії')
+                        input(type='text' placeholder='Адреса')
+                        .video-all-check
+                            input#box4.with-font(type='checkbox', checked='checked')
+                            label.video-all-check-name(for='box4') Фінансово підтримати Наставництво
+                        .video-all-check
+                            input#box5.with-font(type='checkbox', checked='checked')
+                            label.video-all-check-name(for='box5') Допомогти по іншому
+
 
                     .volunteer-form-line
 
                     .volunteer-form-right
+                        p 2
 
 
 
