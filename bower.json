@@ -23,5 +23,8 @@
     "owl.carousel": "^2",
     "lightslider": "^1.1.6",
     "select2": "~4.0"
+  },
+  "dependencies": {
+    "popper.js": "^1.14.4"
   }
 }

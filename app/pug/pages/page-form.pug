@@ -3,6 +3,8 @@ block pageContent
     include ../templates/header.pug
     .content
         section.page-form
+            a#go-top(href='#')
+                i.fas.fa-arrow-alt-circle-up
             .container
                 .page-form-title
                     h2 Давай знайомитися!
@@ -16,36 +18,46 @@ block pageContent
                     h3 1. Загальні відомості:
                     .page-form-register
                         .page-form-register-left
-                            span ПІБ
-                            input.page-form-alert(type='text')
-                            .error-bage
-                                | Заповни обов’язкову анкету кандидата
-                            span Дата народження та ваш вік
-                            input(type='text')
-                            span Контактний телефон
-                            input(type='phone')
-                            span Електронна адреса
-                            input(type='email')
-                        .page-form-register-right
-                            span Національність/Громадянство
-                            input(type='text')
-                            span Адреса фактичного місця проживання
-                            input(type='text')
-                            span Адреса реєстрації
-                            input(type='text')
-                            span Віросповідання
-                            select
-                                option Християнство
-                                option Християнство
-                                option Християнство
-                            .page-form-register-religion
-                                span Яку міську церкву ви відвідуєте?
+                            div
+                                span ПІБ
+                                input.alert-border(type='text' data-toggle="tooltip" data-placement="top" title="Tooltip on top")
+                            div
+                                span Дата народження та ваш вік
                                 input(type='text')
-                                span Як часто?
+                            div
+                                span Контактний телефон
+                                input(type='phone')
+                            div
+                                span Електронна адреса
+                                input(type='email')
+                        .page-form-register-right
+                            div
+                                span Національність/Громадянство
+                                input(type='text')
+                            div
+                                span Адреса фактичного місця проживання
+                                input.alert-border(type='text')
+                                .error-tooltip Заповни обов’язкову анкету
+                            div
+                                span Адреса реєстрації
+                                input(type='text')
+                            div
+                                span Віросповідання
                                 select
-                                    option Раз на тиждень
-                                    option Раз на тиждень
-                                    option Раз на тиждень
+                                    option Християнство
+                                    option Християнство
+                                    option Християнство
+                            .page-form-register-religion
+                                div
+                                    span Яку міську церкву ви відвідуєте?
+                                    input(type='text')
+                                div
+                                    span Як часто?
+                                    select.alert-border
+                                        option Раз на тиждень
+                                        option Раз на тиждень
+                                        option Раз на тиждень
+                                    .error-tooltip Заповни обов’язкову анкету
 
                     h3 2. Стан здоров’я:
                     .page-form-health

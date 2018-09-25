@@ -16,8 +16,43 @@ section.pre-footer-contact
                         option Баклажан
                         option Патиссон
                         option Огурец
-                    button Надіслати
-                button Оцінити заклад
+                    button.complaint Надіслати
+                    .complaint-modal
+                        .complaint-card
+                            .complaint-close
+                                | ×
+                            p Поскаржитися
+                            .complaint-line
+                            textarea(rows='6' placeholder='Опишіть суть проблеми')
+                            button Надіслати
+                button.rate-place Оцінити заклад
+
+                .rate-place-modal
+                    .rate-place-card
+                        .rate-place-close
+                            | ×
+                        p Оцініть роботу закладу
+                        .rate-place-line
+
+                        .rating-stars
+                            ul#stars.mb-0
+                                li.star(data-value='1')
+                                    i.fa.fa-star.fa-fw
+                                li.star(data-value='2')
+                                    i.fa.fa-star.fa-fw
+                                li.star(data-value='3')
+                                    i.fa.fa-star.fa-fw
+                                li.star(data-value='4')
+                                    i.fa.fa-star.fa-fw
+                                li.star(data-value='5')
+                                    i.fa.fa-star.fa-fw
+
+                        textarea(rows='4' placeholder='Чим заклад допомогає тобі?')
+                        textarea(rows='4' placeholder='Як саме заклад може допомогти вашій парі?')
+                        button Надіслати
+
+
+
 
             .pre-footer-line
             .pre-footer-mentor
@@ -62,3 +97,5 @@ section.pre-footer-contact
                         p 044 - 000 - 00 - 00
 
                 a(href='contacts.html') Дивитися всі
+
+

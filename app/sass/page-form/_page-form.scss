@@ -5,10 +5,6 @@
     border: 0;
     margin: 0 auto;
   }
-  &-alert{
-    border: 1px solid red !important;
-    margin-bottom: 5px!important;
-  }
   &-select{
     margin-bottom: 75px;
     & > select{
@@ -190,35 +186,45 @@
     margin-bottom: 15px;
     &-religion {
       margin-left: 25px;
-      & > span {
-        @include name-input;
-      }
-      & > input {
-        @include input-sm-form;
-        width: 100%;
-      }
-      & > select {
-        @include select-sm-form;
-        width: 100%;
+      & > div{
+        position: relative;
+        & > span {
+          @include name-input;
+        }
+        & > input {
+          @include input-sm-form;
+          width: 100%;
+        }
+        & > select {
+          @include select-sm-form;
+          width: 100%;
+        }
       }
     }
     &-left {
-      & > span {
-        @include name-input;
+      & > div{
+        position: relative;
+        & > span {
+          @include name-input;
+        }
+        & > input {
+          @include input-form;
+        }
       }
-      & > input {
-        @include input-form;
-      }
+
     }
     &-right {
-      & > span {
-        @include name-input;
-      }
-      & > input {
-        @include input-form;
-      }
-      & > select {
-        @include select-form;
+      & > div {
+        position: relative;
+        & > span {
+          @include name-input;
+        }
+        & > input {
+          @include input-form;
+        }
+        & > select {
+          @include select-form;
+        }
       }
     }
   }
@@ -430,15 +436,14 @@
     }
     &-input {
       width: 120px;
-      background-color: #E2EDF0;
-      box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
-      border-radius: 8px;
       & > input {
         width: 100%;
-        background: transparent;
         border: 0;
         height: 55px;
         padding: 10px;
+        background:#E2EDF0;
+        box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+        border-radius: 8px;
       }
       &-last {
         width: 486px;
@@ -1013,6 +1018,21 @@
     }
   }
 }
+
+#go-top {
+  position: fixed;
+  bottom: 10%;
+  right: 5%;
+  cursor: pointer;
+  display: none;
+  z-index: 100;
+  & > i{
+    color: #E2EDF0;
+    font-size: 75px;
+  }
+}
+
+
 .page-form-choice{
   &-name{
     font-size: 15px;
@@ -1059,3 +1079,5 @@ select.table-education-name{
   padding-left: 10px;
   border: 0;
 }
+
+

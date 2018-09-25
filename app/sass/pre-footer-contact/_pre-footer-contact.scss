@@ -184,3 +184,153 @@
     }
   }
 }
+
+
+.complaint{
+  &-line{
+    background: rgba(151,151,151,0.23);
+    height: 1px;
+    width: 100%;
+    margin-bottom: 55px;
+  }
+  &-close{
+    width: 25px;
+    text-align: center;
+    margin-left: auto;
+    font-size: 40px;
+    color: #979797;
+    font-weight: 100;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 35px;
+  }
+  &-card{
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+    padding: 55px 75px 120px;
+    width: 610px;
+    position: absolute;
+    top: 3%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 200;
+    & > p{
+      font-size: 15px;
+      letter-spacing: 1.04px;
+      line-height: 18px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    & > textarea{
+      width: 100%;
+      border: 0;
+      background: #E2EDF0;
+      padding: 10px 22px;
+      font-size: 15px;
+      letter-spacing: 1.04px;
+      margin-bottom: 38px;
+    }
+    & > button{
+      background: $main-color;
+      border-radius: 8px;
+      display: block;
+      margin: 0 auto;
+      color: #fff;
+      border: 0;
+      width: 156px;
+      padding: 12px 0;
+      cursor: pointer;
+    }
+  }
+  &-modal{
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 15;
+  }
+
+}
+
+.rate-place{
+  &-line{
+    background: rgba(151,151,151,0.23);
+    height: 1px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  &-close{
+    width: 25px;
+    text-align: center;
+    margin-left: auto;
+    font-size: 40px;
+    color: #979797;
+    font-weight: 100;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 35px;
+  }
+  &-card{
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+    padding: 55px 75px 120px;
+    width: 610px;
+    position: absolute;
+    top: 3%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 200;
+    & > .rating-stars{
+      margin-bottom: 40px;
+    }
+    & > p{
+      font-size: 15px;
+      letter-spacing: 1.04px;
+      line-height: 18px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    & > textarea{
+      width: 100%;
+      border: 0;
+      background: #E2EDF0;
+      padding: 10px 22px;
+      font-size: 15px;
+      letter-spacing: 1.04px;
+      margin-bottom: 38px;
+    }
+    & > button{
+      background: $main-color;
+      border-radius: 8px;
+      display: block;
+      margin: 0 auto;
+      color: #fff;
+      border: 0;
+      width: 156px;
+      padding: 12px 0;
+      cursor: pointer;
+    }
+  }
+  &-modal{
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 15;
+  }
+
+}
