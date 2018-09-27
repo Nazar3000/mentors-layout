@@ -215,6 +215,36 @@ $(document).ready(function() {
 
 
 
+    // sort mentor click
+
+    $('.sort-mentor').click(function () { // при клике на рисунок
+        if($(this).find('img').attr('src') == 'img/a-b.svg'){ // если в этом элименте мы находим картику с путем катороый равняется аб
+            $(this).find('img').attr('src', 'img/b-a.svg'); // то это меняем картинку на ба
+        }else {
+            $(this).find('img').attr('src', 'img/a-b.svg'); // иначе возвращяем обратно
+        }
+    });
+
+    // sort mentor click phone and change
+
+    $('.mentor-phone-img').click(function () {
+        if($(this).find('img').attr('src') == 'img/blue-tel.svg'){
+            $(this).find('img').attr('src', 'img/green-tel.svg');
+            $(this).siblings('.mentor-title').toggle();
+            $(this).siblings('.mentor-phone').toggle();
+        }else {
+            $(this).find('img').attr('src', 'img/blue-tel.svg');
+            $(this).siblings('.mentor-title').toggle();
+            $(this).siblings('.mentor-phone').toggle();
+        }
+    });
+
+
+    $('.mentor-title').click(function(){
+        $('.css-card').slideToggle(500);
+    });
+
+
     // go top auto
 
     $(function() {

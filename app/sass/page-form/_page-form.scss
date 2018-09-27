@@ -1,64 +1,64 @@
 .page-form {
   padding: 85px 0 150px;
-  & button{
+  & button {
     @include blue-btn;
     border: 0;
     margin: 0 auto;
   }
-  &-select{
+  &-select {
     margin-bottom: 75px;
-    & > select{
+    & > select {
       @include select-sm-form;
       width: 510px;
     }
   }
-  &-wrapp{
-    &-item{
+  &-wrapp {
+    &-item {
       display: flex;
       margin: 20px 0;
-       & > .form-check{
+      & > .form-check {
         padding-left: 0;
       }
     }
-    margin:0 0 75px 50px;
-    & > span{
+    margin: 0 0 75px 50px;
+    & > span {
       @include name-input;
     }
-    & > input{
+    & > input {
       @include input-sm-form;
       width: 510px;
     }
-    & > p{
+    & > p {
       font-size: 18px;
       font-weight: 500;
       letter-spacing: 1.25px;
       color: $main-color;
       margin-bottom: 0;
     }
-    & > input{
+    & > input {
       @include input-sm-form;
       width: 510px;
     }
-    & > .form-check{
+    & > .form-check {
       margin-bottom: 10px;
       padding-left: 0;
     }
   }
-  &-input{
+  &-input {
     @include textarea-input;
     margin-bottom: 75px;
   }
-  &-child{
-    &-main{
+  &-child {
+    &-main {
       @include flex-between-center;
       margin-bottom: 15px;
-      & > span{
+      & > span {
         font-size: 15px;
         letter-spacing: 1.04px;
         color: $main-color;
         line-height: 1;
       }
-      & > a{
+      & > a {
         & > i {
           background: $main-color;
           width: 30px;
@@ -90,7 +90,7 @@
       letter-spacing: 1.04px;
       color: $black-color;
       margin-bottom: 5px;
-      padding-left: 0!important;
+      padding-left: 0 !important;
     }
     &-item {
       margin-right: 30px;
@@ -186,7 +186,7 @@
     margin-bottom: 15px;
     &-religion {
       margin-left: 25px;
-      & > div{
+      & > div {
         position: relative;
         & > span {
           @include name-input;
@@ -202,7 +202,7 @@
       }
     }
     &-left {
-      & > div{
+      & > div {
         position: relative;
         & > span {
           @include name-input;
@@ -430,7 +430,7 @@
         right: -354px;
         z-index: -1;
       }
-      & > option{
+      & > option {
         text-align: center;
       }
     }
@@ -441,7 +441,7 @@
         border: 0;
         height: 55px;
         padding: 10px;
-        background:#E2EDF0;
+        background: #E2EDF0;
         box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
         border-radius: 8px;
       }
@@ -1026,15 +1026,14 @@
   cursor: pointer;
   display: none;
   z-index: 100;
-  & > i{
+  & > i {
     color: #E2EDF0;
     font-size: 75px;
   }
 }
 
-
-.page-form-choice{
-  &-name{
+.page-form-choice {
+  &-name {
     font-size: 15px;
     letter-spacing: 1.04px;
     color: $black-color;
@@ -1075,7 +1074,7 @@
 
 }
 
-select.table-education-name{
+select.table-education-name {
   padding-left: 10px;
   border: 0;
 }

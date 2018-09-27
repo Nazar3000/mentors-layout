@@ -12488,6 +12488,862 @@ select.table-education-name {
   z-index: 15;
 }
 
+.css-card {
+  display: none;
+  margin-bottom: 20px;
+}
+
+.css-card-check {
+  font-size: 14px;
+  letter-spacing: 0.54px;
+}
+
+.css-card-check-wrapp {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 0 0 45px 20px;
+}
+
+.css-card-check > label {
+  margin-bottom: 0;
+}
+
+.css-card-check > label:last-child {
+  margin-right: 50px;
+}
+
+.css-card-subtitle > span {
+  opacity: 0.5;
+  color: #000000;
+  font-size: 14px;
+  letter-spacing: 0.97px;
+  display: block;
+  margin: 0 0 5px 20px;
+  font-weight: 500;
+}
+
+.css-card-subtitle > div {
+  background: #037286;
+  color: #fff;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  -webkit-box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+          box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+  padding: 20px 30px;
+  margin-bottom: 20px;
+}
+
+.css-card-subtitle > div > h5 {
+  font-size: 13px;
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+}
+
+.css-card-subtitle > div > p {
+  font-size: 13px;
+  letter-spacing: 0.54px;
+  margin-bottom: 5px;
+}
+
+.css-card-subtitle > div > a {
+  display: block;
+  text-align: right;
+  color: #fff;
+  text-decoration: underline;
+  font-size: 13px;
+  letter-spacing: 0.54px;
+}
+
+.css-card-stat-wrapp {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.css-card-stat-wrapp > div {
+  width: 49%;
+}
+
+.css-card-stat-wrapp > div > a {
+  width: 160px;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  background-color: #037286;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.56px;
+  padding: 9px 18px;
+}
+
+.css-card-stat-wrapp > div > select {
+  font-size: 12px;
+  letter-spacing: 0.56px;
+  border: 0;
+  position: relative;
+  bottom: 3px;
+  right: 3px;
+  margin-bottom: 10px;
+}
+
+.css-card-stat-wrapp > div > span {
+  color: #037286;
+  display: block;
+  font-size: 12px;
+  letter-spacing: 0.46px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.css-card-stat-wrapp > div > p {
+  font-size: 12px;
+  letter-spacing: 0.56px;
+}
+
+.css-card-stat-wrapp > div > p > a {
+  margin-left: 8px;
+}
+
+.css-card-stat-wrapp > div > p > a i {
+  color: #037286;
+  font-size: 14px;
+}
+
+.css-card-line {
+  width: 100%;
+  height: 1px;
+  background: rgba(151, 151, 151, 0.23);
+  margin-bottom: 30px;
+}
+
+.css-card-edit {
+  margin-left: auto;
+}
+
+.css-card-edit > a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  background: #037286;
+  color: #fff;
+}
+
+.css-card-title > h2 {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0.8px;
+  color: #037286;
+}
+
+.css-card-title > p {
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #3F4C55;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.css-card-title > p:last-child {
+  font-size: 14px;
+  letter-spacing: 0.46px;
+  margin-bottom: 0;
+  font-weight: initial;
+}
+
+.css-card-title span {
+  display: block;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 0.33px;
+  margin-bottom: 2px;
+}
+
+.css-card-info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 30px;
+}
+
+.css-card-img > img {
+  height: 133px;
+  width: 108px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  margin-right: 50px;
+}
+
+.css-card-wrapp {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px;
+}
+
+.css-card-left {
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+          box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+  width: 475px;
+  padding: 40px 25px 75px 55px;
+  height: 100%;
+}
+
+.css-card-right {
+  width: 602px;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+          box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+  padding: 40px 25px 75px 55px;
+  height: 100%;
+}
+
+.css-card-right .access-no {
+  margin: 0 0 20px 20px;
+}
+
+.css-card-right .access-no > p {
+  color: #949494;
+  font-size: 14px;
+  letter-spacing: 0.97px;
+  margin-bottom: 0;
+}
+
+.css-card-right .access-no > p > span {
+  opacity: 1;
+  color: #000;
+}
+
+.css-card-right .access-yes {
+  margin: 0 0 20px 20px;
+}
+
+.css-card-right .access-yes input {
+  width: 100%;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  background-color: #E2EDF0;
+  border: 0;
+  padding: 15px 25px;
+  margin-bottom: 15px;
+}
+
+.css-card-right .access-yes button {
+  background: #037286;
+  border: 0;
+  margin: 0 auto 30px;
+  display: block;
+  color: #fff;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  width: 195px;
+  text-align: center;
+  font-weight: bold;
+  padding: 16px 0;
+}
+
+.css-card-right .contract-wrapp {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 0 0 20px 20px;
+}
+
+.css-card-right .contract-num {
+  margin-right: 100px;
+}
+
+.css-card-right .contract-num span {
+  font-size: 15px;
+  letter-spacing: 1.04px;
+  margin-bottom: 15px;
+  color: #037286;
+  font-weight: 500;
+  display: block;
+}
+
+.css-card-right .contract-num p {
+  font-size: 14px;
+  letter-spacing: 0.54px;
+  font-weight: 500;
+}
+
+.css-card-right .contract-date span {
+  font-size: 15px;
+  letter-spacing: 1.04px;
+  margin-bottom: 15px;
+  color: #037286;
+  font-weight: 500;
+  display: block;
+}
+
+.css-card-right .contract-date p {
+  font-size: 14px;
+  letter-spacing: 0.54px;
+  font-weight: 500;
+}
+
+.css-card-right > label {
+  margin-bottom: 20px;
+}
+
+.css-card-right > label > span {
+  font-size: 15px;
+  letter-spacing: 1.04px;
+  color: #037286;
+  margin: 0 10px 0 25px;
+  display: block;
+  position: relative;
+  bottom: 2px;
+}
+
+.css-card-right > label input[type="radio"]:checked:after {
+  background: #037286 !important;
+}
+
+.css-card-right > span {
+  font-size: 15px;
+  letter-spacing: 1.04px;
+  color: #037286;
+  font-weight: 500;
+  display: block;
+  margin: 0 0 15px 20px;
+}
+
+.css-card-right > p {
+  font-size: 14px;
+  letter-spacing: 0.54px;
+  font-weight: 500;
+  margin: 0 0 30px 20px;
+}
+
+.css-card-right .css-card-edit {
+  width: 30px;
+}
+
+.css-mentor {
+  position: relative;
+  z-index: 1;
+}
+
+.css-mentor::before {
+  background-image: url(../img/css-bg.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  content: "";
+  background-size: 50%;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  right: 100px;
+  top: 80px;
+}
+
+.css-mentor-main {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.css-mentor-add {
+  width: 160px;
+  text-align: center;
+  display: block;
+}
+
+.css-mentor-add > i {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+  background: #037286;
+  color: #fff;
+  margin: 0 auto;
+}
+
+.css-mentor-add > span {
+  display: block;
+  font-size: 15px;
+  letter-spacing: 1.04px;
+  color: #3F4C55;
+}
+
+.css-mentor-search {
+  width: 680px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background: #E2EDF0;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  padding: 18px 35px;
+  margin-bottom: 18px;
+}
+
+.css-mentor-search > input {
+  border: 0;
+  background: transparent;
+  width: 100%;
+  margin-left: 30px;
+}
+
+.css-mentor-search > input::-webkit-input-placeholder {
+  opacity: 0.4;
+  font-size: 15px;
+  letter-spacing: 1.04px;
+}
+
+.css-mentor-search > input::-moz-placeholder {
+  opacity: 0.4;
+  font-size: 15px;
+  letter-spacing: 1.04px;
+}
+
+.css-mentor-search > input:-ms-input-placeholder {
+  opacity: 0.4;
+  font-size: 15px;
+  letter-spacing: 1.04px;
+}
+
+.css-mentor-search > input::placeholder {
+  opacity: 0.4;
+  font-size: 15px;
+  letter-spacing: 1.04px;
+}
+
+.css-mentor-title > p {
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: 0.83px;
+  text-transform: uppercase;
+  line-height: 1.3;
+  margin-bottom: 60px;
+}
+
+.css-mentor-title > p > span {
+  color: #037286;
+}
+
+.css-mentor-link {
+  margin-right: 35px;
+}
+
+.css-mentor-link > a {
+  width: 250px;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  background-color: #037286;
+  -webkit-box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+          box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+  padding: 20px 0;
+  color: #fff;
+  display: block;
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 1.04px;
+  line-height: 18px;
+}
+
+.css-mentor-info {
+  padding: 110px 0 0;
+  z-index: 1;
+}
+
+.css-mentor-info-wrapp {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 760px;
+  margin-bottom: 100px;
+}
+
+.css-mentor-img {
+  position: relative;
+  right: 190px;
+}
+
+.css-mentor-img > img {
+  width: 570px;
+}
+
+.css-table-mentor-line {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.css-table-header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  background: #037286;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  color: #fff;
+  padding: 20px 0;
+  font-size: 15px;
+  letter-spacing: 1.04px;
+  line-height: 1.3;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.css-table-block-mentor {
+  width: 248px;
+  height: 55px;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+          box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+  text-align: center;
+  font-size: 15px;
+  letter-spacing: 1.04px;
+  line-height: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.css-table-block-mentor span {
+  cursor: pointer;
+  margin: 0 15px 0 20px;
+}
+
+.css-table-block-stat select {
+  width: 213px;
+  padding: 0 15px;
+  border: 0;
+  height: 55px;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+          box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+  text-align: center;
+  font-size: 15px;
+  letter-spacing: 1.04px;
+}
+
+.css-table-block-license {
+  width: 213px;
+  height: 55px;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+          box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+  text-align: center;
+  font-size: 15px;
+  letter-spacing: 1.04px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.css-table-block-doc {
+  width: 164px;
+  height: 55px;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+          box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+  text-align: center;
+  font-size: 15px;
+  letter-spacing: 1.04px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.css-table-block-respon select {
+  width: 213px;
+  padding: 0 15px;
+  border: 0;
+  height: 55px;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+          box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+  text-align: center;
+  font-size: 15px;
+  letter-spacing: 1.04px;
+}
+
+.css-table-title-mentor {
+  width: 248px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.css-table-title-mentor > span {
+  margin: 0 10px 0 50px;
+}
+
+.css-table-title-stat {
+  width: 213px;
+}
+
+.css-table-title-license {
+  width: 213px;
+}
+
+.css-table-title-doc {
+  width: 164px;
+}
+
+.css-table-title-respon {
+  width: 213px;
+}
+
+.css-table-line {
+  width: 2px;
+  background: #fff;
+  height: 45px;
+}
+
+.mentor-phone {
+  display: none;
+  color: #037286;
+  font-weight: 500;
+}
+
+.sort-mentor {
+  cursor: pointer;
+}
+
+.mentor-title {
+  cursor: pointer;
+}
+
+.mentor-title:hover {
+  color: #0FAD19;
+}
+
+.css-check-single input[type="radio"]:before {
+  content: " ";
+  display: block;
+  background-color: white;
+  border: 1px solid #D8D8D8;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  -webkit-border-radius: 100px;
+          border-radius: 100px;
+  visibility: initial;
+}
+
+.css-check-single input[type="radio"]:after {
+  content: " ";
+  display: block;
+  width: 8px;
+  height: 8px;
+  -webkit-border-radius: 100px;
+          border-radius: 100px;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  visibility: initial;
+  background-color: #ffffff;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.css-check-single input[type="radio"]:checked:after {
+  background: #037286;
+}
+
+.css-card-check input[type=radio].css-font,
+.css-card-check input[type=checkbox].css-font {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  cursor: pointer;
+}
+
+.css-card-check input[type=radio].css-font ~ label:before,
+.css-card-check input[type=checkbox].css-font ~ label:before {
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f1db";
+  letter-spacing: 10px;
+  color: #aaa;
+  width: 1.4em;
+  cursor: pointer;
+}
+
+.css-card-check input[type=checkbox].css-font ~ label:before {
+  content: "\f096";
+  cursor: pointer;
+}
+
+.css-card-check input[type=checkbox].css-font:checked ~ label:before {
+  content: "\f046";
+  color: #037286;
+  cursor: pointer;
+}
+
 .css-header-company {
   margin-left: 70px;
   display: -webkit-box;
@@ -12545,6 +13401,87 @@ select.table-education-name {
   -webkit-box-shadow: 0 2px 35px 0 rgba(165, 164, 164, 0.5);
           box-shadow: 0 2px 35px 0 rgba(165, 164, 164, 0.5);
   padding: 15px 0;
+  z-index: 2;
+}
+
+.css-footer-logo {
+  margin-right: 130px;
+}
+
+.css-footer-wrapp {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.css-footer-log {
+  background: #3F4C55;
+  padding: 65px 0 78px;
+}
+
+.css-footer-nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.css-footer-nav-item {
+  margin-right: 130px;
+}
+
+.css-footer-nav-item > a {
+  color: #fff;
+  display: block;
+  padding: 5px 0;
+  font-size: 15px;
+  letter-spacing: 0.95px;
+  font-weight: 100;
+}
+
+.css-footer-btn {
+  height: 50px;
+  width: 200px;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  -webkit-box-shadow: 2px 5px 10px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 2px 5px 10px 0 rgba(0, 0, 0, 0.19);
+  background: #037286;
+  color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  letter-spacing: 0.15px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 1.2;
+  font-size: 15px;
+  font-weight: 100;
 }
 
 @font-face {
