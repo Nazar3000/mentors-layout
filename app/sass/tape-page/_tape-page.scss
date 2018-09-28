@@ -139,6 +139,9 @@
         color: $main-color;
         cursor: pointer;
       }
+      &-content{
+        display: none;
+      }
     }
     &-content{
       background:rgba(226,237,240,0.37);

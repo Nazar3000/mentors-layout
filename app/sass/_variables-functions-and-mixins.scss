@@ -37,6 +37,15 @@ $second-font: 'FreeSet';
   letter-spacing: 1.04px;
 }
 
+@mixin css-admin-card{
+  min-height: 316px;
+  width: 485px;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+  padding: 40px 30px;
+  margin-bottom: 40px;
+}
 
 
 
