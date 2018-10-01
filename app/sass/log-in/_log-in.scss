@@ -6,13 +6,13 @@
   &::before{
     background-image: url(../img/log-bg.png);
     background-repeat: no-repeat;
-    background-position: 38% 45%;
+    background-position:center center;
     background-size: 50%;
     position: absolute;
     content: "";
     top: 0;
     left: 0;
-    height: 910px;
+    height: 100%;
     width: 100%;
     z-index: -1;
   }

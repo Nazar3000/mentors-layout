@@ -130,6 +130,160 @@ label:focus {
   cursor: default;
 }
 
+.message {
+  position: relative;
+}
+
+.message-check input[type=radio].css-font,
+.message-check input[type=checkbox].css-font {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  cursor: pointer;
+}
+
+.message-check input[type=radio].css-font ~ label:before,
+.message-check input[type=checkbox].css-font ~ label:before {
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "0";
+  letter-spacing: 10px;
+  color: #aaa;
+  width: 1.4em;
+  cursor: pointer;
+}
+
+.message-check input[type=checkbox].css-font ~ label:before {
+  content: "\f096";
+  cursor: pointer;
+}
+
+.message-check input[type=checkbox].css-font:checked ~ label:before {
+  content: "\f046";
+  color: #037286;
+  cursor: pointer;
+  display: block;
+}
+
+.message-check > label {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 1;
+  font-size: 10px;
+  letter-spacing: 0.56px;
+  margin-bottom: 0;
+}
+
+.message-check::before {
+  content: ' ';
+  position: absolute;
+  left: 10px;
+  top: -10px;
+  border-left: 10px solid #fff;
+  border-top: 10px solid transparent;
+  border-bottom: 1px solid #fff;
+  -webkit-filter: drop-shadow(-3.7px 4.7px 2.7px rgba(0, 0, 0, 0.15));
+  filter: drop-shadow(0px -1px 1px rgba(0, 0, 0, 0.15));
+}
+
+.message > a > i {
+  color: #848484 !important;
+  font-size: 20px;
+}
+
+.message-item {
+  -webkit-box-shadow: -1px 0 5px 0 rgba(129, 127, 127, 0.5);
+          box-shadow: -1px 0 5px 0 rgba(129, 127, 127, 0.5);
+  background: #fff;
+  padding: 20px;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  position: absolute;
+  left: 15px;
+}
+
+.message-item span {
+  font-size: 10px;
+  letter-spacing: 0.56px;
+  color: #3F4C55;
+  display: block;
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.message-wrapp {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.message-wrapp > a {
+  background: #037286;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  width: 75px;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 0.56px;
+  color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 18px;
+}
+
+.message-new {
+  position: absolute;
+  left: 10px;
+  top: -5px;
+  height: 25px;
+  width: 25px;
+  background-color: #DB0101;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+}
+
+.message-new span {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+}
+
 input[type="radio"]:before {
   content: " ";
   display: block;
@@ -4532,13 +4686,13 @@ input[type="radio"]:checked:after {
 .log-in::before {
   background-image: url(../img/log-bg.png);
   background-repeat: no-repeat;
-  background-position: 38% 45%;
+  background-position: center center;
   background-size: 50%;
   position: absolute;
   content: "";
   top: 0;
   left: 0;
-  height: 910px;
+  height: 100%;
   width: 100%;
   z-index: -1;
 }
@@ -13490,6 +13644,17 @@ select.table-education-name {
   content: "\f046";
   color: #037286;
   cursor: pointer;
+}
+
+.triangle-green {
+  background-image: url(/img/triangle-green.svg);
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  background-size: 13px 8px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+  width: 100%;
 }
 
 .css-header-company {

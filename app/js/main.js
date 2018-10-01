@@ -176,19 +176,6 @@ $(document).ready(function() {
         return false;
     });
 
-
-
-    // open modal card creer
-
-    $('.career-table-btn').click(function(){
-        $('.career-modal').fadeIn(500);
-    });
-
-    $('.career-card-close').click(function(){
-        $('.career-modal').fadeOut(400);
-    });
-
-
     $('.career-add').click(function(){
         $('.career-modal-reg').fadeIn(500);
     });
@@ -215,36 +202,6 @@ $(document).ready(function() {
 
 
 
-    // sort mentor click
-
-    $('.sort-mentor').click(function () { // при клике на рисунок
-        if($(this).find('img').attr('src') == 'img/a-b.svg'){ // если в этом элименте мы находим картику с путем катороый равняется аб
-            $(this).find('img').attr('src', 'img/b-a.svg'); // то это меняем картинку на ба
-        }else {
-            $(this).find('img').attr('src', 'img/a-b.svg'); // иначе возвращяем обратно
-        }
-    });
-
-    // sort mentor click phone and change
-
-    $('.mentor-phone-img').click(function () {
-        if($(this).find('img').attr('src') == 'img/blue-tel.svg'){
-            $(this).find('img').attr('src', 'img/green-tel.svg');
-            $(this).siblings('.mentor-title').toggle();
-            $(this).siblings('.mentor-phone').toggle();
-        }else {
-            $(this).find('img').attr('src', 'img/blue-tel.svg');
-            $(this).siblings('.mentor-title').toggle();
-            $(this).siblings('.mentor-phone').toggle();
-        }
-    });
-
-
-    $('.mentor-title').click(function(){
-        $('.css-card').slideToggle(500);
-    });
-
-
     // go top auto
 
     $(function() {
@@ -263,47 +220,6 @@ $(document).ready(function() {
     });
     $(function() {
         $("#go-top").scrollToTop();
-    });
-
-    // css-mentor view all
-
-    $(function($){
-        var contents = $('.css-card-content');
-        var titles = $('.css-card-all');
-
-        titles.on('click',function(){
-            var title = $(this);
-
-            contents.filter(':visible').slideUp(function(){
-                $(this).siblings('.css-card-all').removeClass('is-opened');
-            });
-
-            var content = title.siblings('.css-card-content');
-
-            if (!content.is(':visible')) {
-                content.slideDown(function(){title.addClass('is-opened')});
-            }
-        });
-    });
-
-
-    $(function($){
-        var contents = $('.css-card-subtitle-content');
-        var titles = $('.css-card-subtitle-all');
-
-        titles.on('click',function(){
-            var title = $(this);
-
-            contents.filter(':visible').slideUp(function(){
-                $(this).siblings('.css-card-subtitle-all').removeClass('is-opened');
-            });
-
-            var content = title.siblings('.css-card-subtitle-content');
-
-            if (!content.is(':visible')) {
-                content.slideDown(function(){title.addClass('is-opened')});
-            }
-        });
     });
 
 
