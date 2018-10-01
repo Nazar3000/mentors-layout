@@ -142,6 +142,25 @@ $second-font: 'FreeSet';
   }
 }
 
+
+@mixin green-btn {
+  height: 50px;
+  width: 200px;
+  border-radius: 8px;
+  box-shadow: 2px 5px 10px 0 rgba(0, 0, 0, 0.19);
+  background: $css-color;
+  color: $white-color;
+  @include flex-center-center;
+  letter-spacing: 0.15px;
+  cursor: pointer;
+  &:hover{
+    box-shadow: 2px 5px 10px 0 rgba(54, 140, 202, 1);
+  }
+  & > a {
+    font-weight: 400;
+  }
+}
+
 // position
 
 @mixin flex-vertical-between{
