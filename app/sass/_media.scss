@@ -1,8 +1,19 @@
-@import "index/index";
+// header
+
 @import "header/header";
+@import "header-green/header-green";
+
 @import "header-log/header-log";
-@import "footer/footer";
-@import "footer-log/footer-log";
+@import "header-green-log/header-green-log";
+
+@import "header-admin/header-admin";
+@import "header-green-admin/header-green-admin";
+
+// content
+
+@import "index/index";
+
+
 @import "register-mentor/register-mentor";
 @import "register/register";
 @import "video-mentor/video-mentor";
@@ -13,7 +24,7 @@
 @import "video-see/video-see";
 @import "log-in/log-in";
 @import "id-card-settings/id-card-settings";
-@import "header-admin/header-admin";
+
 @import "diary/diary";
 @import "page-form/page-form";
 @import "stage/stage";
@@ -21,7 +32,7 @@
 @import "second-stage/second-stage";
 @import "third-stage/third-stage";
 @import "contacts/contacts";
-@import "footer-bar/foter-bar";
+
 @import "admin/admin";
 @import "about/about";
 @import "question/question";
@@ -31,12 +42,31 @@
 @import "pre-footer/pre-footer";
 @import "pre-footer-contact/pre-footer-contact";
 
+
+
+
+@import "css-main/css-main";
 @import "css-mentor/css-mentor";
-@import "css-header-log/css-header-log";
 @import "css-footer-log/css-footer-log";
 @import "css-admin/css-admin";
 @import "css-login/css-login";
-@import "css-header-extra-log/css-header-extra-log";
+@import "css-register/css-register";
+@import "css-video-mentor/css-video-mentor";
+
+
+
+
+
+
+
+
+
+// footer
+
+@import "footer/footer";
+@import "footer-log/footer-log";
+@import "footer-bar/foter-bar";
+
 
 
 
