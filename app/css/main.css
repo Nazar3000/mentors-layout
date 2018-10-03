@@ -12669,6 +12669,35 @@ select.table-education-name {
 
 .css-main {
   padding: 90px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.css-main::before {
+  background-image: url(../img/green-cube-main.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 38%;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: -300px;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.css-main-video iframe {
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+}
+
+.css-main-video p {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.7px;
+  color: #3F4C55;
+  text-align: right;
 }
 
 .css-main-page {
@@ -12701,8 +12730,13 @@ select.table-education-name {
   padding: 16px 0;
 }
 
+.css-main-link a:hover {
+  -webkit-box-shadow: 2px 5px 10px 0 #037286;
+          box-shadow: 2px 5px 10px 0 #037286;
+}
+
 .css-main-circle {
-  border: 3px solid  #EFF30C;
+  border: 3px solid  #bbbd3f;
   -webkit-box-shadow: 2px 5px 10px 0 rgba(0, 0, 0, 0.5);
           box-shadow: 2px 5px 10px 0 rgba(0, 0, 0, 0.5);
   width: 90px;

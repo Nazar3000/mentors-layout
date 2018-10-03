@@ -1,5 +1,32 @@
 .css-main{
   padding: 90px 0;
+  position: relative;
+  z-index: 1;
+  &::before{
+    background-image: url(../img/green-cube-main.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 38%;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -300px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+  }
+  &-video{
+    & iframe{
+      border-radius: 10px;
+    }
+    & p{
+      font-size: 18px;
+      font-weight: 500;
+      letter-spacing: 0.7px;
+      color: $grafit-color;
+      text-align: right;
+    }
+  }
   &-page{
     margin-bottom: 85px;
     display: flex;
@@ -20,10 +47,13 @@
       letter-spacing: 1.04px;
       margin-bottom: 18px;
       padding: 16px 0;
+      &:hover{
+        box-shadow: 2px 5px 10px 0 $css-color;
+      }
     }
   }
   &-circle{
-    border: 3px solid  #EFF30C;
+    border: 3px solid  #bbbd3f;
     box-shadow: 2px 5px 10px 0 rgba(0,0,0,0.5);
     width: 90px;
     height: 90px;
