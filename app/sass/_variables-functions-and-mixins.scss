@@ -287,6 +287,22 @@ $second-font: 'FreeSet';
   cursor: pointer;
 
 }
+$group-size: 7;
+@mixin six-number(){
+  @for $i from 1 through $group-size {
+    div:nth-child(#{$group-size}n + #{$i}) {
+      &:after {
+        content: "#{$i}";
+        position: absolute;
+        bottom: 15px;
+        left: -50px;
+        opacity: 0.4;
+        color: #E2EDF0;
+        font-size: 144px;
+      }
+    }
+  }
+}
 
 // style checkbox
 
