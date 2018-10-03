@@ -163,6 +163,7 @@ button:focus, input:focus, textarea:focus, select:focus, label:focus{
     border-radius: 8px;
     position: absolute;
     left: 15px;
+    z-index: 100;
     & span{
       font-size: 10px;
       letter-spacing: 0.56px;
