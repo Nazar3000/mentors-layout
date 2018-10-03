@@ -1,0 +1,48 @@
+extends ../default.pug
+block pageContent
+    include ../templates/header-green-admin
+    .content
+        .container
+            section.css-material
+                .css-material-main
+                    .css-material-info
+                        .css-material-info-wrapp
+                            .css-material-link
+                                a(href='') Головна
+                                a(href='') Наставники
+                                a(href='') Громадські організації
+                                a(href='') Матеріали
+
+                            .css-material-title
+                                p
+                                    | в інтернатних закладах
+                                    br
+                                    | україни перебуває
+                                    span  105 703 дітей
+
+                                .css.counter
+                                    .counter-numb 0
+                                    .counter-numb 2
+                                    .counter-numb 9
+                                    .counter-numb 0
+                                span
+                                    | Дітей мають наставників
+                                    br
+                                    | (активно взаємодіють)
+
+                    .css-material-img
+                        img(src='img/happy-child.png')
+
+
+                h2 Матеріали для закладів
+                .css-material-wrapp
+                    .css-material-left
+                        img(src='img/book.svg')
+                        p Законодавча база
+                        p Методологія
+                        p Договори
+                        p Література
+                    .css-material-right
+                        p 2
+
+    include ../templates/css-footer-log.pug

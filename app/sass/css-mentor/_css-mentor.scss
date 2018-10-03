@@ -475,6 +475,12 @@
           color: $css-color;
         }
       }
+      & > span{
+        font-size: 20px;
+        letter-spacing: 1.14px;
+        font-weight: 500;
+        line-height: 1.3;
+      }
     }
     &-link {
       margin-right: 35px;
