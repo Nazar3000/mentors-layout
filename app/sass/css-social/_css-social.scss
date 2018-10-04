@@ -1,0 +1,102 @@
+.css-social{
+  &-main{
+    display: flex;
+    justify-content: space-between;
+  }
+  &-info{
+    padding-top: 155px;
+    &-wrapp{
+      display: flex;
+      justify-content: flex-start;
+      width: 760px;
+      margin-bottom: 100px;
+    }
+  }
+  &-link{
+    margin-right: 35px;
+    & a{
+      width: 250px;
+      border-radius: 8px;
+      background-color: $css-color;
+      box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+      padding: 20px 0;
+      color: #fff;
+      display: block;
+      text-align: center;
+      margin-bottom: 15px;
+      font-size: 15px;
+      font-weight: 500;
+      letter-spacing: 1.04px;
+      line-height: 18px;
+    }
+  }
+  &-title{
+    z-index: 1;
+    & p{
+      font-size: 25px;
+      font-weight: 500;
+      letter-spacing: 0.83px;
+      text-transform: uppercase;
+      line-height: 1.3;
+      margin-bottom: 60px;
+      & span{
+        color: $css-color;
+      }
+    }
+    & span{
+      font-size: 20px;
+      letter-spacing: 1.14px;
+      font-weight: 500;
+      line-height: 1.3;
+    }
+  }
+  &-img{
+    position: relative;
+    right: 510px;
+    padding-top: 50px;
+    & img{
+      width: 890px;
+    }
+  }
+  &-search{
+    width: 680px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: #E2EDF0;
+    border-radius: 2px;
+    padding: 18px 35px;
+    margin-bottom: 18px;
+    z-index: 1;
+    position: relative;
+    & input{
+      border: 0;
+      background: transparent;
+      width: 100%;
+      margin-left: 30px;
+    }
+  }
+  &-add{
+    width: 160px;
+    text-align: center;
+    display: block;
+    & i{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 30px;
+      height: 30px;
+      border-radius: 100%;
+      background: $css-color;
+      color: #fff;
+      margin: 0 auto;
+    }
+    & span{
+      display: block;
+      font-size: 15px;
+      letter-spacing: 1.04px;
+      color: $grafit-color;
+    }
+  }
+}

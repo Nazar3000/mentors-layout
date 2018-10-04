@@ -1,0 +1,97 @@
+extends ../default.pug
+block pageContent
+    include ../templates/header-green-admin
+    .content
+        .container
+            section.css-social
+                .css-social-main
+                    .css-social-info
+                        .css-social-info-wrapp
+                            .css-social-link
+                                a(href='') Головнаa
+                                a(href='') Наставники
+                                a(href='') Громадські організації
+                                a(href='') Матеріали
+
+                            .css-social-title
+                                p
+                                    | в інтернатних закладах
+                                    br
+                                    | україни перебуває
+                                    span  105 703 дітей
+
+                                .css.counter
+                                    .counter-numb 0
+                                    .counter-numb 2
+                                    .counter-numb 9
+                                    .counter-numb 0
+                                span
+                                    | Дітей мають наставників
+                                    br
+                                    | (активно взаємодіють)
+
+                        .css-social-search
+                            img(src='img/search.svg')
+                            input(type='text' placeholder='Почніть вводити дані тут')
+
+                        a.css-social-add(href='')
+                            i.fas.fa-plus
+                            span Додати Наставника
+
+                    .css-social-img
+                        img(src='img/babby-sleep.jpg')
+
+                .css-table
+                    .css-table-header
+                        .css-table-title-mentor Наставник
+                            span.sort-mentor
+                                img(src='img/a-b.svg')
+                        .css-table-line
+                        .css-table-title-stat Статус
+                        .css-table-line
+                        .css-table-title-license Ліцензія
+                        .css-table-line
+                        .css-table-title-doc
+                            | Наявність
+                            br
+                            | документів
+                        .css-table-line
+                        .css-table-title-respon Відповідальний
+
+                    .css-table-mentor-line
+                        .css-table-block-mentor
+                            span.mentor-title
+                                | Наставниченко
+                                br
+                                | Максим Петрович
+                            span.mentor-phone
+                                | (063) 324 43 43
+                            span.mentor-phone-img
+                                img(src='img/blue-tel.svg')
+                        .css-table-block-stat
+                            select.triangle-green(required='')
+                                option(value='') Кандидат в наст…
+                                option Дыня
+                                option Тыква
+                                option Кабачок
+                                option Баклажан
+                                option Патиссон
+                                option Огурец
+
+                        .css-table-block-license
+                            span LOTR 89
+                        .css-table-block-doc
+                            span Є всі
+                        .css-table-block-respon
+                            select.triangle-green(required='')
+                                option(value='') Выбрать
+                                option Дыня
+                                option Тыква
+                                option Кабачок
+                                option Баклажан
+                                option Патиссон
+                                option Огурец
+
+
+
+    include ../templates/css-footer-log.pug
