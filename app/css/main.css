@@ -410,6 +410,41 @@ input[type="radio"]:checked:after {
   z-index: -1;
 }
 
+.help-info-org {
+  position: absolute;
+  top: -35px;
+  right: -5px;
+  -webkit-box-shadow: -1px 0 5px 0 rgba(129, 127, 127, 0.5);
+          box-shadow: -1px 0 5px 0 rgba(129, 127, 127, 0.5);
+  padding: 10px;
+  background: #fff;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  font-weight: 500;
+  display: none;
+}
+
+.help-info-org:before {
+  content: ' ';
+  position: absolute;
+  left: 10px;
+  bottom: -10px;
+  border-left: 10px solid #fff;
+  border-bottom: 10px solid transparent;
+  border-top: 1px solid #fff;
+  -webkit-filter: drop-shadow(-3.7px 4.7px 2.7px rgba(0, 0, 0, 0.15));
+  filter: drop-shadow(-3.7px 4.7px 2.7px rgba(0, 0, 0, 0.15));
+}
+
+.help-info-org span {
+  font-size: 9px;
+  letter-spacing: 0.5px;
+  color: #3F4C55;
+  display: block;
+  text-align: left;
+  line-height: 1.5;
+}
+
 .header {
   font-family: "FreeSet";
   -webkit-box-shadow: 0 2px 35px 0 rgba(165, 164, 164, 0.5);
@@ -13215,7 +13250,7 @@ select.table-education-name {
   width: 30px;
   height: 30px;
   -webkit-border-radius: 100%;
-  border-radius: 100%;
+          border-radius: 100%;
   background: #037286;
   color: #fff;
 }
@@ -15233,6 +15268,1190 @@ select.table-education-name {
   width: 100%;
 }
 
+.css-big-card {
+  display: none;
+  padding: 5px;
+}
+
+.css-info {
+  font-size: 14px;
+  letter-spacing: 0.97px;
+  line-height: 16px;
+  color: #037286;
+  margin-bottom: 60px;
+  font-weight: 500;
+  cursor: default;
+}
+
+.css-org {
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+          box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+  padding: 40px 25px 50px 75px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.css-org-icon {
+  margin-right: 26px;
+}
+
+.css-org-icon label {
+  width: 14px;
+  height: 14px;
+  -webkit-border-radius: 50px;
+          border-radius: 50px;
+  background: #037286;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  color: #fff;
+  font-size: 8px;
+  cursor: pointer;
+}
+
+.css-org-all {
+  color: #037286;
+  margin-left: auto;
+  margin-bottom: 10px;
+  display: block;
+  text-decoration: underline;
+  width: 100px;
+}
+
+.css-org-all:hover {
+  color: #037286;
+}
+
+.css-org-all span {
+  font-size: 14px;
+  letter-spacing: 0.14px;
+  display: block;
+}
+
+.css-org-block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.css-org-mentors {
+  width: 245px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: default;
+}
+
+.css-org-mentors span {
+  margin: 0 10px 0 50px;
+  cursor: pointer;
+}
+
+.css-org-child {
+  width: 210px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: default;
+}
+
+.css-org-child span {
+  margin: 0 10px 0 50px;
+  cursor: pointer;
+}
+
+.css-org-place {
+  width: 210px;
+}
+
+.css-org-contract {
+  width: 160px;
+  line-height: 1.2;
+}
+
+.css-org-data {
+  width: 210px;
+  line-height: 1.2;
+}
+
+.css-org-header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  background: #037286;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  color: #fff;
+  padding: 20px 0;
+  font-size: 15px;
+  letter-spacing: 1.04px;
+  line-height: 1.3;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.css-org-search {
+  width: 680px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background: #E2EDF0;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  padding: 18px 35px;
+  margin-bottom: 40px;
+  z-index: 1;
+  position: relative;
+}
+
+.css-org-search input {
+  border: 0;
+  background: transparent;
+  width: 100%;
+  margin-left: 30px;
+}
+
+.css-org-search input::-webkit-input-placeholder {
+  opacity: 0.4;
+  font-size: 15px;
+  letter-spacing: 1.04px;
+}
+
+.css-org-search input::-moz-placeholder {
+  opacity: 0.4;
+  font-size: 15px;
+  letter-spacing: 1.04px;
+}
+
+.css-org-search input:-ms-input-placeholder {
+  opacity: 0.4;
+  font-size: 15px;
+  letter-spacing: 1.04px;
+}
+
+.css-org-search input::placeholder {
+  opacity: 0.4;
+  font-size: 15px;
+  letter-spacing: 1.04px;
+}
+
+.css-org-img {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 50px;
+}
+
+.css-org-img-edit {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 10px;
+}
+
+.css-org-img-edit img {
+  width: 115px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.css-org-img img {
+  width: 115px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.css-org-title textarea {
+  border: 0;
+  width: 214px;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #3F4C55;
+  line-height: 1.3;
+  margin-bottom: 25px;
+  display: block;
+}
+
+.css-org-title-wrapp {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.css-org-title-wrapp div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.css-org-title-wrapp div > input {
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+  color: #037286;
+  margin-bottom: 0;
+  height: 28px;
+  width: 43px;
+  margin-right: 5px;
+  border: 0;
+}
+
+.css-org-title-wrapp div:first-child {
+  margin-right: 15px;
+}
+
+.css-org-title-wrapp div p {
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+  color: #037286;
+  margin-bottom: 0;
+  height: 40px;
+  margin-right: 5px;
+}
+
+.css-org-title-wrapp div span {
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 0.33px;
+  color: #3F4C55;
+  line-height: 1;
+  display: block;
+}
+
+.css-org-title h3 {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0.8px;
+  color: #037286;
+  text-transform: uppercase;
+}
+
+.css-org-title > p {
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #3F4C55;
+  line-height: 1.3;
+  margin-bottom: 25px;
+}
+
+.css-org-line {
+  width: 1px;
+  background: rgba(151, 151, 151, 0.23);
+  margin: 0 60px;
+}
+
+.css-org-info {
+  margin-right: 60px;
+}
+
+.css-org-info > input {
+  border: 0;
+  border-bottom: 1px solid rgba(151, 151, 151, 0.5);
+  font-size: 12px;
+  letter-spacing: 0.56px;
+  color: #3F4C55;
+  font-weight: 500;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.css-org-info span {
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 0.46px;
+  color: #037286;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.css-org-info p {
+  font-size: 12px;
+  letter-spacing: 0.56px;
+  color: #3F4C55;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.css-org-info a {
+  display: block;
+  color: #037286;
+  font-size: 12px;
+  letter-spacing: 0.56px;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.css-org-mentor {
+  width: 200px;
+}
+
+.css-org-mentor > span {
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 0.46px;
+  color: #037286;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.css-org-mentor select {
+  border: 0;
+  font-size: 12px;
+  letter-spacing: 0.56px;
+  color: #3F4C55;
+  font-weight: 500;
+  margin-bottom: 30px;
+  display: block;
+}
+
+.css-org-doc {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.css-org-doc div input {
+  font-size: 14px;
+  letter-spacing: 0.46px;
+  color: #3F4C55;
+  margin-bottom: 0;
+  border: 0;
+  border-bottom: 1px solid rgba(151, 151, 151, 0.5);
+  width: 100%;
+}
+
+.css-org-doc div span {
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 0.33px;
+  color: #3F4C55;
+}
+
+.css-org-doc div p {
+  font-size: 14px;
+  letter-spacing: 0.46px;
+  color: #3F4C55;
+  margin-bottom: 0;
+}
+
+.css-org-doc div:first-child {
+  margin-right: 25px;
+}
+
+.css-org-edit {
+  margin-left: auto;
+}
+
+.css-org-edit a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+  background: #037286;
+  color: #fff;
+}
+
+.css-del i {
+  color: #037286;
+  font-size: 14px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.css-line-modal {
+  width: 100%;
+  height: 1px;
+  background: rgba(151, 151, 151, 0.23);
+  margin: 25px 0;
+}
+
+.css-slip {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 15;
+}
+
+.css-slip-choice {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.css-slip-choice div button {
+  width: 116px;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  background-color: #037286;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  border: 0;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.56px;
+  padding: 8px 0;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.css-slip-choice div button:hover {
+  -webkit-box-shadow: 2px 5px 10px 0 #037286;
+          box-shadow: 2px 5px 10px 0 #037286;
+}
+
+.css-slip-choice div:first-child {
+  width: 55%;
+  margin-right: 30px;
+}
+
+.css-slip-choice div:last-child {
+  width: 45%;
+}
+
+.css-slip-choice div select {
+  font-size: 12px;
+  letter-spacing: 0.56px;
+  border: 0;
+  width: 100%;
+  margin-bottom: 13px;
+}
+
+.css-slip-choice div input {
+  font-size: 12px;
+  letter-spacing: 0.56px;
+  border: 0;
+  width: 100%;
+  border-bottom: 1px solid rgba(151, 151, 151, 0.5);
+  margin-bottom: 10px;
+}
+
+.css-slip-choice span {
+  display: block;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 0.46px;
+  color: #037286;
+}
+
+.css-slip-input-value {
+  width: 140px;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 0.33px;
+  color: #3F4C55;
+  border: 0;
+  border-bottom: 1px solid rgba(151, 151, 151, 0.5);
+}
+
+.css-slip-icon {
+  margin-right: 24px;
+}
+
+.css-slip-icon label {
+  width: 14px;
+  height: 14px;
+  -webkit-border-radius: 50px;
+          border-radius: 50px;
+  background: #037286;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  color: #fff;
+  font-size: 8px;
+  cursor: pointer;
+}
+
+.css-slip-modal {
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+          box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+  width: 600px;
+  margin: 0 auto;
+  position: relative;
+  top: 3%;
+  padding: 40px 25px 50px 50px;
+}
+
+.css-slip-close {
+  width: 25px;
+  text-align: center;
+  margin-left: auto;
+  font-size: 40px;
+  color: #979797;
+  font-weight: 100;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 25px;
+}
+
+.css-slip-main {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.css-slip-main div p {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0.8px;
+  color: #037286;
+  margin-bottom: 5px;
+}
+
+.css-slip-main div span {
+  width: 150px;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 0.33px;
+  color: #3F4C55;
+  display: block;
+}
+
+.css-slip-main div > textarea {
+  width: 210px;
+  height: 62px !important;
+  border: 0;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0.8px;
+  color: #3F4C55;
+  line-height: 1.3;
+  resize: none;
+}
+
+.css-slip-main div > textarea::-webkit-input-placeholder {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0.8px;
+  color: #3F4C55;
+  line-height: 1.3;
+}
+
+.css-slip-main div > textarea::-moz-placeholder {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0.8px;
+  color: #3F4C55;
+  line-height: 1.3;
+}
+
+.css-slip-main div > textarea:-ms-input-placeholder {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0.8px;
+  color: #3F4C55;
+  line-height: 1.3;
+}
+
+.css-slip-main div > textarea::placeholder {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0.8px;
+  color: #3F4C55;
+  line-height: 1.3;
+}
+
+.css-slip-main img {
+  width: 108px;
+  height: 134px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  margin-right: 10px;
+  display: block;
+}
+
+.css-table-block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.css-header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  background: #037286;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  color: #fff;
+  padding: 20px 0;
+  font-size: 15px;
+  letter-spacing: 1.04px;
+  line-height: 1.3;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.css-line {
+  width: 2px;
+  background: #fff;
+  height: 45px;
+}
+
+.css-title-org {
+  width: 245px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: default;
+}
+
+.css-title-org span {
+  margin: 0 10px 0 50px;
+  cursor: pointer;
+}
+
+.css-title-stat {
+  width: 400px;
+}
+
+.css-title-license {
+  width: 210px;
+}
+
+.css-title-val {
+  width: 198px;
+}
+
+.css-block-sort-img {
+  cursor: pointer;
+  margin: 0 15px 0 20px;
+}
+
+.css-block-mentors {
+  width: 245px;
+  height: 55px;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+          box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+  text-align: center;
+  font-size: 15px;
+  letter-spacing: 1.04px;
+  line-height: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: relative;
+}
+
+.css-block-mentors > a:hover {
+  color: #037286;
+  -webkit-transition: none;
+  transition: none;
+}
+
+.css-block-mentors > a:hover .help-info-org {
+  display: block;
+}
+
+.css-block-mentors-phone {
+  display: none;
+  color: #037286;
+  font-weight: 500;
+  margin: 0 15px 0 20px;
+}
+
+.css-block-mentors a {
+  color: #3F4C55;
+}
+
+.css-block-child {
+  width: 210px;
+  height: 55px;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+          box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  position: relative;
+}
+
+.css-block-child > a:hover {
+  color: #037286;
+  -webkit-transition: none;
+  transition: none;
+}
+
+.css-block-child > a:hover .help-info-org {
+  display: block;
+}
+
+.css-block-child a {
+  text-align: center;
+  font-size: 15px;
+  letter-spacing: 1.04px;
+  line-height: 1.3;
+  color: #000;
+}
+
+.css-block-place {
+  width: 210px;
+  height: 55px;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+          box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+  text-align: center;
+  font-size: 15px;
+  letter-spacing: 1.04px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.css-block-contract {
+  width: 160px;
+  height: 55px;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+          box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+  text-align: center;
+  font-size: 15px;
+  letter-spacing: 1.04px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.css-block-data {
+  width: 210px;
+  height: 55px;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+          box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+  text-align: center;
+  font-size: 15px;
+  letter-spacing: 1.04px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.css-block-title {
+  cursor: pointer;
+  margin: 0 15px 0 20px;
+}
+
+.css-block-phone {
+  display: none;
+  color: #037286;
+  font-weight: 500;
+  margin: 0 15px 0 20px;
+}
+
+.css-block-img {
+  cursor: pointer;
+  margin: 0 15px 0 20px;
+}
+
+.css-block-org {
+  width: 245px;
+  height: 55px;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+          box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+  text-align: center;
+  font-size: 15px;
+  letter-spacing: 1.04px;
+  line-height: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: relative;
+  color: #3F4C55;
+}
+
+.css-block-org > .css-block-title:hover {
+  color: #037286;
+  -webkit-transition: none;
+  transition: none;
+}
+
+.css-block-org > .css-block-title:hover .help-info-org {
+  display: block;
+}
+
+.css-block-stat {
+  width: 400px;
+}
+
+.css-block-stat select {
+  padding: 0 35px;
+  border: 0;
+  height: 55px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+  box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+  text-align: center;
+  font-size: 15px;
+  letter-spacing: 1.04px;
+}
+
+.css-block-license {
+  width: 210px;
+  height: 55px;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+          box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+  text-align: center;
+  font-size: 15px;
+  letter-spacing: 1.04px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.css-block-val {
+  width: 198px;
+  height: 55px;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+          box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+  text-align: center;
+  font-size: 15px;
+  letter-spacing: 1.04px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.css-social-all {
+  color: #037286;
+  margin-left: auto;
+  margin-bottom: 60px;
+  display: block;
+  text-decoration: underline;
+  width: 100px;
+}
+
+.css-social-all span {
+  font-size: 14px;
+  letter-spacing: 0.14px;
+  display: block;
+}
+
+.css-social-all:hover {
+  color: #037286;
+}
+
 .css-social-main {
   display: -webkit-box;
   display: -webkit-flex;
@@ -15245,7 +16464,7 @@ select.table-education-name {
 }
 
 .css-social-info {
-  padding-top: 155px;
+  padding-top: 110px;
 }
 
 .css-social-info-wrapp {
@@ -15296,8 +16515,10 @@ select.table-education-name {
   margin-bottom: 60px;
 }
 
-.css-social-title p span {
+.css-social-title p > span {
   color: #037286;
+  font-size: 25px;
+  letter-spacing: 0.83px;
 }
 
 .css-social-title span {
@@ -15310,7 +16531,6 @@ select.table-education-name {
 .css-social-img {
   position: relative;
   right: 510px;
-  padding-top: 50px;
 }
 
 .css-social-img img {
@@ -15347,10 +16567,36 @@ select.table-education-name {
   margin-left: 30px;
 }
 
+.css-social-search input::-webkit-input-placeholder {
+  opacity: 0.4;
+  font-size: 15px;
+  letter-spacing: 1.04px;
+}
+
+.css-social-search input::-moz-placeholder {
+  opacity: 0.4;
+  font-size: 15px;
+  letter-spacing: 1.04px;
+}
+
+.css-social-search input:-ms-input-placeholder {
+  opacity: 0.4;
+  font-size: 15px;
+  letter-spacing: 1.04px;
+}
+
+.css-social-search input::placeholder {
+  opacity: 0.4;
+  font-size: 15px;
+  letter-spacing: 1.04px;
+}
+
 .css-social-add {
   width: 160px;
   text-align: center;
   display: block;
+  cursor: pointer;
+  position: relative;
 }
 
 .css-social-add i {
@@ -15383,6 +16629,7 @@ select.table-education-name {
   font-size: 15px;
   letter-spacing: 1.04px;
   color: #3F4C55;
+  cursor: pointer;
 }
 
 .footer {

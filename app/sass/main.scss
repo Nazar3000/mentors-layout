@@ -327,6 +327,41 @@ input[type="radio"]:checked:after {
   }
 }
 
+// help bage
+
+.help-info-org{
+  position: absolute;
+  top: -35px;
+  right: -5px;
+  box-shadow: -1px 0 5px 0 rgba(129,127,127,0.5);
+  padding: 10px;
+  background: #fff;
+  border-radius: 8px;
+  font-weight: 500;
+  display: none;
+  &:before{
+    content: ' ';
+    position: absolute;
+    left: 10px;
+    bottom: -10px;
+    border-left: 10px solid #fff;
+    border-bottom: 10px solid transparent;
+    border-top: 1px solid #fff;
+    -webkit-filter: drop-shadow(-3.7px 4.7px 2.7px rgba(0, 0, 0, 0.15));
+    filter: drop-shadow(-3.7px 4.7px 2.7px rgba(0, 0, 0, 0.15));
+  }
+  & span{
+    font-size: 9px;
+    letter-spacing: 0.5px;
+    color: $grafit-color;
+    display: block;
+    text-align: left;
+    line-height: 1.5;
+  }
+}
+
+
+
 @import 'media';
 @import "fonts";
 
