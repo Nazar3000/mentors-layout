@@ -395,6 +395,33 @@ $(document).ready(function () {
 
 
 
+    // open diary block team
+
+    $('.team-diary-more').click(function (event) {
+        event.preventDefault();
+
+        var parent = $(this).parents('.team-diary-wrapp');
+        var parent_id = parent.data('id');
+
+        parent.slideToggle(400);
+        $('.team-diary-content[data-id=' + parent_id + ']').slideToggle(400);
+
+    });
+
+    $('.team-diary-close').click(function (event) {
+        event.preventDefault();
+        var parent = $(this).parents('.team-diary-content');
+        var parent_id = parent.data('id');
+
+        $(this).parents('.team-diary-content').slideToggle(400);
+        $('.team-diary-wrapp[data-id=' + parent_id + ']').slideToggle(400);
+    });
+
+
+
+
+
+
 
 });
 
