@@ -2,11 +2,92 @@
   width: 1055px;
   margin: 0 auto;
   padding: 100px;
+  &-carousel{
+    & .owl-nav{
+      display: none;
+    }
+    & .owl{
+      &-prev:focus, &-dot:focus{
+        outline: 0;
+      }
+      &-next:focus{
+        outline: 0;
+      }
+      &-dot{
+        width: 21px;
+        height: 21px;
+        background-color: #368cca!important;
+        opacity: 0.3;
+        margin: 0 20px;
+        border: none;
+        border-radius: 50px;
+        &.active{
+          opacity: 1;
+        }
+      }
+      &-dots{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
   &-diary{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 45px;
+    margin-bottom: 30px;
+    padding: 5px;
+    &-more, &-close{
+      font-size: 14px;
+      letter-spacing: 0.14px;
+      color: $css-color;
+      text-decoration: underline;
+      cursor: pointer;
+      width: 90px;
+      margin-left: auto;
+    }
+    &-content{
+      display: none;
+      padding: 60px;
+      border-radius: 8px;
+      background-color: #FFFFFF;
+      box-shadow: -2px -1px 9px 0 rgba(0,0,0,0.17);
+      margin: 5px;
+      & h3{
+        font-size: 30px;
+        font-weight: bold;
+        letter-spacing: 1.16px;
+        color: $grafit-color;
+        margin-bottom: 0;
+      }
+      & hr{
+        margin: 18px 0;
+      }
+      & > span{
+        font-size: 18px;
+        font-weight: bold;
+        letter-spacing: 0.6px;
+        color: $grafit-color;
+        display: block;
+        margin-bottom: 10px;
+      }
+      & div{
+        & span{
+          font-size: 18px;
+          font-weight: bold;
+          letter-spacing: 0.6px;
+          color: $css-color;
+          display: block;
+          margin-bottom: 10px;
+        }
+        & p{
+          font-size: 14px;
+          letter-spacing: 0.54px;
+          color: $grafit-color;
+        }
+      }
+    }
     &-title{
       width: 475px;
       border-radius: 8px;
@@ -38,14 +119,6 @@
         letter-spacing: 0.54px;
         color: $grafit-color;
         margin-bottom: 10px;
-      }
-      & a{
-        font-size: 14px;
-        letter-spacing: 0.14px;
-        color: $css-color;
-        text-decoration: underline;
-        text-align: right;
-        display: block;
       }
     }
     &-img{
@@ -224,7 +297,6 @@
       letter-spacing: 0.75px;
       color: $css-color;
     }
-
     &-wrapp{
       display: flex;
       & div{
@@ -260,6 +332,22 @@
       box-shadow: -2px -1px 9px 0 rgba(0,0,0,0.17);
       display: flex;
       & div{
+        & a{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+          width: 30px;
+          height: 30px;
+          border-radius: 100%;
+          background: #037286;
+          color: #fff;
+        }
+        a, a:hover {
+          text-decoration: none;
+          -webkit-transition: 0.5s ease;
+          transition: 0.5s ease;
+        }
         &:last-child{
           margin-left: auto;
         }
@@ -280,6 +368,16 @@
     }
   }
 }
+//
+//.owl-carousel{
+//  & .team-diary-wrapp{
+//    & .owl-nav{
+//      display: none;
+//    }
+//  }
+//}
+
+
 
 
 
@@ -290,8 +388,6 @@
     }
   }
 }
-
-
 
 .team-diary-img{
   & .owl{
@@ -342,9 +438,4 @@
       }
     }
   }
-}
-
-
-.team-diary-content{
-
 }

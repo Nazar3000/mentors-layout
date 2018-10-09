@@ -400,7 +400,7 @@ $(document).ready(function () {
     $('.team-diary-more').click(function (event) {
         event.preventDefault();
 
-        var parent = $(this).parents('.team-diary-wrapp');
+        var parent = $(this).parents('.team-diary');
         var parent_id = parent.data('id');
 
         parent.slideToggle(400);
@@ -414,7 +414,7 @@ $(document).ready(function () {
         var parent_id = parent.data('id');
 
         $(this).parents('.team-diary-content').slideToggle(400);
-        $('.team-diary-wrapp[data-id=' + parent_id + ']').slideToggle(400);
+        $('.team-diary[data-id=' + parent_id + ']').slideToggle(400);
     });
 
 

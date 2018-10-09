@@ -16669,6 +16669,49 @@ select.table-education-name {
   padding: 100px;
 }
 
+.team-carousel .owl-nav {
+  display: none;
+}
+
+.team-carousel .owl-prev:focus,
+.team-carousel .owl-dot:focus {
+  outline: 0;
+}
+
+.team-carousel .owl-next:focus {
+  outline: 0;
+}
+
+.team-carousel .owl-dot {
+  width: 21px;
+  height: 21px;
+  background-color: #368cca !important;
+  opacity: 0.3;
+  margin: 0 20px;
+  border: none;
+  -webkit-border-radius: 50px;
+          border-radius: 50px;
+}
+
+.team-carousel .owl-dot.active {
+  opacity: 1;
+}
+
+.team-carousel .owl-dots {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .team-diary {
   display: -webkit-box;
   display: -webkit-flex;
@@ -16681,7 +16724,66 @@ select.table-education-name {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  margin-bottom: 45px;
+  margin-bottom: 30px;
+  padding: 5px;
+}
+
+.team-diary-more,
+.team-diary-close {
+  font-size: 14px;
+  letter-spacing: 0.14px;
+  color: #037286;
+  text-decoration: underline;
+  cursor: pointer;
+  width: 90px;
+  margin-left: auto;
+}
+
+.team-diary-content {
+  display: none;
+  padding: 60px;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+          box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+  margin: 5px;
+}
+
+.team-diary-content h3 {
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 1.16px;
+  color: #3F4C55;
+  margin-bottom: 0;
+}
+
+.team-diary-content hr {
+  margin: 18px 0;
+}
+
+.team-diary-content > span {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.6px;
+  color: #3F4C55;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.team-diary-content div span {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.6px;
+  color: #037286;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.team-diary-content div p {
+  font-size: 14px;
+  letter-spacing: 0.54px;
+  color: #3F4C55;
 }
 
 .team-diary-title {
@@ -16722,15 +16824,6 @@ select.table-education-name {
   letter-spacing: 0.54px;
   color: #3F4C55;
   margin-bottom: 10px;
-}
-
-.team-diary-title a {
-  font-size: 14px;
-  letter-spacing: 0.14px;
-  color: #037286;
-  text-decoration: underline;
-  text-align: right;
-  display: block;
 }
 
 .team-diary-img {
@@ -17020,6 +17113,37 @@ select.table-education-name {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+}
+
+.team-card-title div a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+  background: #037286;
+  color: #fff;
+}
+
+.team-card-title div a,
+.team-card-title div a:hover {
+  text-decoration: none;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 .team-card-title div:last-child {
