@@ -1,9 +1,9 @@
 .css {
-  &-big-card{
+  &-big-card {
     display: none;
     padding: 5px;
   }
-  &-info{
+  &-info {
     font-size: 14px;
     letter-spacing: 0.97px;
     line-height: 16px;
@@ -12,18 +12,18 @@
     font-weight: 500;
     cursor: default;
   }
-  &-org{
+  &-org {
     border-radius: 8px;
     background-color: #FFFFFF;
-    box-shadow: -2px -1px 9px 0 rgba(0,0,0,0.17);
+    box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
     padding: 40px 25px 50px 75px;
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
     margin-bottom: 40px;
-    &-icon{
+    &-icon {
       margin-right: 26px;
-      & label{
+      & label {
         width: 14px;
         height: 14px;
         border-radius: 50px;
@@ -37,63 +37,63 @@
         cursor: pointer;
       }
     }
-    &-all{
+    &-all {
       color: $css-color;
       margin-left: auto;
       margin-bottom: 10px;
       display: block;
       text-decoration: underline;
       width: 100px;
-      &:hover{
+      &:hover {
         color: $css-color;
       }
-      & span{
+      & span {
         font-size: 14px;
         letter-spacing: 0.14px;
         display: block;
       }
     }
-    &-block{
+    &-block {
       display: flex;
       justify-content: space-around;
       align-items: center;
       flex-wrap: wrap;
       margin-bottom: 20px;
     }
-    &-mentors{
+    &-mentors {
       width: 245px;
       display: flex;
       justify-content: flex-end;
       align-items: center;
       cursor: default;
-      & span{
+      & span {
         margin: 0 10px 0 50px;
         cursor: pointer;
       }
     }
-    &-child{
+    &-child {
       width: 210px;
       display: flex;
       justify-content: flex-end;
       align-items: center;
       cursor: default;
-      & span{
+      & span {
         margin: 0 10px 0 50px;
         cursor: pointer;
       }
     }
-    &-place{
+    &-place {
       width: 210px;
     }
-    &-contract{
+    &-contract {
       width: 160px;
       line-height: 1.2;
     }
-    &-data{
+    &-data {
       width: 210px;
       line-height: 1.2;
     }
-    &-header{
+    &-header {
       display: flex;
       justify-content: space-around;
       align-items: center;
@@ -108,7 +108,7 @@
       text-align: center;
       margin-bottom: 20px;
     }
-    &-search{
+    &-search {
       width: 680px;
       display: flex;
       align-items: center;
@@ -119,7 +119,7 @@
       margin-bottom: 40px;
       z-index: 1;
       position: relative;
-      & input{
+      & input {
         border: 0;
         background: transparent;
         width: 100%;
@@ -131,28 +131,28 @@
         }
       }
     }
-    &-img{
+    &-img {
       display: flex;
       align-items: center;
       justify-content: center;
       margin-right: 50px;
-      &-edit{
+      &-edit {
         display: flex;
         align-items: center;
         justify-content: center;
         margin-right: 10px;
-        & img{
+        & img {
           width: 115px;
           object-fit: cover;
         }
       }
-      & img{
+      & img {
         width: 115px;
         object-fit: cover;
       }
     }
-    &-title{
-      & textarea{
+    &-title {
+      & textarea {
         border: 0;
         width: 214px;
         font-size: 30px;
@@ -163,14 +163,14 @@
         margin-bottom: 25px;
         display: block;
       }
-      &-wrapp{
+      &-wrapp {
         display: flex;
         justify-content: space-between;
-        & div{
+        & div {
           display: flex;
           flex-direction: row;
           align-items: flex-end;
-          & > input{
+          & > input {
             font-size: 36px;
             font-weight: bold;
             letter-spacing: 1.2px;
@@ -181,10 +181,10 @@
             margin-right: 5px;
             border: 0;
           }
-          &:first-child{
+          &:first-child {
             margin-right: 15px;
           }
-          & p{
+          & p {
             font-size: 36px;
             font-weight: bold;
             letter-spacing: 1.2px;
@@ -193,7 +193,7 @@
             height: 40px;
             margin-right: 5px;
           }
-          & span{
+          & span {
             font-size: 10px;
             font-weight: bold;
             letter-spacing: 0.33px;
@@ -203,14 +203,14 @@
           }
         }
       }
-      & h3{
+      & h3 {
         font-size: 24px;
         font-weight: bold;
         letter-spacing: 0.8px;
         color: $css-color;
         text-transform: uppercase;
       }
-      & > p{
+      & > p {
         font-size: 30px;
         font-weight: bold;
         letter-spacing: 1px;
@@ -219,14 +219,14 @@
         margin-bottom: 25px;
       }
     }
-    &-line{
+    &-line {
       width: 1px;
-      background: rgba(151,151,151,0.23);
+      background: rgba(151, 151, 151, 0.23);
       margin: 0 60px;
     }
-    &-info{
+    &-info {
       margin-right: 60px;
-      & > input{
+      & > input {
         border: 0;
         border-bottom: 1px solid rgba(151, 151, 151, 0.5);
         font-size: 12px;
@@ -236,7 +236,7 @@
         margin-bottom: 10px;
         display: block;
       }
-      & span{
+      & span {
         font-size: 10px;
         font-weight: bold;
         letter-spacing: 0.46px;
@@ -244,14 +244,14 @@
         display: block;
         margin-bottom: 5px;
       }
-      & p{
+      & p {
         font-size: 12px;
         letter-spacing: 0.56px;
         color: $grafit-color;
         font-weight: 500;
         margin-bottom: 10px;
       }
-      & a{
+      & a {
         display: block;
         color: $css-color;
         font-size: 12px;
@@ -260,9 +260,9 @@
         font-weight: 500;
       }
     }
-    &-mentor{
+    &-mentor {
       width: 200px;
-      & > span{
+      & > span {
         font-size: 10px;
         font-weight: bold;
         letter-spacing: 0.46px;
@@ -270,7 +270,7 @@
         display: block;
         margin-bottom: 5px;
       }
-      & select{
+      & select {
         border: 0;
         font-size: 12px;
         letter-spacing: 0.56px;
@@ -280,12 +280,12 @@
         display: block;
       }
     }
-    &-doc{
+    &-doc {
       display: flex;
       justify-content: flex-start;
       align-items: center;
-      & div{
-        & input{
+      & div {
+        & input {
           font-size: 14px;
           letter-spacing: 0.46px;
           color: $grafit-color;
@@ -294,26 +294,26 @@
           border-bottom: 1px solid rgba(151, 151, 151, 0.5);
           width: 100%;
         }
-        & span{
+        & span {
           font-size: 10px;
           font-weight: bold;
           letter-spacing: 0.33px;
           color: $grafit-color;
         }
-        & p{
+        & p {
           font-size: 14px;
           letter-spacing: 0.46px;
           color: $grafit-color;
           margin-bottom: 0;
         }
-        &:first-child{
+        &:first-child {
           margin-right: 25px;
         }
       }
     }
-    &-edit{
+    &-edit {
       margin-left: auto;
-      & a{
+      & a {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -326,8 +326,8 @@
       }
     }
   }
-  &-del{
-    & i{
+  &-del {
+    & i {
       color: $css-color;
       font-size: 14px;
       cursor: pointer;
@@ -336,13 +336,13 @@
       justify-content: center;
     }
   }
-  &-line-modal{
+  &-line-modal {
     width: 100%;
     height: 1px;
-    background:rgba(151, 151, 151, 0.23);
+    background: rgba(151, 151, 151, 0.23);
     margin: 25px 0;
   }
-  &-slip{
+  &-slip {
     display: none;
     position: fixed;
     left: 0;
@@ -351,15 +351,15 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
     z-index: 15;
-    &-choice{
+    &-choice {
       display: flex;
       justify-content: flex-start;
-      & div{
-        & button{
+      & div {
+        & button {
           width: 116px;
           border-radius: 4px;
           background-color: $css-color;
-          box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
           border: 0;
           color: #fff;
           font-size: 12px;
@@ -368,25 +368,25 @@
           padding: 8px 0;
           margin-top: 10px;
           cursor: pointer;
-          &:hover{
+          &:hover {
             box-shadow: 2px 5px 10px 0 $css-color;
           }
         }
-        &:first-child{
+        &:first-child {
           width: 55%;
           margin-right: 30px;
         }
-        &:last-child{
+        &:last-child {
           width: 45%;
         }
-        & select{
+        & select {
           font-size: 12px;
           letter-spacing: 0.56px;
           border: 0;
           width: 100%;
           margin-bottom: 13px;
         }
-        & input{
+        & input {
           font-size: 12px;
           letter-spacing: 0.56px;
           border: 0;
@@ -395,7 +395,7 @@
           margin-bottom: 10px;
         }
       }
-      & span{
+      & span {
         display: block;
         font-size: 10px;
         font-weight: bold;
@@ -403,8 +403,8 @@
         color: $css-color;
       }
     }
-    &-input{
-      &-value{
+    &-input {
+      &-value {
         width: 140px;
         font-size: 10px;
         font-weight: bold;
@@ -414,9 +414,9 @@
         border-bottom: 1px solid rgba(151, 151, 151, 0.5);
       }
     }
-    &-icon{
+    &-icon {
       margin-right: 24px;
-      & label{
+      & label {
         width: 14px;
         height: 14px;
         border-radius: 50px;
@@ -430,17 +430,17 @@
         cursor: pointer;
       }
     }
-    &-modal{
+    &-modal {
       border-radius: 8px;
       background-color: #FFFFFF;
-      box-shadow: -2px -1px 9px 0 rgba(0,0,0,0.17);
+      box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
       width: 600px;
       margin: 0 auto;
       position: relative;
       top: 3%;
       padding: 40px 25px 50px 50px;
     }
-    &-close{
+    &-close {
       width: 25px;
       text-align: center;
       margin-left: auto;
@@ -452,18 +452,18 @@
       top: 0;
       right: 25px;
     }
-    &-main{
+    &-main {
       display: flex;
       justify-content: flex-start;
-      & div{
-        & p{
+      & div {
+        & p {
           font-size: 24px;
           font-weight: bold;
           letter-spacing: 0.8px;
           color: $css-color;
           margin-bottom: 5px;
         }
-        & span{
+        & span {
           width: 150px;
           font-size: 10px;
           font-weight: bold;
@@ -471,9 +471,9 @@
           color: $grafit-color;
           display: block;
         }
-        & > textarea{
+        & > textarea {
           width: 210px;
-          height: 62px!important;
+          height: 62px !important;
           border: 0;
           font-size: 24px;
           font-weight: bold;
@@ -481,7 +481,7 @@
           color: $grafit-color;
           line-height: 1.3;
           resize: none;
-          &::placeholder{
+          &::placeholder {
             font-size: 24px;
             font-weight: bold;
             letter-spacing: 0.8px;
@@ -490,7 +490,7 @@
           }
         }
       }
-      & img{
+      & img {
         width: 108px;
         height: 134px;
         object-fit: cover;
@@ -552,17 +552,21 @@
     }
   }
   &-block {
-    &-sort-img{
+    &-mentor {
+      &-link {
+        text-align: center;
+      }
+    }
+    &-sort-img {
       cursor: pointer;
       margin: 0 15px 0 20px;
     }
-    &-mentors{
+    &-mentors {
       width: 245px;
       height: 55px;
       border-radius: 8px;
       background-color: #FFFFFF;
       box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
-      text-align: center;
       font-size: 15px;
       letter-spacing: 1.04px;
       line-height: 1;
@@ -570,24 +574,25 @@
       align-items: center;
       justify-content: flex-end;
       position: relative;
-      & > a:hover{
+      cursor: pointer;
+      & > :hover {
         color: $css-color;
         transition: none;
       }
-      & > a:hover .help-info-org {
+      & > :hover .help-info-org {
         display: block;
       }
-      &-phone{
+      &-phone {
         display: none;
         color: #037286;
         font-weight: 500;
         margin: 0 15px 0 20px;
       }
-      & a{
+      & a {
         color: $grafit-color;
       }
     }
-    &-child{
+    &-child {
       width: 210px;
       height: 55px;
       border-radius: 8px;
@@ -598,14 +603,14 @@
       align-items: center;
       flex-wrap: wrap;
       position: relative;
-      & > a:hover{
+      & > a:hover {
         color: $css-color;
         transition: none;
       }
       & > a:hover .help-info-org {
         display: block;
       }
-      & a{
+      & a {
         text-align: center;
         font-size: 15px;
         letter-spacing: 1.04px;
@@ -613,7 +618,7 @@
         color: $black-color;
       }
     }
-    &-place{
+    &-place {
       width: 210px;
       height: 55px;
       border-radius: 8px;
@@ -627,7 +632,7 @@
       align-items: center;
       flex-wrap: wrap;
     }
-    &-contract{
+    &-contract {
       width: 160px;
       height: 55px;
       border-radius: 8px;
@@ -641,7 +646,7 @@
       align-items: center;
       flex-wrap: wrap;
     }
-    &-data{
+    &-data {
       width: 210px;
       height: 55px;
       border-radius: 8px;
@@ -740,6 +745,20 @@
     }
   }
   &-social {
+    position: relative;
+    z-index: 1;
+    &:before {
+      background-image: url(../img/css-bg.svg);
+      background-repeat: no-repeat;
+      position: absolute;
+      content: "";
+      background-size: 50%;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+      right: 100px;
+      top: 80px;
+    }
     &-all {
       color: $css-color;
       margin-left: auto;
@@ -785,6 +804,9 @@
         font-weight: 500;
         letter-spacing: 1.04px;
         line-height: 18px;
+        &:hover {
+          box-shadow: 2px 5px 10px 0 $css-color;
+        }
       }
     }
     &-title {

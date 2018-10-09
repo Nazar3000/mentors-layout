@@ -383,6 +383,16 @@ $(document).ready(function () {
     });
 
 
+    // open modal mentor social
+
+    $('.css-block-child-link').click(function () {
+        $('.team-modal').fadeIn(500);
+    });
+
+    $('.team-close').click(function () {
+        $('.team-modal').fadeOut(400);
+    });
+
 
 
 
