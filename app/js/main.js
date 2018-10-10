@@ -382,19 +382,6 @@ $(document).ready(function () {
         $('.css-big-card').slideToggle(500);
     });
 
-
-    // open modal mentor social
-
-    $('.css-block-child-link').click(function () {
-        $('.team-modal').fadeIn(500);
-    });
-
-    $('.team-close').click(function () {
-        $('.team-modal').fadeOut(400);
-    });
-
-
-
     // open diary block team
 
     $('.team-diary-more').click(function (event) {
@@ -416,6 +403,18 @@ $(document).ready(function () {
         $(this).parents('.team-diary-content').slideToggle(400);
         $('.team-diary[data-id=' + parent_id + ']').slideToggle(400);
     });
+
+
+    // open modal mentor social
+
+    $('.css-block-mentor-link').click(function () {
+        $('.social-modal').fadeIn(500);
+    });
+
+    $('.social-card-close').click(function () {
+        $('.social-modal').fadeOut(400);
+    });
+
 
 
 
