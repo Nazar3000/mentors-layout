@@ -16747,7 +16747,7 @@ select.table-education-name {
   background-color: #FFFFFF;
   -webkit-box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
           box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
-  margin: 5px;
+  margin: 5px 5px 50px;
 }
 
 .team-diary-content h3 {
@@ -17076,7 +17076,18 @@ select.table-education-name {
 }
 
 .team-card-wrapp div:first-child {
-  margin-right: 100px;
+  margin-right: 115px;
+  width: 168px;
+}
+
+.team-card-wrapp div input {
+  font-size: 12px;
+  letter-spacing: 0.56px;
+  border: 0;
+  width: auto;
+  border-bottom: 1px solid rgba(151, 151, 151, 0.5);
+  margin-bottom: 10px;
+  display: block;
 }
 
 .team-card-wrapp div select {
@@ -17102,7 +17113,7 @@ select.table-education-name {
 }
 
 .team-card-title {
-  width: 490px;
+  width: 500px;
   padding: 25px 25px 40px 60px;
   -webkit-border-radius: 8px;
           border-radius: 8px;
@@ -17113,6 +17124,8 @@ select.table-education-name {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
 }
 
 .team-card-title div a {
