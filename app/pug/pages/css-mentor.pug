@@ -34,12 +34,65 @@ block pageContent
                             img(src='img/search.svg')
                             input(type='text' placeholder='Почніть вводити дані тут')
 
-                        a.css-mentor-add(href='')
+                        .css-mentor-add
                             i.fas.fa-plus
                             span Додати Наставника
 
+
+
                     .css-mentor-img
                         img(src='img/baby-nice.jpg')
+
+
+                // start edit modal mentor
+                .social-modal
+                    .social-modal-card
+                        .social-info-edit
+                            .social-card-img-edit
+                                img(src='img/empty-img.png', alt='')
+                            .social-card-icon
+                                label.add-img(for='files')
+                                    i.fas.fa-plus
+                                input#files(style='display:none;', type='file')
+                                a.delete-img(href='', title='Delete image')
+                                    i.fas.fa-trash
+                            .social-card-title
+                                h2 Наставник
+                                input.social-input-name(type='text' placeholder='Имя')
+                                input.social-input-surname(type='text' placeholder='Фамилия')
+                                span Дата народження
+                                input.social-input-birth(type='text')
+                            .social-card-edit
+                                i.fas.fa-check
+                            .social-card-close
+                                i.fas.fa-times
+
+                        .social-card-line
+                        .social-card-stat
+                            .social-card-wrapp
+                                div
+                                    span Статус:
+                                    select.triangle-green
+                                        option Кандидат в наставники
+                                        option Кандидат в наставники
+                                        option Кандидат в наставники
+                                    span Телефон:
+                                    input(type='text')
+                                    span Email:
+                                    input(type='text')
+                                    span Адреса:
+                                    input(type='text')
+                                div
+                                    span Відповідальний:
+                                    select.triangle-green
+                                        option РЦСССДМ
+                                        option РЦСССДМ
+                                        option РЦСССДМ
+                                    span Ліцензія:
+                                    input(type='text')
+                                    span Дата подачі анкети:
+                                    input(type='text')
+                // end edit modal mentor
 
                 .css-table
                     .css-table-header

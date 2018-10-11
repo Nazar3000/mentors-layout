@@ -7,6 +7,7 @@
     "gulp": "^3.9.1",
     "lightslider": "^1.1.6",
     "particlesjs": "^2.2.2",
+    "select2": "^4.0.6-rc.1",
     "shufflejs": "^5.1.2",
     "swiper": "^4.1.6"
   },

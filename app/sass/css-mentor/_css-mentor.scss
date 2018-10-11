@@ -425,6 +425,7 @@
       width: 160px;
       text-align: center;
       display: block;
+      cursor: pointer;
       & > i {
         @include flex-center-center;
         width: 30px;

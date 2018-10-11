@@ -210,10 +210,10 @@ $(document).ready(function () {
     $(function () {
         $.fn.scrollToTop = function () {
             $(this).hide().removeAttr("href");
-            if ($(window).scrollTop() >= "250") $(this).fadeIn("slow")
+            if ($(window).scrollTop() >= "250") $(this).fadeIn("slow");
             var scrollDiv = $(this);
             $(window).scroll(function () {
-                if ($(window).scrollTop() <= "250") $(scrollDiv).fadeOut("slow")
+                if ($(window).scrollTop() <= "250") $(scrollDiv).fadeOut("slow");
                 else $(scrollDiv).fadeIn("slow")
             });
             $(this).click(function () {
@@ -339,11 +339,6 @@ $(document).ready(function () {
     });
 
 
-
-
-
-
-
     // sort css-org click
 
     $('.css-org-sort-mentor').click(function () { // при клике на рисунок
@@ -415,12 +410,14 @@ $(document).ready(function () {
         $('.social-modal').fadeOut(400);
     });
 
+    // open modal mentor
+    $('.css-mentor-add').click(function () {
+        $('.social-modal').fadeIn(500);
+    });
 
-
-
-
-
-
+    $('.social-card-close').click(function () {
+        $('.social-modal').fadeOut(400);
+    });
 
 });
 
