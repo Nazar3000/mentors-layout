@@ -920,13 +920,11 @@ input[type="radio"]:checked:after {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  -webkit-box-align: start;
+  -webkit-align-items: start;
+      -ms-flex-align: start;
+          align-items: start;
+  /*@include flex-between-center;*/
 }
 
 .main-mentor-interactiv-item p {
@@ -2608,6 +2606,94 @@ input[type="radio"]:checked:after {
   height: 1px;
   opacity: 0.2;
   z-index: -1;
+}
+
+/*style for s.b [12.10.2k18] evgeniy dont work with "gofriends"*/
+
+.main-be-mentor-line-top {
+  position: relative;
+}
+
+.main-be-mentor-line-text {
+  position: relative;
+}
+
+.test {
+  position: absolute;
+  top: 95px;
+  left: 528px;
+  font-size: 18px;
+  letter-spacing: 0.7px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.test::before {
+  content: "";
+  background: url(../img/line-md-x.png);
+  position: absolute;
+  height: 4px;
+  top: 30px;
+  left: -210px;
+  width: 235px;
+}
+
+.test::after {
+  content: "";
+  width: 4px;
+  height: 50px;
+  background-repeat: repeat;
+  background: url(../img/line-md-y.png);
+  position: absolute;
+  top: 40px;
+  right: 12px;
+}
+
+.test span {
+  position: absolute;
+  content: '';
+  width: 16px;
+  height: 16px;
+  background: url(../img/line-arrow-down.png);
+  right: 6px;
+  top: 84px;
+}
+
+.test-two {
+  width: 25%;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  left: 500px;
+  font-size: 18px;
+  letter-spacing: 0.7px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.test-two p:nth-child(2) {
+  margin-left: 30px;
+  text-transform: none;
+  font-size: 20px;
+  letter-spacing: 0.2px;
+  color: #368CCA;
+  font-weight: 600;
+  line-height: 1.2;
 }
 
 .register {
