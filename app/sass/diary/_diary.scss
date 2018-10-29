@@ -54,6 +54,7 @@
       flex-direction: column;
     }
     &-frown{
+      cursor: unset;
       margin-bottom: 35px;
       & > i{
         display: block;
@@ -131,6 +132,7 @@
       }
     }
     &-frown{
+      cursor:unset;
       display: flex;
       margin: 0 auto 10px;
       justify-content: center;
@@ -657,4 +659,8 @@
 }
 .lightSlider.lsGrabbing > * {
   cursor: move;
+}
+.form-dating-button{
+  margin:0;
+  margin-left:auto;
 }

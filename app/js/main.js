@@ -327,18 +327,60 @@ $(document).ready(function () {
 
 
     // sort css-social click phone and change
+    if ( $('#css-gr-block-img').hasClass('gr-o-block-img') ) {
 
-    $('.css-block-img').click(function () {
-        if ($(this).find('img').attr('src') == 'img/blue-tel.svg') {
+        $('.css-block-img').click(function () {
+            if ($(this).find('img').attr('src') == 'img/phone-purple.svg') {
+                $(this).find('img').attr('src', 'img/green-tel.svg');
+                $(this).siblings('.css-block-title').toggle();
+                $(this).siblings('.css-block-phone').toggle();
+            } else {
+                $(this).find('img').attr('src', 'img/phone-purple.svg');
+                $(this).siblings('.css-block-title').toggle();
+                $(this).siblings('.css-block-phone').toggle();
+            }
+        });
+
+    } else {
+        $('.css-block-img').click(function () {
+            if ($(this).find('img').attr('src') == 'img/blue-tel.svg') {
+                $(this).find('img').attr('src', 'img/green-tel.svg');
+                $(this).siblings('.css-block-title').toggle();
+                $(this).siblings('.css-block-phone').toggle();
+            } else {
+                $(this).find('img').attr('src', 'img/blue-tel.svg');
+                $(this).siblings('.css-block-title').toggle();
+                $(this).siblings('.css-block-phone').toggle();
+            }
+        });
+    }
+
+   // sort css-org click phone and change
+   if ( $('#css-gr-block-sort-img').hasClass('gr-o-block-sort-img') ) {
+    $('.css-block-sort-img').click(function () {
+        if ($(this).find('img').attr('src') == 'img/phone-purple.svg') {
             $(this).find('img').attr('src', 'img/green-tel.svg');
-            $(this).siblings('.css-block-title').toggle();
-            $(this).siblings('.css-block-phone').toggle();
+            $(this).siblings('.css-block-mentor-link').toggle();
+            $(this).siblings('.css-block-mentors-phone').toggle();
         } else {
-            $(this).find('img').attr('src', 'img/blue-tel.svg');
-            $(this).siblings('.css-block-title').toggle();
-            $(this).siblings('.css-block-phone').toggle();
+            $(this).find('img').attr('src', 'img/phone-purple.svg');
+            $(this).siblings('.css-block-mentor-link').toggle();
+            $(this).siblings('.css-block-mentors-phone').toggle();
         }
     });
+   } else {
+    $('.css-block-sort-img').click(function () {
+        if ($(this).find('img').attr('src') == 'img/blue-tel.svg') {
+            $(this).find('img').attr('src', 'img/green-tel.svg');
+            $(this).siblings('.css-block-mentor-link').toggle();
+            $(this).siblings('.css-block-mentors-phone').toggle();
+        } else {
+            $(this).find('img').attr('src', 'img/blue-tel.svg');
+            $(this).siblings('.css-block-mentor-link').toggle();
+            $(this).siblings('.css-block-mentors-phone').toggle();
+        }
+    });
+   }
 
 
     //  add social card org
@@ -370,22 +412,6 @@ $(document).ready(function () {
             $(this).find('img').attr('src', 'img/a-b.svg'); // иначе возвращяем обратно
         }
     });
-
-
-    // sort css-org click phone and change
-
-    $('.css-block-sort-img').click(function () {
-        if ($(this).find('img').attr('src') == 'img/blue-tel.svg') {
-            $(this).find('img').attr('src', 'img/green-tel.svg');
-            $(this).siblings('.css-block-mentor-link').toggle();
-            $(this).siblings('.css-block-mentors-phone').toggle();
-        } else {
-            $(this).find('img').attr('src', 'img/blue-tel.svg');
-            $(this).siblings('.css-block-mentor-link').toggle();
-            $(this).siblings('.css-block-mentors-phone').toggle();
-        }
-    });
-
 
     $('.css-block-title').click(function () {
         $('.css-big-card').slideToggle(500);
@@ -434,6 +460,15 @@ $(document).ready(function () {
     });
 
 });
-
-
-
+// sciprt s.b
+$('select option[value=placeholder]').hide();
+// test script
+var elements = document.querySelectorAll( 'a' );
+[].forEach.call(elements, function(el) {
+    if (el.style.color === '#037286') { // искомый цвет. Вместо red подставьте свое значение
+        el.style.color = '#7B57A0'; // заменяемый цвет. Вместо green поставьте свое значение
+    }
+    else {
+        console.log('1');
+    }
+});

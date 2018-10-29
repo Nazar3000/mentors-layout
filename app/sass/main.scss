@@ -359,12 +359,148 @@ input[type="radio"]:checked:after {
     line-height: 1.5;
   }
 }
-
+/*// gr-o =! gromadskya organizatio */
+.gr-o{
+  &-login{
+    & h2{
+      text-align: center;
+      font-size: 30px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      color: #3F4C55;
+      margin-bottom: 30px;
+    }
+    & &-wrapp button{
+      background: $gr-o-main;
+      &:hover{
+        box-shadow: 2px 5px 10px 0 $gr-o-main;
+      }
+    }
+    & &-wrapp a{
+      font-size: 15px;
+      letter-spacing: 0.15px;
+      color: $gr-o-main;
+      text-decoration: underline;   
+    }
+  }
+  &-footer-wrapp .gr-o-footer-btn{
+    background: $gr-o-main;
+  }
+  &-header-log{
+    z-index: 2;
+  }
+  &-header-notification &-notification-icon{
+    margin:0px 10px;
+    color: $gr-o-main;
+  }
+  &-admin &-admin-menu-off{
+    color: $gr-o-main;
+  }
+  &-social-info-wrapp &-social-link > a{
+    background-color: $gr-o-main;
+    &:hover{
+        box-shadow: 2px 5px 10px 0 $gr-o-main;
+    }
+  }
+  &-social-info-wrapp &-social-title > p > span{
+    color: $gr-o-main;
+  }
+  & &-counter{
+    &-numb{
+      color: $gr-o-main;
+    }
+  }
+  &-social-info &-social-add > i{
+    background: $gr-o-main;
+  }
+  &-table &-header{
+    background: $gr-o-main;
+  }
+  &-content &-social-all{
+    color:$gr-o-main;
+  }
+  &-content &-org-edit a{
+    background: $gr-o-main;
+  }
+  &-content &-org-title h3{
+    color:$gr-o-main;
+  }
+  &-content &-org-title-wrapp div p{
+    color: $gr-o-main;
+  }
+  &-content &-org-info span{
+    color:$gr-o-main;
+  }
+  &-content &-org-info a{
+    color:$gr-o-main;
+  }
+  &-content &-org-mentor span{
+    color:$gr-o-main;
+  }
+  &-content &-org-header{
+    background: $gr-o-main;
+  }
+  &-content &-info{
+    color:$gr-o-main;
+  }
+  &-content &-org-all{
+    color: $gr-o-main;
+  }
+  &-content &-slip-modal p{
+    color:$gr-o-main;
+  }
+  &-content &-triangle-purple{
+    background-image: url(../img/triangle-purple.svg);
+  }
+  &-content &-social-card-title h2{
+    color:$gr-o-main;
+  }
+  &-mentor &-mentor-link a{
+    background:$gr-o-main;
+  }
+  &-mentor &-mentor-title > p > span{
+    color:$gr-o-main;
+  }
+  &-header-log &-admin-two > img{
+    border-radius: 0px;
+    box-shadow:none;
+    object-fit:contain;
+    background: transparent;
+  }
+  &-content &-slip-choice span{
+    color:$gr-o-main;
+  }
+  &-content &-slip-choice div button{
+    background-color:$gr-o-main;
+    &:hover{
+      box-shadow: 2px 5px 10px 0 $gr-o-main;
+    }
+  }
+  &-content &-slip-icon label{
+    background: $gr-o-main;
+  }
+  &-content &-del i{
+    color: $gr-o-main;
+  }
+  &-content &-social-card-wrapp div > span{
+    color:$gr-o-main;
+  }
+  &-content &-social-card-wrapp p a i{
+    color:$gr-o-main;
+  }
+  &-content &-social-card-wrapp > div > a{
+    background-color:$gr-o-main;
+  }
+  &-content &-social-card-edit_close{
+    background:$gr-o-main;
+  }
+}
+/* end style for gr-o*/
 
 
 @import 'media';
 @import "fonts";
 
-// ЭТО ВСЕ МЫ ПОДКЛЮЧАЕМ КАК <link rel="stylesheet" href="css/main.css">  И НИКАК ИНАЧЕ !
+/*// ЭТО ВСЕ МЫ ПОДКЛЮЧАЕМ КАК <link rel="stylesheet" href="css/main.css">  И НИКАК ИНАЧЕ !*/
 
 

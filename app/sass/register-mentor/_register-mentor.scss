@@ -15,7 +15,9 @@
     z-index: -1;
   }
   &-wrapp{
-    @include flex-center-center;
+    display: flex;
+    align-items:center;
+    justify-content: center;
   }
   &-line{
     height: 1px;
