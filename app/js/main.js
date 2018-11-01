@@ -63,7 +63,11 @@ $(document).ready(function () {
             // animateOut: 'fadeOut',
             responsive: {
                 0: {
-                    items: 1
+                    items: 1,
+                    nav:false
+                },
+                767: {
+                    nav:true,
                 }
             }
         });
@@ -191,15 +195,18 @@ $(document).ready(function () {
     });
 
 
-
-
-
     $('.career-add').click(function () {
         $('.career-modal-reg').fadeIn(500);
+        $('.career-modal-reg').css({
+            'overflow-y': 'scroll',
+        });
+        $('body').toggleClass('body-hidden');
     });
+   
 
     $('.career-card-close').click(function () {
         $('.career-modal-reg').fadeOut(400);
+        $('body').toggleClass('body-hidden');
     });
 
     $('.complaint').click(function () {
@@ -463,12 +470,3 @@ $(document).ready(function () {
 // sciprt s.b
 $('select option[value=placeholder]').hide();
 // test script
-var elements = document.querySelectorAll( 'a' );
-[].forEach.call(elements, function(el) {
-    if (el.style.color === '#037286') { // искомый цвет. Вместо red подставьте свое значение
-        el.style.color = '#7B57A0'; // заменяемый цвет. Вместо green поставьте свое значение
-    }
-    else {
-        console.log('1');
-    }
-});

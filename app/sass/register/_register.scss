@@ -57,7 +57,8 @@
     border-radius: 8px;
     box-shadow: -2px -1px 9px 0 rgba(0,0,0,0.17);
     position: relative;
-    margin: 0 auto;
+    margin: 0 0 0 550px;
+    width: 370px;
     & input{
       display: block;
       border-radius: 2px;
@@ -99,5 +100,12 @@
       letter-spacing: 0.15px;
       color: $grafit-color;
     }
+  }
+}
+@media screen and (max-width: 767px){
+  .register-new-form{
+    margin:0px;
+    padding: 27px;
+    width: 100%;
   }
 }

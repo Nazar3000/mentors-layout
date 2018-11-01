@@ -111,3 +111,32 @@
 
 }
 
+@media screen and (max-width:767px){
+  .header{
+    padding: 15px 0px;
+    &-logo{
+      margin:0px;
+    }
+    &-wrapp{
+      flex-direction: column;
+    }
+    &-btn{
+      flex-direction: column;
+    }
+    &-login{
+      text-align: center;
+    }
+    &-donate{
+      margin:0px;
+    }
+  }
+  .video-all{
+    &-card{
+      width: 100%;
+      padding: 25px;
+    }
+    &-content{
+      flex-direction: column;
+    }
+  }
+} 

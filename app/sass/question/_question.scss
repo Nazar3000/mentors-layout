@@ -153,4 +153,27 @@
     }
   }
 }
-
+@media screen and (max-width:767px){
+  .question{
+    &-search{
+      width: 100%;
+      & > input{
+        font-size: 13px;
+      }
+    }
+    &-wrapp{
+      flex-direction: column;
+    }
+    &-left{
+      width: 100%;
+    }
+    &-right{
+      width: 100%;
+    }
+  }
+  .issues{
+    .question-slide &-content{
+      padding: 27px;
+    }
+  }
+}

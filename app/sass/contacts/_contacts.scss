@@ -93,3 +93,14 @@
     }
   }
 }
+@media screen and (max-width: 767px){
+  .contacts-container{
+    width: 100%;
+  }
+  .contacts-prof{
+    text-align: center;
+  }
+  .contacts-search{
+    font-size: 13px;
+  }
+}

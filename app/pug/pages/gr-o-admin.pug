@@ -59,7 +59,7 @@ block pageContent
                             .css-main-circle.gr-o-main-circle
                                 span 57%
 
-                    div.gr-o-wrapper-stat
+                    div
                         .css-main-item.gr-o-main-item
                             p 312
                             span
@@ -82,8 +82,80 @@ block pageContent
                                 | Стали наставниками
                             .css-main-circle.gr-o-main-circle
                                 span 57%
-
-
-
+        section.gr-o-wrapper-map
+          .container
+            .gr-o-wrapper-features-stats
+              .row
+                .col-lg-12
+                  h2.gr-o-map-subtitle Програму наставництва впроваджують:
+                .col-lg-4
+                  .gr-o-features-item
+                    img(src="../img/enterprise.svg")
+                    span.gr-o-features-item-number 346
+                  .gr-o-features-item-name Закладiв
+                .col-lg-4
+                  .gr-o-features-item 
+                    img(src="../img/hotel.svg")
+                    span.gr-o-features-item-number 796
+                  .gr-o-features-item-name ЦСССДМ
+                .col-lg-4
+                  .gr-o-features-item 
+                    img(src="../img/building.svg")
+                    span.gr-o-features-item-number.gr-o-spesnumber 33
+                  .gr-o-features-item-name Громадські #[br] організації
+            .row
+              .col-lg-12
+                h2.gr-o-map-subtitle-stats Статистика по областям
+              .col-lg-12
+                .gr-o-wrapper-map_svg
+                  include ../../img/map.svg
+            .row
+              .col-lg-12
+                h2.gr-o-subtitle-all_stats Зведена таблиця по областям
+              .col-lg-12
+                .page-form-education.gr-o-page-form-stats
+                  .table-education.gr-o-table-stats
+                      .table-education-header.gr-o-table-stats-header
+                          .table-education-main.gr-o-table-stats-main Область
+                          .table-line
+                          .table-education-start.gr-o-table-stats-start Дітей в #[br] закладах
+                          .table-line
+                          .table-education-end.gr-o-table-stats-end Дітей з #[br]наставниками
+                          .table-line
+                          .table-education-end.gr-o-table-stats-end Наставників з #[br] висовками #[br] (за весь час)
+                          .table-line
+                          .table-education-special.gr-o-table-stats-special Наставників, які #[br] пройшли курс #[br] підготовки (за весь час)
+                            img(src="../img/exchange-arrow.svg", alt="")
+                      .table-education-line.gr-o-table-stats-line
+                          .table-education-name.gr-o-table-stats-name Вінницька
+                          .table-education-input.gr-o-table-stats-input.gr-o-table-one-input
+                              div 100
+                          .table-education-input.gr-o-table-stats-input.gr-o-table-two-input
+                              div 100
+                          .table-education-input.gr-o-table-stats-input
+                              div 100
+                          .table-education-input.gr-o-table-stats-inputlast
+                              div 100
+                      .table-education-line.gr-o-table-stats-line
+                          .table-education-name.gr-o-table-stats-name Волинська
+                          .table-education-input.gr-o-table-stats-input.gr-o-table-one-input
+                              div 100
+                          .table-education-input.gr-o-table-stats-input.gr-o-table-two-input
+                              div 100
+                          .table-education-input.gr-o-table-stats-input
+                              div 100
+                          .table-education-input.gr-o-table-stats-inputlast
+                              div 100
+                      .table-education-line.gr-o-table-stats-line
+                          .table-education-name.gr-o-table-stats-name Дніпровська
+                          .table-education-input.gr-o-table-stats-input.gr-o-table-one-input
+                              div 100
+                          .table-education-input.gr-o-table-stats-input.gr-o-table-two-input
+                              div 100
+                          .table-education-input.gr-o-table-stats-input
+                              div 100
+                          .table-education-input.gr-o-table-stats-inputlast
+                              div 100
+                          
 
     include ../templates/gr-o-footer-log

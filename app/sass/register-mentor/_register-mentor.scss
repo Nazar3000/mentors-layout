@@ -82,6 +82,7 @@
     }
   }
   &-block-right{
+    width: 370px;
     background: $white-color;
     padding: 57px 70px 20px;
     border-radius: 8px;
@@ -128,5 +129,23 @@
       letter-spacing: 0.15px;
       color: $grafit-color;
     }
+  }
+}
+@media screen and (max-width: 767px){
+  .register-wrapp{
+    flex-direction: column;
+  }
+  .register-block-center{
+    margin:0px;
+    & > img{
+      width: 100%;
+    }
+  }
+  .register-block-center{
+    margin-bottom: 20px;
+  }
+  .register-block-right{
+    padding: 27px;
+    width: 100%;
   }
 }

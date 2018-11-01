@@ -38,3 +38,39 @@
     }
   }
 }
+@media screen and (max-width:767px){
+  .about-card{
+    padding: 27px;
+    width: 100%;
+  }
+  .career-search{
+    width: 100%;
+  }
+  .css-admin{
+    padding: 27px;
+  }
+  .css-admin-main{
+    flex-direction: column;
+  }
+  .css-admin-info{
+    flex-direction: column;
+  }
+  .css-admin-main-card{
+    width: 100%;
+    padding: 27px;
+  }
+  .css-admin-wrapp{
+    flex-direction: column;
+  }
+  .css-admin-card{
+    padding: 27px;
+    width: 100%;
+    flex-direction: column;
+  }
+  .css-footer-wrapp{
+    flex-direction: column;
+  }
+  .css-footer-logo{
+    margin:0px;
+  }
+}

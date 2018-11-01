@@ -167,3 +167,25 @@
     }
   }
 }
+@media screen and (max-width:767px){
+  .admin{
+    &-log{
+      &-description{
+        width: 100%;
+      }
+      &-password{
+        width: 100%;
+      }
+      &-info{
+        flex-direction: column;
+      }
+      &-head{
+        flex-direction: column;
+      }      
+      &-card{
+        padding: 27px;
+        width: 100%;
+      }
+    }
+  }
+}

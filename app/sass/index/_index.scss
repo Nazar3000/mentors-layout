@@ -1004,3 +1004,89 @@
     }
   }
 }
+@media screen and (max-width: 767px){
+  .main-mentor-interactiv{
+    flex-direction: column;
+  }
+  .main-donate-wrapp::after{
+    width: 100%;
+  }
+  .main-donate-title > p{
+    width: 100%;
+  }
+  .main-new-mentor-circle{
+    flex-direction: column;
+  }
+  .main-new-mentor-item .local-img::after{
+    content:none;
+  }
+  .main-new-mentor-item .file-img::after{
+    content: none;
+  }
+  .main-new-mentor-item .book-img::after{
+    content:none;
+  }
+  .main-new-mentor-item .filepen-img::after{
+    content:none;
+  }
+  .main-be-mentor{
+    display: none;
+  }
+  .index-video{
+    width: 100%;
+  }
+  .main-title {
+    font-size: 33px;
+    letter-spacing: 5px;
+  }
+  .main-one-description > p{
+    width: 100%;
+  }
+  .main-history-card{
+    width: 100%;
+    padding: 27px;
+    height: 100%;
+    border:solid 1px;
+    box-shadow: none;
+  }
+  .main-help h2{
+    font-size: 30px;
+    letter-spacing: 1px;
+  }
+  .main-history h2{
+    font-size: 30px;
+    letter-spacing: 1px;
+  }
+  .main-donate h2{
+    font-size: 30px;
+    letter-spacing: 1px;
+  }
+  .main-new-mentor h2{
+    font-size: 30px;
+    letter-spacing: 1px;
+  }
+  .main-mentor-issues h2{
+    font-size: 30px;
+    letter-spacing: 1px;
+  }
+  .main-one-description{
+    width: 100%;
+    padding: 15px 0px;
+  }
+  .main-one-img{
+    display: none;
+  }
+  .main-one-description > h3 {
+    text-align: center;
+  }
+  .main-history-card-about{
+    flex-direction: column;
+  }
+  .main-new-mentor-circle{
+    justify-content: center;
+    align-items: center;
+  }
+  .main-new-mentor-btn > a{
+    margin: 10px auto;
+  }
+}

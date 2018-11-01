@@ -66,3 +66,29 @@
     height: 45px;
   }
 }
+@media screen and (max-width: 767px){
+  .log-in-wrapp{
+    width: 100%;
+  }
+  .footer{
+    padding: 30px 0px;
+    &-logo{
+      margin:0px;
+      margin-right: auto;
+    }
+    &-wrapp{
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+    &-nav{
+      width: 100%;
+      flex-direction: column;
+      &-item{
+        margin:10px auto 0px 0px;
+      }
+    }
+    &-btn{
+      margin-right: auto;
+    }
+  }
+}

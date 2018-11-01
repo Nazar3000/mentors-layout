@@ -420,3 +420,109 @@
     }
   }
 }
+@media screen and (max-width: 767px){
+  .header-notification{
+    flex-direction: column;
+    &-title{
+      margin-right: auto;
+    }
+    &-icon{
+      margin-right: auto;
+    }
+  }
+  .admin{
+    &-left{
+      width: 100%;
+    }
+    &-card{
+      padding: 27px;
+      &-info {
+        justify-content: center;
+        align-items: center;
+        & img{
+          margin:0px;
+        }
+      }
+      &-name{
+        text-align: center;
+      }
+      &-birth{
+        text-align: center;
+      }
+    }
+    &-wrapp{
+      flex-direction: column;
+    }
+    &-card-info{
+      flex-direction: column;
+    }
+    &-school{
+      padding: 27px;
+      &-video{
+        &-item{
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        &-title{
+          text-align: center;
+        }
+      }
+    }
+    &-walk{
+      padding: 27px;
+      &-place{
+        flex-direction: column;
+        justify-content: flex-start;
+        & > img{
+          margin-right: auto;
+          margin-bottom: 10px;
+        }
+      }
+    }
+    &-right{
+      width: 100%;
+    }
+    &-social{
+      padding: 27px;
+      &-title{
+        width: 90%;
+        font-size: 25px;
+      }
+      &-icon{
+        margin:auto;
+      }
+      &-wrapp-icon{
+        margin-left: 0px;
+        & span{
+          margin-left: 0px;
+        }
+      }
+      &-dialog-content{
+        margin-bottom: 0px;
+      }
+    }
+    &-diary{
+      padding: 27px;
+    }
+    &-menu-on{
+      top: 100%;
+    }
+    & > img{
+      margin:0px 20px 0px 0px;
+    }
+  }
+  .worksheet{
+    padding: 27px;
+    &-history{
+      padding: 27px;
+      width: 100%;
+    }
+    &-wrapp{
+      flex-direction: column;
+    }
+  }
+  .pre-footer-prof-item{
+    width: 50%;
+  }
+}

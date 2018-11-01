@@ -664,3 +664,43 @@
   margin:0;
   margin-left:auto;
 }
+@media screen and (max-width: 767px){
+  .diary-block{
+    flex-direction: column;
+    &-wrapp{
+      flex-direction: column;
+    }
+    &-link{
+      flex-direction: column;
+    }
+    &-content{
+      padding: 0px;
+    }
+  }
+  .diary-card{
+    width: 100%;
+    padding: 27px;
+  }
+  .diary-block-open-edit{
+    padding: 27px;
+  }
+  .diary-block-link-item{
+    margin:0px;
+  }
+  .diary-slider-empty{
+    padding: 15px 0px;
+    width: 100%;
+  }
+  .diary-slider{
+    width: 100%;
+  }
+  .diary-block-left{
+    width: 100%;
+  }
+  .diary-block-input-name{
+    width: 100%;
+  }
+  .diary-block-open{
+    padding: 27px;
+  }
+}

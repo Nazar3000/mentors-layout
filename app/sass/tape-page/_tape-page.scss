@@ -213,7 +213,7 @@
     }
     &-img{
       color: $main-color;
-      font-size: 28px;
+      font-size: 18px;
       @include flex-start-center;
       cursor: pointer;
       & span{
@@ -223,15 +223,16 @@
     }
     &-edit{
       background: $main-color;
-      width: 30px;
-      height: 30px;
+      width: 20px;
+      height: 20px;
+      font-size: 10px;
       border-radius: 50px;
       color: #fff;
       @include flex-center-center;
     }
     &-trash{
       color: $main-color;
-      font-size: 28px;
+      font-size: 18px;
       margin-left: 10px;
     }
     margin-left: auto;
@@ -317,5 +318,25 @@
         align-items: center;
       }
     }
+  }
+}
+@media screen and (max-width:767px){
+  .tape-content{
+    padding: 0px;
+    & span{
+      margin:0px;
+    }
+  }
+  .tape-wrapp{
+    padding: 27px;
+    &-icon-edit{
+      justify-content: center;
+    }
+  }
+  .tape-social-icon{
+    margin:0px 15px;
+  }
+  .tape-dialog-header > p{
+    letter-spacing: 0;
   }
 }
