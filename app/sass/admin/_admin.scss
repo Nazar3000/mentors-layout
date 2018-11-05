@@ -167,7 +167,7 @@
     }
   }
 }
-@media screen and (max-width:767px){
+@media screen and (max-width:991px){
   .admin{
     &-log{
       &-description{
@@ -181,6 +181,10 @@
       }
       &-head{
         flex-direction: column;
+        & > a{
+          position: absolute;
+          right: 25px;
+        }
       }      
       &-card{
         padding: 27px;

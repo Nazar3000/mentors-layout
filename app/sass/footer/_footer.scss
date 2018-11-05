@@ -45,3 +45,19 @@
     margin-right: 130px;
   }
 }
+@media screen and (max-width:767px){
+  .footer-nav{
+    flex-direction: unset;
+    &-item{
+      margin:10px auto;
+    }
+  }
+  .footer-btn{
+    margin:0 auto;
+  }
+}
+@media screen and (min-width: 991px) and (max-width: 1024px){
+  .footer-logo{
+    margin-bottom: 25px;
+  }
+}

@@ -239,3 +239,69 @@
     }
   }
 }
+@media screen and (max-width:767px){
+  .material-doc{
+    flex-direction: column;
+  }
+  .material-block-right{
+    width: 100%;
+  }
+  .material-video{
+    flex-direction: column;
+  }
+  .material-block-frame > iframe{
+    width: 100%;
+  }
+  .material-blue-video{
+    width: 100%;
+    margin:15px 0px;
+  }
+  .material-license{
+    flex-direction: column;
+  }
+  .material-block-left{
+    margin: 0px;
+    width: 100%;
+  }
+  .material-license{
+    width: 100%;
+  }
+  .material-blue-license{
+    width: 100%;
+  }
+  .material-blue-doc{
+    width: 100%;
+  }
+  .material-block-license > p{
+    margin:10px 0px;
+    font-size: 16px;
+  }
+  .material-block-one{
+    margin: 25px 0px;
+  }
+  .material-block-two{
+    margin:25px 0px;
+  }
+  .material-block-one > p{
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .material-block-two > p{
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .material-block-three > p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .material-block-three{
+    margin:25px 0px;
+  }
+  .material-block-four{
+    margin:25px 0px;
+  }
+  .material-block-four > p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+}

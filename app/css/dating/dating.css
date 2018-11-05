@@ -129,4 +129,14 @@
 .last-input {
   margin-bottom: 50px;
 }
+
+@media screen and (max-width: 767px) {
+  .background-dating {
+    left: 0%;
+  }
+
+  .header-green {
+    padding: 15px 0px;
+  }
+}
 /*# sourceMappingURL=../../css/dating/dating.css.map */

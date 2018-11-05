@@ -1,6 +1,6 @@
 extends ../default.pug
 block pageContent
-    include ../templates/header.pug
+    include ../templates/header-admin.pug
     .content
         section.admin-link-nav
             .container
@@ -58,17 +58,6 @@ block pageContent
                                         input#files(style='display:none;', type='file')
 
 
-                                    .tape-wrapp-icon-right
-                                        .tape-social-icon
-                                            span
-                                                i.far.fa-comment
-                                            a(href='') Коментарii (3)
-                                        .tape-social-icon
-                                            span
-                                                i.far.fa-thumbs-up
-                                            a(href='') (18)
-
-
                         hr
                             
 
@@ -84,8 +73,8 @@ block pageContent
                                         .tape-author-right-wrapp
                                             a.tape-bage-edit(href='' title='Edit')
                                                 i.fas.fa-pencil-alt
-                                            a.tape-bage-trash(href='' title='Delete')
-                                                i.fas.fa-trash
+                                            //- a.tape-bage-trash(href='' title='Delete')
+                                            //-     i.fas.fa-trash
                             .tape-description
                                 p
                                     | Наша перша зустріч з вихованцем. Було спочатку страшно, але з першої секунди ми знайшли спільну мову і далі пішло “як по маслу”.  Початок покладено. Тепер найголовніше залишатися постійним, це для мене виклик, але я вірю, що впораюсь!

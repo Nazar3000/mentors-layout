@@ -67,6 +67,7 @@ $(document).ready(function () {
                     nav:false
                 },
                 767: {
+                    items: 1,
                     nav:true,
                 }
             }
@@ -188,10 +189,12 @@ $(document).ready(function () {
     // career modal
     $('.career-table-btn').click(function () {
         $('.career-modal').fadeIn(500);
+        $('body').toggleClass('body-hidden');
     });
 
     $('.career-card-close').click(function () {
         $('.career-modal').fadeOut(400);
+        $('body').toggleClass('body-hidden');
     });
 
 
@@ -206,23 +209,26 @@ $(document).ready(function () {
 
     $('.career-card-close').click(function () {
         $('.career-modal-reg').fadeOut(400);
-        $('body').toggleClass('body-hidden');
     });
 
     $('.complaint').click(function () {
         $('.complaint-modal').fadeIn(500);
+        $('body').toggleClass('body-hidden');
     });
 
     $('.complaint-close').click(function () {
         $('.complaint-modal').fadeOut(400);
+        $('body').toggleClass('body-hidden');
     });
 
     $('.rate-place').click(function () {
         $('.rate-place-modal').fadeIn(500);
+        $('body').toggleClass('body-hidden');
     });
 
     $('.rate-place-close').click(function () {
         $('.rate-place-modal').fadeOut(400);
+        $('body').toggleClass('body-hidden');
     });
 
 
