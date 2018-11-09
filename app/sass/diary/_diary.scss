@@ -719,3 +719,61 @@
     margin:0px;
   }
 }
+@media screen and (max-width: 992px){
+  .diary-block-link-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & > label{
+      display: flex;
+      align-items: center;
+      & > i{
+        margin:0px 5px;
+      }
+      justify-content: center;
+    }
+  }
+  .diary-block-frown{
+    margin:0 auto 0px;
+  }
+  .diary-block-left{
+    position: relative;
+  }
+  .diary-o-edit-icon{
+    position: absolute;
+    top: 79px;
+    right: 50px;
+  }
+  .diary-o-trash-icon{
+    position: absolute;
+    top: 77px;
+    right: 10px;
+  }
+  .diary-block-edit{
+    font-size: 13px;
+    width: 25px;
+    height: 25px;
+  }
+  .diary-block-trash{
+    font-size: 20px;
+  }
+  .diary-none-edit-item{
+    display: none;
+  }
+  .diary-block-input-date{
+    margin-bottom: 25px;
+  }
+  .diary-block-link{
+      margin: 0px 0px 20px 0px;
+      line-height: 3;
+  }
+  .diary-block-input-date{
+    font-weight: 300;
+  }
+  .diary{
+    margin-bottom: 50px;
+  }
+  .diary-block-content .form-dating-button{
+    margin:0 auto;
+  }
+}

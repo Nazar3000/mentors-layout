@@ -154,7 +154,13 @@ block pageContent
                             .diary-block-left
                                 input.diary-block-input-name(type='text' value='' placeholder='Где вы были')
                                 .diary-block-line
-                                input.diary-block-input-date(type='text' value='' placeholder='дд.мм.гг')
+                                input.diary-block-input-date(type='text' value='' placeholder='дд.мм.рiк')
+                                .diary-block-link-item.diary-o-edit-icon
+                                    a.diary-block-edit(href='')
+                                        i.fas.fa-pencil-alt
+                                .diary-block-trash.diary-o-trash-icon
+                                    a(href='')
+                                        i.fas.fa-trash
                             .diary-block-right
                                 .diary-block-link
                                     .diary-block-link-item
@@ -167,10 +173,10 @@ block pageContent
                                             span Додати фото
                                         input#filess(style='display:none;', type='file')
 
-                                    .diary-block-link-item
+                                    .diary-block-link-item.diary-none-edit-item
                                         a.diary-block-edit(href='')
                                             i.fas.fa-pencil-alt
-                                .diary-block-trash
+                                .diary-block-trash.diary-none-edit-item
                                     a(href='')
                                         i.fas.fa-trash
                         .diary-block-content
@@ -183,12 +189,11 @@ block pageContent
                             h4 Замітка для наступної зустрічі:
                             textarea(rows='4' placeholder='Замітка для наступної зустрічі:')
 
-                            a.diary-block-close(href='') Згорнути
                             input.form-dating-button(type="submit" value="Зберегти")
 
-                    .alert.alert-danger(role='alert')
-                        strong Oh snap!
-                        |  Change a few things up and try submitting again.
+                    //- .alert.alert-danger(role='alert')
+                    //-     strong Oh snap!
+                    //-     |  Change a few things up and try submitting again.
 
 
 

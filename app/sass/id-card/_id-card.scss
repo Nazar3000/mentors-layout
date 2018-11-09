@@ -150,5 +150,14 @@
 @media screen and (max-width: 767px){
   .worksheet{
     padding: 15px;
+    &-input > p{
+      font-weight: 100;
+    }
+    &-history{
+      margin-bottom: 50px;
+      & > a{
+        margin:0 auto;
+      }
+    }
   }
 }

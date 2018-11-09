@@ -1,4 +1,32 @@
 .admin{
+  &-lasheader-wrapper{
+    display: flex;
+    justify-content: space-between;
+  }
+  &-history-with-child{
+    display: flex;
+    & span{
+      width: 35px;
+      height: 35px;
+      display: flex;
+      align-items: center;
+      color: #fff;
+      justify-content: center;
+      background: rgb(54, 140, 202);
+      border-radius: 20px;
+      font-size: 12px;
+      margin-right: 5px;
+      font-weight: bold;
+    }
+    & p{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 15px;
+      letter-spacing: 2.139429px;
+      font-size: 12px;
+    }
+  }
   &-wrapp{
     display: flex;
     justify-content: space-between;
@@ -578,6 +606,9 @@
   }
 }
 @media screen and (max-width:991px){
+  .admin-school-video-title > p {
+    margin-bottom: 0px;
+  }
   .rate-place-card{
     width: 100%;
     padding: 27px;
@@ -614,7 +645,10 @@
     display: none;
   }
   .pre-footer-share{
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+  }
+  .pre-footer-mentor{
+    margin-bottom: 30px;
   }
   .pre-footer-mentor > h2{
     margin-bottom: 15px;
@@ -624,6 +658,22 @@
   }
   .tape-content{
     padding: 0px;
+  }
+  .admin-lasheader-wrapper{
+    flex-direction: column;
+  }
+  .admin-history-with-child{
+    flex-direction: column;
+    & p {
+      justify-content: flex-start;
+      letter-spacing: 1px;
+    }
+  }
+  .admin-log-head{
+    margin-bottom: 15px;
+  }
+  .admin-log{
+    padding: 40px 0px;
   }
 }
 @media screen and (min-width: 991px) and (max-width: 1024px){

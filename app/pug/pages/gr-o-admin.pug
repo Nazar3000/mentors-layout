@@ -119,19 +119,27 @@ block pageContent
                           .table-education-main.gr-o-table-stats-main Область
                           .table-line
                           .table-education-start.gr-o-table-stats-start Дітей в #[br] закладах
+                            a(href="javascript:void(0)")
+                              img(src="img/exhange-arrow.svg", alt="")
                           .table-line
                           .table-education-end.gr-o-table-stats-end Дітей з #[br]наставниками
+                            a(href="javascript:void(0)")
+                              img(src="img/exhange-arrow.svg", alt="")
                           .table-line
                           .table-education-end.gr-o-table-stats-end Наставників з #[br] висовками #[br] (за весь час)
+                            a(href="javascript:void(0)")
+                              img(src="img/exhange-arrow.svg", alt="")
                           .table-line
                           .table-education-special.gr-o-table-stats-special Наставників, які #[br] пройшли курс #[br] підготовки (за весь час)
-                            img(src="../img/exchange-arrow.svg", alt="")
+                            a(href="javascript:void(0)")
+                              img(src="img/exhange-arrow.svg", alt="")
                       .table-education-line.gr-o-table-stats-line
                           .table-education-name.gr-o-table-stats-name Вінницька
                           .table-education-input.gr-o-table-stats-input.gr-o-table-one-input
                               div 100
                           .table-education-input.gr-o-table-stats-input.gr-o-table-two-input
-                              div 100
+                              div 100 / 
+                                span.gr-o-table-stats-input_prossent 0,3%
                           .table-education-input.gr-o-table-stats-input
                               div 100
                           .table-education-input.gr-o-table-stats-inputlast
@@ -141,7 +149,8 @@ block pageContent
                           .table-education-input.gr-o-table-stats-input.gr-o-table-one-input
                               div 100
                           .table-education-input.gr-o-table-stats-input.gr-o-table-two-input
-                              div 100
+                              div 100 /
+                                span.gr-o-table-stats-input_prossent 0,27%
                           .table-education-input.gr-o-table-stats-input
                               div 100
                           .table-education-input.gr-o-table-stats-inputlast
@@ -151,11 +160,18 @@ block pageContent
                           .table-education-input.gr-o-table-stats-input.gr-o-table-one-input
                               div 100
                           .table-education-input.gr-o-table-stats-input.gr-o-table-two-input
-                              div 100
+                              div 100 / 
+                                span.gr-o-table-stats-input_prossent   0,32%
                           .table-education-input.gr-o-table-stats-input
                               div 100
                           .table-education-input.gr-o-table-stats-inputlast
                               div 100
+                div.gr-o-table-stats-links
+                  div.gr-o-table-stats-wrapper-all
+                    a(href="javascript:void(0);") Дивитися всі
+                  div.gr-o-table-stats-wrapper-download
+                    img(src='img/download.svg', alt='')
+                    a(href="#" download) Завантажити в Excel
                           
 
     include ../templates/gr-o-footer-log

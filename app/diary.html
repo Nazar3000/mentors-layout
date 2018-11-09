@@ -144,7 +144,9 @@
                   <div class="diary-block-left">
                     <input class="diary-block-input-name" type="text" value="" placeholder="Где вы были">
                     <div class="diary-block-line"></div>
-                    <input class="diary-block-input-date" type="text" value="" placeholder="дд.мм.гг">
+                    <input class="diary-block-input-date" type="text" value="" placeholder="дд.мм.рiк">
+                    <div class="diary-block-link-item diary-o-edit-icon"><a class="diary-block-edit" href=""><i class="fas fa-pencil-alt"></i></a></div>
+                    <div class="diary-block-trash diary-o-trash-icon"><a href=""><i class="fas fa-trash"></i></a></div>
                   </div>
                   <div class="diary-block-right">
                     <div class="diary-block-link">
@@ -153,9 +155,9 @@
                         <label for="files"><i class="fas fa-plus"></i><span>Додати фото</span></label>
                         <input id="filess" style="display:none;" type="file">
                       </div>
-                      <div class="diary-block-link-item"><a class="diary-block-edit" href=""><i class="fas fa-pencil-alt"></i></a></div>
+                      <div class="diary-block-link-item diary-none-edit-item"><a class="diary-block-edit" href=""><i class="fas fa-pencil-alt"></i></a></div>
                     </div>
-                    <div class="diary-block-trash"><a href=""><i class="fas fa-trash"></i></a></div>
+                    <div class="diary-block-trash diary-none-edit-item"><a href=""><i class="fas fa-trash"></i></a></div>
                   </div>
                 </div>
                 <div class="diary-block-content">
@@ -164,11 +166,10 @@
                   <h4>Спостереження за вихованцем:</h4>
                   <textarea class="alert-border" rows="4" placeholder="Спостереження за вихованцем:"></textarea>
                   <h4>Замітка для наступної зустрічі:</h4>
-                  <textarea rows="4" placeholder="Замітка для наступної зустрічі:"></textarea><a class="diary-block-close" href="">Згорнути</a>
+                  <textarea rows="4" placeholder="Замітка для наступної зустрічі:"></textarea>
                   <input class="form-dating-button" type="submit" value="Зберегти">
                 </div>
               </div>
-              <div class="alert alert-danger" role="alert"><strong>Oh snap!</strong> Change a few things up and try submitting again.</div>
             </div>
           </div>
         </section>
