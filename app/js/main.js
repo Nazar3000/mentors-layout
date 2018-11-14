@@ -471,8 +471,32 @@ $(document).ready(function () {
     $('.social-card-close').click(function () {
         $('.social-modal').fadeOut(400);
     });
+    // sciprt s.b
+    $('select option[value=placeholder]').hide();
+    // svg script
+    var allRegions = $("#ua > polygon, path#UKR322,path#UKR284,path#UKR4827,path#UKR321");
+    var mapsItem = $('.gr-o-maps-item');
 
+    allRegions.on("click", function() {
+      allRegions.removeClass("on");
+      $(this).addClass("on");
+      mapsItem.toggle();
+      $('body').toggleClass('body-hidden');
+    });
+    $('.gr-o-maps-item-closed').on('click',function(){
+      if($(this).attr('data-click-state') == 1) {
+
+          $(this).attr('data-click-state', 0);
+          mapsItem.toggle();
+          $('body').toggleClass('body-hidden');
+          allRegions.removeClass('on');
+
+    } else {
+
+      $(this).attr('data-click-state', 1);
+      mapsItem.toggle();
+      $('body').toggleClass('body-hidden');
+      allRegions.removeClass('on');
+    }
+    });
 });
-// sciprt s.b
-$('select option[value=placeholder]').hide();
-// test script

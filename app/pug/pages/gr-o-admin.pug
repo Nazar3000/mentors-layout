@@ -108,6 +108,7 @@ block pageContent
                 h2.gr-o-map-subtitle-stats Статистика по областям
               .col-lg-12
                 .gr-o-wrapper-map_svg
+                  include ../templates/maps-item.pug
                   include ../../img/map.svg
             .row
               .col-lg-12
@@ -155,7 +156,7 @@ block pageContent
                               div 100
                           .table-education-input.gr-o-table-stats-inputlast
                               div 100
-                      .table-education-line.gr-o-table-stats-line
+                      .table-education-line.gr-o-table-stats-line.gr-o-table-stats-line-last
                           .table-education-name.gr-o-table-stats-name Дніпровська
                           .table-education-input.gr-o-table-stats-input.gr-o-table-one-input
                               div 100
@@ -172,6 +173,81 @@ block pageContent
                   div.gr-o-table-stats-wrapper-download
                     img(src='img/download.svg', alt='')
                     a(href="#" download) Завантажити в Excel
+                    //- rating
+              .col-lg-7
+                .row
+                  .col-lg-12
+                    h2.gr-o-subtitle-all_stats Рейтинг ЦСССДМ з наставництва
+                  .col-lg-12
+                    .page-form-education.gr-o-page-form-stats
+                      .table-education.gr-o-table-stats
+                          .table-education-header.gr-o-table-stats-header.gr-o-table-stats-header-csssdm
+                              .table-education-main.gr-o-table-stats-main.gr-o-table-stats-main-csssdm Місце
+                              .table-line
+                              .table-education-start.gr-o-table-stats-start.gr-o-table-stats-start-csssdm ЦСССДМ
+                              .table-line
+                              .table-education-end.gr-o-table-stats-end.gr-o-table-stats-end-csssdm Бали
+                          .table-education-line.gr-o-table-stats-line
+                              .table-education-name.gr-o-table-stats-name.gr-o-table-stats-name-csssdm 1
+                              .table-education-input.gr-o-table-stats-input.gr-o-table-one-input.gr-o-table-one-input-csssdm
+                                  div Смілянський РЦСССДМ
+                              .table-education-input.gr-o-table-stats-input.gr-o-table-two-input.gr-o-table-two-input-csssdm
+                                  div 20,21
+                          .table-education-line.gr-o-table-stats-line
+                              .table-education-name.gr-o-table-stats-name.gr-o-table-stats-name-csssdm 2
+                              .table-education-input.gr-o-table-stats-input.gr-o-table-one-input.gr-o-table-one-input-csssdm
+                                  div Київський РЦСССДМ Голосіївський
+                              .table-education-input.gr-o-table-stats-input.gr-o-table-two-input.gr-o-table-two-input-csssdm
+                                  div 20,21
+                          .table-education-line.gr-o-table-stats-line.gr-o-table-stats-line-last
+                              .table-education-name.gr-o-table-stats-name.gr-o-table-stats-name-csssdm 3
+                              .table-education-input.gr-o-table-stats-input.gr-o-table-one-input.gr-o-table-one-input-csssdm
+                                  div Житомирський МЦСССДМ
+                              .table-education-input.gr-o-table-stats-input.gr-o-table-two-input.gr-o-table-two-input-csssdm
+                                  div 20,21
+                    div.gr-o-table-stats-links
+                      div.gr-o-table-stats-wrapper-all
+                        a(href="javascript:void(0);") Дивитися всі
+                      div.gr-o-table-stats-wrapper-download
+                        img(src='img/download.svg', alt='')
+                        a(href="#" download) Завантажити в Excel
+              .col-lg-7
+                .row
+                  .col-lg-12
+                    h2.gr-o-subtitle-all_stats Рейтинг установ по наставництву
+                  .col-lg-12
+                    .page-form-education.gr-o-page-form-stats
+                      .table-education.gr-o-table-stats
+                          .table-education-header.gr-o-table-stats-header.gr-o-table-stats-header-csssdm
+                              .table-education-main.gr-o-table-stats-main.gr-o-table-stats-main-csssdm Місце
+                              .table-line
+                              .table-education-start.gr-o-table-stats-start.gr-o-table-stats-start-csssdm ЦСССДМ
+                              .table-line
+                              .table-education-end.gr-o-table-stats-end.gr-o-table-stats-end-csssdm Бали
+                          .table-education-line.gr-o-table-stats-line
+                              .table-education-name.gr-o-table-stats-name.gr-o-table-stats-name-csssdm 1
+                              .table-education-input.gr-o-table-stats-input.gr-o-table-one-input.gr-o-table-one-input-csssdm
+                                  div Смілянський РЦСССДМ
+                              .table-education-input.gr-o-table-stats-input.gr-o-table-two-input.gr-o-table-two-input-csssdm
+                                  div 20,21
+                          .table-education-line.gr-o-table-stats-line
+                              .table-education-name.gr-o-table-stats-name.gr-o-table-stats-name-csssdm 2
+                              .table-education-input.gr-o-table-stats-input.gr-o-table-one-input.gr-o-table-one-input-csssdm
+                                  div Київський РЦСССДМ Голосіївський
+                              .table-education-input.gr-o-table-stats-input.gr-o-table-two-input.gr-o-table-two-input-csssdm
+                                  div 20,21
+                          .table-education-line.gr-o-table-stats-line.gr-o-table-stats-line-last
+                              .table-education-name.gr-o-table-stats-name.gr-o-table-stats-name-csssdm 3
+                              .table-education-input.gr-o-table-stats-input.gr-o-table-one-input.gr-o-table-one-input-csssdm
+                                  div Житомирський МЦСССДМ
+                              .table-education-input.gr-o-table-stats-input.gr-o-table-two-input.gr-o-table-two-input-csssdm
+                                  div 20,21
+                    div.gr-o-table-stats-links
+                      div.gr-o-table-stats-wrapper-all
+                        a(href="javascript:void(0);") Дивитися всі
+                      div.gr-o-table-stats-wrapper-download
+                        img(src='img/download.svg', alt='')
+                        a(href="#" download) Завантажити в Excel
                           
 
     include ../templates/gr-o-footer-log

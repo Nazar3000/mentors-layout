@@ -104,7 +104,53 @@
                 <h2 class="gr-o-map-subtitle-stats">Статистика по областям</h2>
               </div>
               <div class="col-lg-12">
-                <div class="gr-o-wrapper-map_svg"><?xml version="1.0" encoding="UTF-8"?>
+                <div class="gr-o-wrapper-map_svg">
+                  <div class="gr-o-maps-item"><style>
+  .body-hidden{
+  margin-right: 16px;
+  }
+  .body-hidden::before{
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  }
+</style><img class="gr-o-maps-item-background" src="../../img/maps-item-background.svg" alt="">
+                    <div class="gr-o-maps-item-infobox">
+                      <h2 class="gr-o-maps-item-infobox-title">Донецька область</h2>
+                      <div class="gr-o-maps-item-closed"><img src="../../img/maps-item-closed.svg" alt=""></div>
+                      <ul class="gr-o-maps-item-infobox-items_child">
+                        <li class="gr-o-maps-item-infobox-item_child"><span class="gr-o-maps-item-infobox-item_child-count">16 000</span>дітей в установах<a class="gr-o-maps-item-infobox-item_child-link" href="javascript:void(0)">Оновити кількість дітей</a></li>
+                        <li class="gr-o-maps-item-infobox-item_child"><span class="gr-o-maps-item-infobox-item_child-count">90</span>дітей з Наставниками (активна взаимодія) / <span class="gr-o-maps-item-infobox-item_child-stats">0,005%</span> </li>
+                        <li class="gr-o-maps-item-infobox-item_child"><span class="gr-o-maps-item-infobox-item_child-count">170</span>сертифікованих Наставников / <span class="gr-o-maps-item-infobox-item_child-stats">32%</span></li>
+                      </ul>
+                      <ul class="gr-o-maps-item-infobox-items_child">
+                        <li class="gr-o-maps-item-infobox-item_child"><span class="gr-o-maps-item-infobox-item_child-count">190</span>співбесід з психологом / <span class="gr-o-maps-item-infobox-item_child-stats">36%</span> </li>
+                        <li class="gr-o-maps-item-infobox-item_child"><span class="gr-o-maps-item-infobox-item_child-count">270</span>інфо-зустрічей / <span class="gr-o-maps-item-infobox-item_child-stats">51%</span> </li>
+                        <li class="gr-o-maps-item-infobox-item_child"><span class="gr-o-maps-item-infobox-item_child-count">530</span>подали заяву / <span class="gr-o-maps-item-infobox-item_child-stats">32%</span></li>
+                      </ul>
+                      <ul class="gr-o-maps-item-infobox-items_child">
+                        <li class="gr-o-maps-item-infobox-item_child"><span class="gr-o-maps-item-infobox-item_child-count">46</span>установ</li>
+                        <li class="gr-o-maps-item-infobox-item_child"><span class="gr-o-maps-item-infobox-item_child-count">96</span>ЦСССДМ-ів</li>
+                        <li class="gr-o-maps-item-infobox-item_child"><span class="gr-o-maps-item-infobox-item_child-count">5</span>партнерських ГО (активних)</li>
+                      </ul>
+                      <ul class="gr-o-maps-item-infobox-items_child">
+                        <li class="gr-o-maps-item-infobox-item_child"><span class="gr-o-maps-item-infobox-item_child-count">190</span>співбесід з психологом / <span class="gr-o-maps-item-infobox-item_child-stats">36%</span></li>
+                        <li class="gr-o-maps-item-infobox-item_child"><span class="gr-o-maps-item-infobox-item_child-count">0</span>пар розформовано</li>
+                      </ul>
+                    </div>
+                    <div class="gr-o-maps-item-findbox">
+                      <p class="gr-o-maps-item-findbox-title">* Щоб здійснити перехід до статистики конкретного ЦСССДМ даної області, введіть його назву в поле для пошуку або виберіть зі списку</p>
+                      <form action="POST">
+                        <div class="form-dating-wrapper-input gr-o-form-dating-wrapper-input"><img src="../../img/search.svg" alt="">
+                          <input class="form-dating-input gr-o-form-dating-input" type="text" placeholder="Почніть вводити назву ЦСССДМ тут">
+                        </div>
+                      </form>
+                    </div>
+                  </div><?xml version="1.0" encoding="UTF-8"?>
 <svg width="1104px" height="740px" viewBox="0 0 1104 740" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
     <title>ua</title>
@@ -224,7 +270,7 @@
                         <div>100</div>
                       </div>
                     </div>
-                    <div class="table-education-line gr-o-table-stats-line">
+                    <div class="table-education-line gr-o-table-stats-line gr-o-table-stats-line-last">
                       <div class="table-education-name gr-o-table-stats-name">Дніпровська</div>
                       <div class="table-education-input gr-o-table-stats-input gr-o-table-one-input">
                         <div>100</div>
@@ -244,6 +290,108 @@
                 <div class="gr-o-table-stats-links">
                   <div class="gr-o-table-stats-wrapper-all"><a href="javascript:void(0);">Дивитися всі</a></div>
                   <div class="gr-o-table-stats-wrapper-download"><img src="img/download.svg" alt=""><a href="#" download>Завантажити в Excel</a></div>
+                </div>
+              </div>
+              <div class="col-lg-7">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <h2 class="gr-o-subtitle-all_stats">Рейтинг ЦСССДМ з наставництва</h2>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="page-form-education gr-o-page-form-stats">
+                      <div class="table-education gr-o-table-stats">
+                        <div class="table-education-header gr-o-table-stats-header gr-o-table-stats-header-csssdm">
+                          <div class="table-education-main gr-o-table-stats-main gr-o-table-stats-main-csssdm">Місце</div>
+                          <div class="table-line"></div>
+                          <div class="table-education-start gr-o-table-stats-start gr-o-table-stats-start-csssdm">ЦСССДМ</div>
+                          <div class="table-line"></div>
+                          <div class="table-education-end gr-o-table-stats-end gr-o-table-stats-end-csssdm">Бали</div>
+                        </div>
+                        <div class="table-education-line gr-o-table-stats-line">
+                          <div class="table-education-name gr-o-table-stats-name gr-o-table-stats-name-csssdm">1</div>
+                          <div class="table-education-input gr-o-table-stats-input gr-o-table-one-input gr-o-table-one-input-csssdm">
+                            <div>Смілянський РЦСССДМ</div>
+                          </div>
+                          <div class="table-education-input gr-o-table-stats-input gr-o-table-two-input gr-o-table-two-input-csssdm">
+                            <div>20,21</div>
+                          </div>
+                        </div>
+                        <div class="table-education-line gr-o-table-stats-line">
+                          <div class="table-education-name gr-o-table-stats-name gr-o-table-stats-name-csssdm">2</div>
+                          <div class="table-education-input gr-o-table-stats-input gr-o-table-one-input gr-o-table-one-input-csssdm">
+                            <div>Київський РЦСССДМ Голосіївський</div>
+                          </div>
+                          <div class="table-education-input gr-o-table-stats-input gr-o-table-two-input gr-o-table-two-input-csssdm">
+                            <div>20,21</div>
+                          </div>
+                        </div>
+                        <div class="table-education-line gr-o-table-stats-line gr-o-table-stats-line-last">
+                          <div class="table-education-name gr-o-table-stats-name gr-o-table-stats-name-csssdm">3</div>
+                          <div class="table-education-input gr-o-table-stats-input gr-o-table-one-input gr-o-table-one-input-csssdm">
+                            <div>Житомирський МЦСССДМ</div>
+                          </div>
+                          <div class="table-education-input gr-o-table-stats-input gr-o-table-two-input gr-o-table-two-input-csssdm">
+                            <div>20,21</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="gr-o-table-stats-links">
+                      <div class="gr-o-table-stats-wrapper-all"><a href="javascript:void(0);">Дивитися всі</a></div>
+                      <div class="gr-o-table-stats-wrapper-download"><img src="img/download.svg" alt=""><a href="#" download>Завантажити в Excel</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-7">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <h2 class="gr-o-subtitle-all_stats">Рейтинг установ по наставництву</h2>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="page-form-education gr-o-page-form-stats">
+                      <div class="table-education gr-o-table-stats">
+                        <div class="table-education-header gr-o-table-stats-header gr-o-table-stats-header-csssdm">
+                          <div class="table-education-main gr-o-table-stats-main gr-o-table-stats-main-csssdm">Місце</div>
+                          <div class="table-line"></div>
+                          <div class="table-education-start gr-o-table-stats-start gr-o-table-stats-start-csssdm">ЦСССДМ</div>
+                          <div class="table-line"></div>
+                          <div class="table-education-end gr-o-table-stats-end gr-o-table-stats-end-csssdm">Бали</div>
+                        </div>
+                        <div class="table-education-line gr-o-table-stats-line">
+                          <div class="table-education-name gr-o-table-stats-name gr-o-table-stats-name-csssdm">1</div>
+                          <div class="table-education-input gr-o-table-stats-input gr-o-table-one-input gr-o-table-one-input-csssdm">
+                            <div>Смілянський РЦСССДМ</div>
+                          </div>
+                          <div class="table-education-input gr-o-table-stats-input gr-o-table-two-input gr-o-table-two-input-csssdm">
+                            <div>20,21</div>
+                          </div>
+                        </div>
+                        <div class="table-education-line gr-o-table-stats-line">
+                          <div class="table-education-name gr-o-table-stats-name gr-o-table-stats-name-csssdm">2</div>
+                          <div class="table-education-input gr-o-table-stats-input gr-o-table-one-input gr-o-table-one-input-csssdm">
+                            <div>Київський РЦСССДМ Голосіївський</div>
+                          </div>
+                          <div class="table-education-input gr-o-table-stats-input gr-o-table-two-input gr-o-table-two-input-csssdm">
+                            <div>20,21</div>
+                          </div>
+                        </div>
+                        <div class="table-education-line gr-o-table-stats-line gr-o-table-stats-line-last">
+                          <div class="table-education-name gr-o-table-stats-name gr-o-table-stats-name-csssdm">3</div>
+                          <div class="table-education-input gr-o-table-stats-input gr-o-table-one-input gr-o-table-one-input-csssdm">
+                            <div>Житомирський МЦСССДМ</div>
+                          </div>
+                          <div class="table-education-input gr-o-table-stats-input gr-o-table-two-input gr-o-table-two-input-csssdm">
+                            <div>20,21</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="gr-o-table-stats-links">
+                      <div class="gr-o-table-stats-wrapper-all"><a href="javascript:void(0);">Дивитися всі</a></div>
+                      <div class="gr-o-table-stats-wrapper-download"><img src="img/download.svg" alt=""><a href="#" download>Завантажити в Excel</a></div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
