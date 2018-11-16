@@ -406,3 +406,12 @@
 		left: 35px;
 	}
 }
+.gr-o-message{
+	margin:0 12px;
+}
+.gr-o-message-wrapp > a{
+	background:$gr-o-main;
+}
+.gr-o-message-check input[type=checkbox].css-font:checked ~ label:before{
+	color:$gr-o-main;
+}

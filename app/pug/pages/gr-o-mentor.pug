@@ -1,6 +1,6 @@
 extends ../default.pug
 block pageContent
-    include ../templates/gr-o-header-admin
+    include ../templates/gr-o-header-admin-two
     .content
         .container
             section.css-mentor.gr-o-mentor
@@ -21,10 +21,10 @@ block pageContent
                                     span  105 703 дітей
 
                                 .css.counter
-                                    .counter-numb 0
-                                    .counter-numb 2
-                                    .counter-numb 9
-                                    .counter-numb 0
+                                    .counter-numb.gr-o-counter-numb 0
+                                    .counter-numb.gr-o-counter-numb 2
+                                    .counter-numb.gr-o-counter-numb 9
+                                    .counter-numb.gr-o-counter-numb 0
                                 span
                                     | Дітей мають наставників
                                     br
@@ -34,7 +34,7 @@ block pageContent
                             img(src='img/search.svg')
                             input(type='text' placeholder='Почніть вводити дані тут')
 
-                        .css-mentor-add
+                        .css-mentor-add.gr-o-mentor-add
                             i.fas.fa-plus
                             span Додати Наставника
 
@@ -44,35 +44,35 @@ block pageContent
                         img(src='img/baby-nice.jpg')
 
 
-                // start edit modal mentor
+                //- // start edit modal mentor
                 .social-modal
                     .social-modal-card
                         .social-info-edit
                             .social-card-img-edit
                                 img(src='img/empty-img.png', alt='')
-                            .social-card-icon
+                            .social-card-icon.gr-o-social-card-icon
                                 label.add-img(for='files')
                                     i.fas.fa-plus
                                 input#files(style='display:none;', type='file')
                                 a.delete-img(href='', title='Delete image')
                                     i.fas.fa-trash
-                            .social-card-title
+                            .social-card-title.gr-o-social-card-title
                                 h2 Наставник
                                 input.social-input-name(type='text' placeholder='Имя')
                                 input.social-input-surname(type='text' placeholder='Фамилия')
                                 span Дата народження
                                 input.social-input-birth(type='text')
-                            .social-card-edit
+                            .social-card-edit.gr-o-social-card-edit
                                 i.fas.fa-check
-                            .social-card-close
+                            .social-card-close.gr-o-social-card-close
                                 i.fas.fa-times
 
                         .social-card-line
                         .social-card-stat
-                            .social-card-wrapp
+                            .social-card-wrapp.gr-o-social-card-wrapp
                                 div
                                     span Статус:
-                                    select.triangle-green
+                                    select.triangle-green.gr-o-triangle-purple
                                         option Кандидат в наставники
                                         option Кандидат в наставники
                                         option Кандидат в наставники
@@ -84,7 +84,7 @@ block pageContent
                                     input(type='text')
                                 div
                                     span Відповідальний:
-                                    select.triangle-green
+                                    select.triangle-green.gr-o-triangle-purple
                                         option РЦСССДМ
                                         option РЦСССДМ
                                         option РЦСССДМ
@@ -95,7 +95,7 @@ block pageContent
                 // end edit modal mentor
 
                 .css-table
-                    .css-table-header
+                    .css-table-header.gr-o-css-table-header
                         .css-table-title-mentor Наставник
                             span.sort-mentor
                                 img(src='img/a-b.svg')
@@ -117,12 +117,12 @@ block pageContent
                                 | Наставниченко
                                 br
                                 | Максим Петрович
-                            span.mentor-phone
+                            span.mentor-phone.gr-o-mentor-phone
                                 | (063) 324 43 43
-                            span.mentor-phone-img
-                                img(src='img/blue-tel.svg')
+                            span.mentor-phone-img.gr-o-mentor-phone-img
+                                img(src='img/phone-purple.svg')
                         .css-table-block-stat
-                            select.triangle-green(required='')
+                            select.triangle-green.gr-o-triangle-purple(required='')
                                 option(value='') Кандидат в наст…
                                 option Дыня
                                 option Тыква
@@ -136,7 +136,7 @@ block pageContent
                         .css-table-block-doc
                             span Є всі
                         .css-table-block-respon
-                            select.triangle-green(required='')
+                            select.triangle-green.gr-o-triangle-purple(required='')
                                 option(value='') Выбрать
                                 option Дыня
                                 option Тыква
@@ -152,7 +152,7 @@ block pageContent
                                 .css-card-info
                                     .css-card-img
                                         img(src='img/mentor.jpg', alt='')
-                                    .css-card-title
+                                    .css-card-title.gr-o-card-title
                                         h2 Наставник
                                         p
                                             | Максим
@@ -161,16 +161,16 @@ block pageContent
                                         span Дата народження
                                         p 25.03.1993 (25  років)
 
-                                    .css-card-edit
+                                    .css-card-edit.gr-o-card-edit
                                         a(href='', title='Edit')
                                             i.fas.fa-pencil-alt
                                 .css-card-line
 
                                 .css-card-stat
-                                    .css-card-stat-wrapp
+                                    .css-card-stat-wrapp.gr-o-card-stat-wrapp
                                         div
                                             span Статус:
-                                            select.triangle-green
+                                            select.triangle-green.gr-o-triangle-purple
                                                 option Кандидат в наставники
                                                 option Кандидат в наставники
                                                 option Кандидат в наставники
@@ -265,25 +265,25 @@ block pageContent
 
                             // start card info
 
-                            .css-card-right
-                                .css-card-edit
+                            .css-card-right.gr-o-card-right
+                                .css-card-edit.gr-o-card-edit
                                     a(href='', title='Edit')
                                         i.fas.fa-pencil-alt
                                 span Дата проходження інфо-зустрічі:
                                 p 11 лютого 2017
                                 span Наявність документів:
                                 .css-card-check-wrapp
-                                    .css-card-check
+                                    .css-card-check.gr-o-card-check
                                         input#box3.css-font(type='checkbox', checked='checked')
                                         label(for='box3') Довідка про несудимість
-                                    .css-card-check
+                                    .css-card-check.gr-o-card-check
                                         input#box4.css-font(type='checkbox', checked='checked')
                                         label(for='box4') Мед. довідка
 
                                 span Дата проходження консультації з психологом:
                                 p 21 лютого 2017
 
-                                .css-card-subtitle
+                                .css-card-subtitle.gr-o-card-subtitle
                                     span Висновок психолога:
                                     div
                                         h5 поведінка:
@@ -304,7 +304,7 @@ block pageContent
                                 span Дата тренінга:
                                 p 16 березня 2017
 
-                                .css-card-subtitle
+                                .css-card-subtitle.gr-o-card-subtitle
                                     span Висновок тренера:
                                     div
                                         h5 поведінка:
@@ -337,7 +337,7 @@ block pageContent
                                         span Дата договору:
                                         p 01 травня 2017
 
-                                .css-card-subtitle
+                                .css-card-subtitle.gr-o-card-subtitle
                                     span Коментар:
                                     div
                                         h5 поведінка:
@@ -600,9 +600,9 @@ block pageContent
 
 
 
-                    .css-card-all Дивитися всі
+                    .css-card-all.gr-o-css-card-all Дивитися всі
 
-    include ../templates/css-footer-log.pug
+    include ../templates/gr-o-footer-log
 
 
 

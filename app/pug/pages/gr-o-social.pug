@@ -116,11 +116,20 @@ block pageContent
                             span.css-block-phone (063) 324 43 43
                             span#css-gr-block-img.css-block-img.gr-o-block-img
                                 img(src='img/phone-purple.svg')
+                        include ../templates/social-dropbox.css
                         .css-block-stat
-                            select.triangle-green.gr-o-triangle-purple(required='')
-                                option(value='') Знаємо про її існування
-                                option Домовленість про співпрацю
-                                option Підписаний договір
+                            .social-center
+                              select#sources.custom-select.sources(name='sources', placeholder='стотус')
+                                option(value='profile') Пройшов тренінг
+                                option(value='word') Пройшов тренінг
+                                option(value='Видмовився бути наставником') Видмовився бути наставником
+                                option(value='Видмовився бути наставником') Видмовився бути наставником
+                                option(value='Видмовився бути наставником') Видмовився бути наставником
+                                option(value='Видмовився бути наставником') Видмовився бути наставником
+                            //- select.triangle-green.gr-o-triangle-purple(required='')
+                            //-     option(value='') Знаємо про її існування
+                            //-     option Домовленість про співпрацю
+                            //-     option Підписаний договір
                         .css-block-license
                             span 45043
                         .css-block-val

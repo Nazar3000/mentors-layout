@@ -12,6 +12,10 @@ body {
   font-weight: 400;
   font-family: $main-font;
 }
+header {
+  background:#fff;
+  z-index: 9999;
+}
 a, a:hover{
   text-decoration: none;
   transition: 0.5s ease;

@@ -310,17 +310,46 @@ $(document).ready(function () {
 
     // sort mentor click phone and change
 
-    $('.mentor-phone-img').click(function () {
-        if ($(this).find('img').attr('src') == 'img/blue-tel.svg') {
-            $(this).find('img').attr('src', 'img/green-tel.svg');
-            $(this).siblings('.mentor-title').toggle();
-            $(this).siblings('.mentor-phone').toggle();
-        } else {
-            $(this).find('img').attr('src', 'img/blue-tel.svg');
-            $(this).siblings('.mentor-title').toggle();
-            $(this).siblings('.mentor-phone').toggle();
-        }
-    });
+    // $('.mentor-phone-img').click(function () {
+    //     if ($(this).find('img').attr('src') == 'img/blue-tel.svg') {
+    //         $(this).find('img').attr('src', 'img/green-tel.svg');
+    //         $(this).siblings('.mentor-title').toggle();
+    //         $(this).siblings('.mentor-phone').toggle();
+    //     } else {
+    //         $(this).find('img').attr('src', 'img/blue-tel.svg');
+    //         $(this).siblings('.mentor-title').toggle();
+    //         $(this).siblings('.mentor-phone').toggle();
+    //     }
+    // });
+    if ( $('.mentor-phone-img').hasClass('gr-o-mentor-phone-img') ){
+
+        $('.mentor-phone-img').click(function () {
+            if ($(this).find('img').attr('src') == 'img/phone-purple.svg') {
+                $(this).find('img').attr('src', 'img/green-tel.svg');
+                $(this).siblings('.mentor-title').toggle();
+                $(this).siblings('.mentor-phone').toggle();
+            } else {
+                $(this).find('img').attr('src', 'img/phone-purple.svg');
+                $(this).siblings('.mentor-title').toggle();
+                $(this).siblings('.mentor-phone').toggle();
+            }
+        });
+
+    } else {
+
+        $('.mentor-phone-img').click(function () {
+            if ($(this).find('img').attr('src') == 'img/blue-tel.svg') {
+                $(this).find('img').attr('src', 'img/green-tel.svg');
+                $(this).siblings('.mentor-title').toggle();
+                $(this).siblings('.mentor-phone').toggle();
+            } else {
+                $(this).find('img').attr('src', 'img/blue-tel.svg');
+                $(this).siblings('.mentor-title').toggle();
+                $(this).siblings('.mentor-phone').toggle();
+            }
+        });
+
+    }
 
 
     $('.mentor-title').click(function () {
@@ -499,4 +528,41 @@ $(document).ready(function () {
       allRegions.removeClass('on');
     }
     });
+});
+
+// social-dropbox
+$(".custom-select").each(function() {
+  var classes = $(this).attr("class"),
+      id      = $(this).attr("id"),
+      name    = $(this).attr("name");
+  var template =  '<div class="' + classes + '">';
+      template += '<span class="custom-select-trigger">' + $(this).attr("placeholder") + '</span>';
+      template += '<div class="custom-options">';
+      $(this).find("option").each(function() {
+        template += '<span class="custom-option ' + $(this).attr("class") + '" data-value="' + $(this).attr("value") + '">' + $(this).html() + '</span>';
+      });
+  template += '</div></div>';
+  
+  $(this).wrap('<div class="custom-select-wrapper"></div>');
+  $(this).hide();
+  $(this).after(template);
+});
+$(".custom-option:first-of-type").hover(function() {
+  $(this).parents(".custom-options").addClass("option-hover");
+}, function() {
+  $(this).parents(".custom-options").removeClass("option-hover");
+});
+$(".custom-select-trigger").on("click", function() {
+  $('html').one('click',function() {
+    $(".custom-select").removeClass("opened");
+  });
+  $(this).parents(".custom-select").toggleClass("opened");
+  event.stopPropagation();
+});
+$(".custom-option").on("click", function() {
+  $(this).parents(".custom-select-wrapper").find("select").val($(this).data("value"));
+  $(this).parents(".custom-options").find(".custom-option").removeClass("selection");
+  $(this).addClass("selection");
+  $(this).parents(".custom-select").removeClass("opened");
+  $(this).parents(".custom-select").find(".custom-select-trigger").text($(this).text());
 });
