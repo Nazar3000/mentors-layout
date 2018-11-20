@@ -566,3 +566,14 @@ $(".custom-option").on("click", function() {
   $(this).parents(".custom-select").removeClass("opened");
   $(this).parents(".custom-select").find(".custom-select-trigger").text($(this).text());
 });
+// form-search-box
+$('.form-dating-search').click(function(event) {
+    $('.form-dating-box-items').toggle();
+});
+$('.form-dating-item').click(function(event) {
+    var form_dating_info = $(this).html();
+    $('.form-dating-search').attr({
+        value: form_dating_info
+    });
+    $('.form-dating-box-items').toggle();
+});
