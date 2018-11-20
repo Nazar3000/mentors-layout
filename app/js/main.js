@@ -567,13 +567,32 @@ $(".custom-option").on("click", function() {
   $(this).parents(".custom-select").find(".custom-select-trigger").text($(this).text());
 });
 // form-search-box
-$('.form-dating-search').click(function(event) {
-    $('.form-dating-box-items').toggle();
-});
+// $('.form-dating-search').click(function(event) {
+//     $('.form-dating-box-items').toggle();
+// });
+// 
 $('.form-dating-item').click(function(event) {
     var form_dating_info = $(this).html();
     $('.form-dating-search').attr({
         value: form_dating_info
     });
     $('.form-dating-box-items').toggle();
+});
+
+$(".form-dating-search").click(function() {
+  $('.form-dating-box-items').toggle();
+});
+$(document).on('click', function(e) {
+  if (!$(e.target).closest(".form-dating-search").length) {
+    $('.form-dating-box-items').hide();
+  }
+  e.stopPropagation();
+});
+$('.link-dating-for-input').click(function(event) {
+    $('.form-dating-modal').toggle();
+    $('body').toggleClass('body-hidden-dating');
+});
+$('.form-dating-modal-closed').click(function(event) {
+    $('.form-dating-modal').toggle();
+    $('body').toggleClass('body-hidden-dating');
 });
