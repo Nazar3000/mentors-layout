@@ -205,7 +205,7 @@ $(document).ready(function () {
         });
         $('body').toggleClass('body-hidden');
     });
-   
+
 
     $('.career-card-close').click(function () {
         $('.career-modal-reg').fadeOut(400);
@@ -542,7 +542,7 @@ $(".custom-select").each(function() {
         template += '<span class="custom-option ' + $(this).attr("class") + '" data-value="' + $(this).attr("value") + '">' + $(this).html() + '</span>';
       });
   template += '</div></div>';
-  
+
   $(this).wrap('<div class="custom-select-wrapper"></div>');
   $(this).hide();
   $(this).after(template);
@@ -570,7 +570,7 @@ $(".custom-option").on("click", function() {
 // $('.form-dating-search').click(function(event) {
 //     $('.form-dating-box-items').toggle();
 // });
-// 
+//
 $('.form-dating-item').click(function(event) {
     var form_dating_info = $(this).html();
     $('.form-dating-search').attr({
@@ -588,11 +588,11 @@ $(document).on('click', function(e) {
   }
   e.stopPropagation();
 });
-$('.link-dating-for-input').click(function(event) {
-    $('.form-dating-modal').toggle();
-    $('body').toggleClass('body-hidden-dating');
-});
-$('.form-dating-modal-closed').click(function(event) {
-    $('.form-dating-modal').toggle();
-    $('body').toggleClass('body-hidden-dating');
-});
+// $('.link-dating-for-input').click(function(event) {
+//     $('.form-dating-modal').toggle();
+//     $('body').toggleClass('body-hidden-dating');
+// });
+// $('.form-dating-modal-closed').click(function(event) {
+//     $('.form-dating-modal').toggle();
+//     $('body').toggleClass('body-hidden-dating');
+// });

@@ -95,7 +95,7 @@
 		right: 20px;
 		top: 15px;
 	    border: 8px solid transparent;
-	    border-top: 8px solid #037286; 
+	    border-top: 8px solid #037286;
 	}
 }
 .link-dating-for-input{
@@ -149,19 +149,28 @@
 	}
 }
 .form-dating-modal{
-	display: none;
+	// display: none;
     position: absolute;
     width: 730px;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	height: 400px;
-    z-index: 11000;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		height: 400px;
     padding:45px;
    	overflow-y: auto;
     background:#fff;
     border-radius: 5px;
+    z-index: 11000;
+    &_background{
+    	position: fixed;
+			width: 100%;
+			left: 0;
+			top: 0;
+			height: 100%;
+			z-index: 10000;
+			background: rgba(0,0,0,.5);
+    }
     & .form-dating-subtitle-input{
     	text-align: center;
     }

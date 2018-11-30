@@ -177,7 +177,6 @@
 }
 
 .form-dating-modal {
-  display: none;
   position: absolute;
   width: 730px;
   left: 0;
@@ -185,12 +184,22 @@
   top: 0;
   bottom: 0;
   height: 400px;
-  z-index: 11000;
   padding: 45px;
   overflow-y: auto;
   background: #fff;
   -webkit-border-radius: 5px;
           border-radius: 5px;
+  z-index: 11000;
+}
+
+.form-dating-modal_background {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100%;
+  z-index: 10000;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .form-dating-modal .form-dating-subtitle-input {
