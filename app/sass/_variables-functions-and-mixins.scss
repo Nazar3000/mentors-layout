@@ -287,7 +287,7 @@ $second-font: 'FreeSet';
   cursor: pointer;
 
 }
-$group-size: 7;
+$group-size: 99;
 @mixin six-number(){
   @for $i from 1 through $group-size {
     div:nth-child(#{$group-size}n + #{$i}) {
