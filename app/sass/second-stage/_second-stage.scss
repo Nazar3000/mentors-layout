@@ -1,3 +1,7 @@
+#stage{
+  transform: translate3d(0, 0, 0);
+  transition: all 300ms;
+}
 .second-stage{
   padding: 100px 0 185px;
   position: relative;

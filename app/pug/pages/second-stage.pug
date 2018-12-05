@@ -6,8 +6,8 @@ block pageContent
             .container
                 h2  Дякую за бажання стати Наставником для дитини
                 .first-stage-wrapp
-                    .stage-panel-two
-                        img(src='img/family.svg', alt='')
+                    .stage-panel-two#stage
+                        //- img(src='img/family.svg', alt='')
                         span.stage-panel-start
                             | Зареєструватися
                             br
@@ -16,7 +16,7 @@ block pageContent
                             | Зібрати пакет
                             br
                             | документів
-                        .stage-panel-active До наступного кроку
+                        //- .stage-panel-active До наступного кроку
                         span.stage-panel-last Пройти навчання
                         span.stage-panel-finish
                             | Знайомство з дитиною,
@@ -31,7 +31,7 @@ block pageContent
                             |  внутрішніх справ для отримання довідки про несудимість
                             br
                             |  або
-                            a(href='')  замов її Online.
+                            a(href='https://dpvs.hsc.gov.ua/' target="_blank")  замов її Online.
                             |   Знайди контактні дані на карті:
 
 
@@ -46,7 +46,7 @@ block pageContent
                             | огляду, то ти можеш її завантажити тут:
 
                         .first-stage-doc
-                            a(href='' target='_blank')
+                            a(href='http://zakon.rada.gov.ua/laws/file/text/7/f272713n437.doc' target='_blank')
                                 img(src='img/download.svg', alt='')
                                 span Завантажити
 
@@ -55,9 +55,10 @@ block pageContent
                         .first-stage-subt
                             span 1. Довідка про несудимість
                             span 2. Висновок про стан здоров'я
+                            span 3. Копiя паспорта
 
 
-                        .first-stage-btn Крок 2. Підготовка до зустрічі
+                        .first-stage-btn.testssss Крок 2. Підготовка до зустрічі
 
                         p
                             | 1. Пройди співбесіду з психологом Центру

@@ -588,6 +588,39 @@ $(document).on('click', function(e) {
   }
   e.stopPropagation();
 });
+// page-secon-stage
+
+function getTopOffset(e) {
+    var y = 0;
+    do { y += e.offsetTop; } while (e = e.offsetParent);
+    return y;
+}
+var block = document.getElementById('stage'); /* fixblock - значение атрибута id блока */
+if ( null != block ) {
+    var topPos = getTopOffset( block );
+
+    window.onscroll = function() {
+        var scrollHeight = Math.max( document.documentElement.scrollHeight, document.documentElement.clientHeight),
+
+            // определяем высоту рекламного блока
+            blockHeight = block.offsetHeight,
+
+            // вычисляем высоту подвала, footer заменить на значение атрибута id подвала
+            footerHeight = document.getElementById('footer').offsetHeight,
+
+            // считаем позицию, до которой блок будет зафиксирован
+            stopPos = scrollHeight - blockHeight - footerHeight;
+
+        var newcss = (topPos < window.pageYOffset) ?
+            'top:20px; position: sticky; ' : 'position:static;';
+
+        if ( window.pageYOffset > stopPos )
+            newcss = 'top: 20px; position: sticky;';
+
+        block.setAttribute( 'style', newcss );
+    }
+}
+
 // $('.link-dating-for-input').click(function(event) {
 //     $('.form-dating-modal').toggle();
 //     $('body').toggleClass('body-hidden-dating');
