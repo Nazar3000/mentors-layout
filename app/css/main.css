@@ -9441,33 +9441,29 @@ select.table-education-name {
   margin-bottom: 90px;
 }
 
-.first-stage-info > a img {
+.first-stage-info > section > a img {
   width: 20px;
 }
 
-.first-stage-info > p {
+.first-stage-info > section > p {
   font-size: 20px;
   letter-spacing: 1.38px;
   color: #000;
   margin-bottom: 0;
 }
 
-.first-stage-info > p > a {
+.first-stage-info > section > p > a {
   color: #368CCA;
   text-decoration: underline;
 }
 
-.first-stage-info > input {
+.first-stage-info > section > input {
   width: 505px;
   border: 0;
   padding: 10px 30px;
   display: block;
   background: #E2EDF0;
   margin: 30px 0;
-}
-
-.first-stage-subt {
-  margin-bottom: 45px;
 }
 
 .first-stage-subt > span {
@@ -9837,6 +9833,26 @@ select.table-education-name {
           transform: translate3d(0, 0, 0);
   -webkit-transition: all 300ms;
   transition: all 300ms;
+}
+
+section#section3 {
+  padding-top: 45px;
+}
+
+.active {
+  opacity: 1 !important;
+}
+
+.stage-panel-start {
+  opacity: .5;
+}
+
+.stage-panel-two span.stage-panel-next {
+  opacity: .5;
+}
+
+.stage-panel-two span.stage-panel-last {
+  opacity: .5;
 }
 
 .first-stage-form_box {
@@ -13643,7 +13659,7 @@ select.table-education-name {
           justify-content: center;
   position: absolute;
   top: -35px;
-  right: -20px;
+  right: -45px;
 }
 
 .css-main-circle > span {
@@ -13700,6 +13716,12 @@ select.table-education-name {
 }
 
 .css-main-item {
+  text-align: center;
+  position: relative;
+}
+
+.css-main-item_results {
+  display: inline-block;
   position: relative;
 }
 

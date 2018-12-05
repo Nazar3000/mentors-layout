@@ -620,6 +620,39 @@ if ( null != block ) {
         block.setAttribute( 'style', newcss );
     }
 }
+// page-second-stage-active-scroll
+
+//highlight the correct menu item
+$(window).scroll(function(){
+  //define line on screen, which the item has to cross to activate the respective menu   item, the intersecting line will be 32 pixels from the top of the scren
+  var intersectingLine = $(window).scrollTop() + 32;
+
+
+  //loop through all text items and see which of them crosses the intersecting line
+  if(!$('.container').hasClass('animating-scroll')){
+    //remove active class from all menu items
+  $('.stage-active').removeClass('active');
+
+    $('.text-item').each(function(){
+   //how far is each text from top
+   var top = $(this).offset().top;
+
+   //how tall is each text
+   var bottom = $(this)[0].clientHeight + top;
+
+   //check if this text item crosses the intersecting line
+   if(top < intersectingLine && bottom > intersectingLine){
+     //the active item is found
+     var activeName = $(this).attr('data-name');
+     $('.stage-active[data-name="' + activeName + '"]').addClass('active');
+   }
+ });
+  }
+
+});
+
+
+//
 
 // $('.link-dating-for-input').click(function(event) {
 //     $('.form-dating-modal').toggle();

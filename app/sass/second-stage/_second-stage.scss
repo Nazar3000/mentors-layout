@@ -2,6 +2,21 @@
   transform: translate3d(0, 0, 0);
   transition: all 300ms;
 }
+section#section3{
+  padding-top: 45px;
+}
+.active{
+  opacity: 1 !important;
+}
+.stage-panel-start{
+  opacity: .5;
+}
+.stage-panel-two span.stage-panel-next{
+  opacity: .5;
+}
+.stage-panel-two span.stage-panel-last{
+  opacity: .5;
+}
 .first-stage-form_box{
   margin-top:40px;
   max-width: 600px;

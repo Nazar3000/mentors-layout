@@ -64,7 +64,7 @@
     justify-content: center;
     position: absolute;
     top: -35px;
-    right: -20px;
+    right: -45px;
     & > span{
       color: $css-color;
       font-size: 24px;
@@ -98,7 +98,12 @@
     }
   }
   &-item{
+    text-align: center;
     position: relative;
+    &_results{
+      display: inline-block;
+      position: relative;
+    }
     & p{
       font-size: 130px;
       font-weight: bold;
