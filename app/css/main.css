@@ -19594,6 +19594,30 @@ section#section3 {
   right: 30px !important;
 }
 
+.css-admin-log .admin-log-card > button {
+  background: #037286;
+}
+
+.css-admin-log .admin-log-head > a {
+  background: #037286;
+}
+
+.css-admin-log .admin-log-description > span {
+  color: #037286;
+}
+
+.css-admin-log .admin-log-password > span {
+  color: #037286;
+}
+
+.css-admin-log .setting-card-icon .add-img {
+  background: #037286;
+}
+
+.css-admin-log .setting-card-icon .delete-img {
+  color: #037286;
+}
+
 .gr-o-wrapper-stat {
   margin-bottom: 70px;
 }
