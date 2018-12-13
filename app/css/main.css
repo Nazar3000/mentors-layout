@@ -626,6 +626,22 @@ input[type="radio"]:checked:after {
   background: #7B57A0;
 }
 
+.gr-o-content .gr-o-admin-link-title {
+  color: #7B57A0;
+}
+
+.gr-o-content .gr-o-question-write {
+  color: #7B57A0;
+}
+
+.gr-o-content .gr-o-question-write > span {
+  color: #7B57A0;
+}
+
+.gr-o-content .gr-o-question-write > button {
+  background: #7B57A0;
+}
+
 /* end style for gr-o*/
 
 .footer-btn {

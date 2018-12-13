@@ -497,6 +497,19 @@ input[type="radio"]:checked:after {
   &-content &-social-card-edit_close{
     background:$gr-o-main;
   }
+  // question-page
+  &-content &-admin-link-title{
+      color:$gr-o-main;
+  }
+  &-content &-question-write{
+    color:$gr-o-main;
+    & > span{
+      color:$gr-o-main;
+    }
+    & > button{
+      background:$gr-o-main;
+    }
+  }
 }
 /* end style for gr-o*/
 .footer-btn{
