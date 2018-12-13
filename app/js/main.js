@@ -56,6 +56,38 @@ $(document).ready(function () {
     // carousel main page
 
     $(document).ready(function () {
+        $(".main-carousel-homepage").owlCarousel({
+            loop: false,
+            nav: true,
+            dots: true,
+            // animateOut: 'fadeOut',
+            responsive: {
+                0: {
+                    items: 1,
+                    nav:false
+                },
+                767: {
+                    items: 1,
+                    nav:true,
+                }
+            }
+        });
+        $(".contacts-slider").owlCarousel({
+            loop: false,
+            nav: false,
+            dots: true,
+            // animateOut: 'fadeOut',
+            responsive: {
+                0: {
+                    items: 1,
+                    nav:false
+                },
+                767: {
+                    items: 1,
+                    nav:true,
+                }
+            }
+        });
         $(".owl-carousel").owlCarousel({
             loop: false,
             nav: true,

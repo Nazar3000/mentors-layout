@@ -10740,8 +10740,8 @@ section#section3 {
   margin-bottom: 220px;
 }
 
-.contacts-slide .owl-carousel .owl-nav {
-  display: none;
+.contacts-slide .owl-item img {
+  width: 20%;
 }
 
 .contacts-container {
@@ -10869,74 +10869,47 @@ section#section3 {
   margin-bottom: 0;
 }
 
-.contacts .owl {
-  /*&-dot{
-      width: 21px;
-      height: 21px;
-      background-color: #368cca!important;
-      opacity: 0.3;
-      margin: 0 20px;
-      border: none;
-      border-radius: 50px;
-      &.active{
-        opacity: 1;
-      }
-    }*/
-}
-
 .contacts .owl-dots {
   text-align: center;
   margin-bottom: 50px;
 }
 
-.contacts .owl-prev:focus,
-.contacts .owl-dot:focus {
-  outline: 0;
-}
-
-.contacts .owl-next:focus {
-  outline: 0;
-}
-
-.contacts .owl-prev {
-  background: url("../img/left.png") no-repeat !important;
-  background-size: cover;
-  width: 38px;
-  height: 59px;
-  display: block;
-}
-
-.contacts .owl-prev > span {
-  display: none;
-}
-
-.contacts .owl-next {
-  background: url("../img/right.png") no-repeat !important;
-  background-size: cover;
-  width: 38px;
-  height: 59px;
-  display: block;
-}
-
-.contacts .owl-next > span {
-  display: none;
-}
-
 .contacts .owl-nav {
-  text-align: center;
-  display: block;
-  display: -webkit-box !important;
-  display: -webkit-flex !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
+  display: none;
+}
+
+.contacts .owl-dot {
+  width: 21px;
+  height: 21px;
+  background-color: #368cca !important;
+  opacity: 0.3;
+  margin: 0 20px;
+  border: none;
+  -webkit-border-radius: 50px;
+          border-radius: 50px;
+}
+
+.contacts .owl-dot.active {
+  opacity: 1;
+}
+
+.issues-title {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: relative;
-  top: 30px;
-  z-index: 1;
-  margin: 0 200px;
+}
+
+.issues-title img {
+  width: 10%;
 }
 
 .admin-log {
