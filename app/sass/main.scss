@@ -402,7 +402,7 @@ input[type="radio"]:checked:after {
   &-social-info-wrapp &-social-link > a{
     background-color: $gr-o-main;
     &:hover{
-        box-shadow: 2px 5px 10px 0 $gr-o-main;
+      box-shadow: 2px 5px 10px 0 $gr-o-main;
     }
   }
   &-social-info-wrapp &-social-title > p > span{
@@ -499,7 +499,7 @@ input[type="radio"]:checked:after {
   }
   // question-page
   &-content &-admin-link-title{
-      color:$gr-o-main;
+    color:$gr-o-main;
   }
   &-content &-question-write{
     color:$gr-o-main;
@@ -515,6 +515,25 @@ input[type="radio"]:checked:after {
 .footer-btn{
   transition: all 300ms;
 }
+// carousel-btn
+.btn-active_dots{
+  width: 21px;
+  height: 21px;
+  border:none;
+  background-color: #368cca !important;
+  margin: 0 20px;
+  border-radius: 50px;
+}
+.btn_dots{
+  width: 21px;
+  height: 21px;
+  border:none;
+  background-color: #368cca !important;
+  opacity: 0.3;
+  margin: 0 20px;
+  border-radius: 50px;
+}
+//
 
 
 @import 'media';

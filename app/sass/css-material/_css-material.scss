@@ -212,7 +212,8 @@
     }
     &-item{
       width: 600px;
-      height: 170px;
+      max-height: 400px;
+      min-height: 160px;
       position: relative;
       display: flex;
       flex-direction: column;

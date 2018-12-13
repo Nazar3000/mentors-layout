@@ -295,6 +295,7 @@ $group-size: 99;
         content: "#{$i}";
         position: absolute;
         bottom: 15px;
+        z-index: -1;
         left: -50px;
         opacity: 0.4;
         color: #E2EDF0;
