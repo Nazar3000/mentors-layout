@@ -11441,6 +11441,91 @@ section#section3 {
   z-index: -1;
 }
 
+.photo-box {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+          box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+  padding: 35px 45px;
+  max-width: 53%;
+  max-height: 500px;
+  height: 100%;
+}
+
+.photos {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.photos li {
+  margin: 5px 0px;
+}
+
+.photo_btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.photo_btn-main-img {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  margin: 0px 10px;
+}
+
+.photo_btn-main-img img {
+  width: 100%;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+}
+
+.photo_btn img {
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  width: 100%;
+}
+
+.photo-btn_arrow {
+  background: transparent;
+  cursor: pointer;
+  border: none;
+}
+
 .body-hidden {
   overflow: hidden;
 }
