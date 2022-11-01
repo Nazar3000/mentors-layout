@@ -4,7 +4,7 @@
   "description": "Bolierplate for start project with Pug",
   "main": "index.js",
   "dependencies": {
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "lightslider": "^1.1.6",
     "particlesjs": "^2.2.2",
     "select2": "^4.0.6-rc.1",
@@ -15,7 +15,7 @@
     "animate.css": "^3.6.1",
     "browser-sync": "^2.12.5",
     "del": "^2.2.0",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-cache": "^0.4.5",
     "gulp-concat": "^2.6.0",
